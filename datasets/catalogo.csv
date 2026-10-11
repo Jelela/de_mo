@@ -1,0 +1,1402 @@
+modelo,nombre,departamento,categoria,precio,stock_ref,talles,costo_unitario
+117000030029,PEACH ML LINO T-SHIRT GRIS,Vestimenta,Remeras y tops,200,8,1,70.0
+117001011006,Remera Morning Verde,Vestimenta,Remeras y tops,500,5,3,180.0
+117001011014,Remera Morning Gris O,Vestimenta,Remeras y tops,500,49,4,197.0
+117006310085,T-Shirt Autumm 631 CFLL,Vestimenta,Remeras y tops,290,132,4,116.0
+117006730002,Remera Cativa Blanco,Vestimenta,Remeras y tops,750,1,1,263.0
+117007050005,Remera Nancy Azul,Vestimenta,Remeras y tops,500,8,1,184.0
+117007050014,Remera Nancy Gris O,Vestimenta,Remeras y tops,500,12,1,170.0
+117007050015,Remera Nancy Gris Claro,Vestimenta,Remeras y tops,500,1,1,195.0
+117007430005,Remera Safi Azul,Vestimenta,Remeras y tops,500,2,1,189.0
+117008420015,Remera Begonia Gris Claro,Vestimenta,Remeras y tops,500,1,1,181.0
+117008520005,Remera Jazmin Azul,Vestimenta,Remeras y tops,500,2,2,178.0
+117008590006,Remera Areca Verde,Vestimenta,Remeras y tops,500,5,2,181.0
+117008590007,Remera Areca Rosa,Vestimenta,Remeras y tops,500,9,2,184.0
+117008640005,Remera Croton Azul,Vestimenta,Remeras y tops,500,1,1,190.0
+117009900014,Remera Anyway Gris O,Vestimenta,Remeras y tops,500,30,3,167.0
+117009920014,Remera Change Gris O,Vestimenta,Remeras y tops,500,89,5,159.0
+117011160004,Remera Loja Amarillo,Vestimenta,Remeras y tops,590,5,3,233.0
+117011160005,Remera Loja Azul,Vestimenta,Remeras y tops,590,2,1,228.0
+117011160018,Remera Loja Verde Agua,Vestimenta,Remeras y tops,590,1,1,223.0
+117011280002,Remera Trujillo Blanco,Vestimenta,Remeras y tops,690,6,2,243.0
+117011280004,Remera Trujillo Amarillo,Vestimenta,Remeras y tops,690,60,4,228.0
+117011280005,Remera Trujillo Azul,Vestimenta,Remeras y tops,690,9,3,245.0
+117011280007,Remera Trujillo Rosa,Vestimenta,Remeras y tops,690,43,4,257.0
+117011280008,Remera Trujillo Celeste,Vestimenta,Remeras y tops,690,37,3,256.0
+117011280014,Remera Trujillo Gris O,Vestimenta,Remeras y tops,690,1,1,217.0
+117011280018,Remera Trujillo Verde Agua,Vestimenta,Remeras y tops,690,17,3,230.0
+117011280033,Remera Trujillo Coral,Vestimenta,Remeras y tops,690,1,1,268.0
+117011290002,Musculosa Besaluz BLANCO,Vestimenta,Remeras y tops,590,6,2,231.0
+117011290004,Musculosa Besaluz AMARILLO,Vestimenta,Remeras y tops,590,50,4,218.0
+117011290005,Musculosa Besaluz AZUL,Vestimenta,Remeras y tops,590,19,4,225.0
+117011290007,Musculosa Besaluz ROSA,Vestimenta,Remeras y tops,590,51,4,223.0
+117011290008,Musculosa Besaluz CELESTE,Vestimenta,Remeras y tops,590,41,3,199.0
+117011290014,Musculosa Besaluz GRIS O,Vestimenta,Remeras y tops,590,1,1,187.0
+117011290018,Musculosa Besaluz VERDE AGUA,Vestimenta,Remeras y tops,590,37,4,245.0
+117011290023,Musculosa Besaluz BEIGE,Vestimenta,Remeras y tops,590,2,2,243.0
+117011290033,Musculosa Besaluz CORAL,Vestimenta,Remeras y tops,590,4,3,199.0
+117011550004,Remera Tanot Amarillo,Vestimenta,Remeras y tops,590,50,1,225.0
+117013390009,T-Shirt Lost In LILA,Vestimenta,Remeras y tops,490,1,1,172.0
+117014470007,T-Shirt Sunny 447 ROSA,Vestimenta,Remeras y tops,290,61,5,99.0
+117014550029,T-Shirt Sunny 455 GRIS,Vestimenta,Remeras y tops,290,3,2,96.0
+117015220023,Musculosa Autumm 545 BEIGE,Vestimenta,Remeras y tops,290,13,1,106.0
+117015330006,Musculosa Autumm 553 VERDE,Vestimenta,Remeras y tops,290,1,1,99.0
+117015470007,Musculosa Autumm 547 ROSA,Vestimenta,Remeras y tops,290,1,1,99.0
+117015480002,Musculosa Autumm 548 BLANCO,Vestimenta,Remeras y tops,290,1,1,110.0
+117015520033,Musculosa Autumm 552 CORAL,Vestimenta,Remeras y tops,290,17,3,108.0
+117015530029,Musculosa Autumm 553 GRIS,Vestimenta,Remeras y tops,490,52,3,175.0
+117015570002,Musculosa Autumm 557 BLANCO,Vestimenta,Remeras y tops,290,8,1,100.0
+117015590007,Musculosa Autumm 559 ROSA,Vestimenta,Remeras y tops,290,20,2,115.0
+117015590029,Musculosa Autumm 559 GRIS,Vestimenta,Remeras y tops,290,5,1,108.0
+117015600085,Musculosa Autumm 560 CFLL,Vestimenta,Remeras y tops,290,68,5,102.0
+117015630023,Musculosa Autumm 563 BEIGE,Vestimenta,Remeras y tops,290,95,3,117.0
+117015640007,Musculosa Autumm 564 ROSA,Vestimenta,Remeras y tops,290,71,2,101.0
+117015660007,Musculosa Autumm 566 ROSA,Vestimenta,Remeras y tops,290,6,1,110.0
+117015670007,Musculosa Autumm 567 ROSA,Vestimenta,Remeras y tops,290,37,4,107.0
+117015680085,Musculosa Autumm 568 CFLL,Vestimenta,Remeras y tops,290,51,3,91.0
+117015720008,Musculosa Autumm 572 CELESTE,Vestimenta,Remeras y tops,290,93,6,112.0
+117016190008,T-Shirt Autumm 619 CELESTE,Vestimenta,Remeras y tops,290,40,4,101.0
+117016210001,T-Shirt Autumm 621 NEGRO,Vestimenta,Remeras y tops,290,3,1,106.0
+117016220007,T-Shirt Autumm 622 ROSA,Vestimenta,Remeras y tops,290,25,3,112.0
+117016280002,T-Shirt Autumm 628 BLANCO,Vestimenta,Remeras y tops,290,1,1,116.0
+117016290006,T-Shirt Autumm 629 VERDE,Vestimenta,Remeras y tops,290,17,4,114.0
+117016290030,T-Shirt Autumm 629 ANARAN,Vestimenta,Remeras y tops,290,55,5,94.0
+117016300023,T-Shirt Autumm 630 BEIGE,Vestimenta,Remeras y tops,290,2,1,109.0
+117016740024,T-Shirt Autumm 674 MARRON,Vestimenta,Remeras y tops,490,35,3,177.0
+117016750085,T-Shirt Autumm 675 CFLL,Vestimenta,Remeras y tops,490,82,4,169.0
+117016770006,T-Shirt Autumm 677 VERDE,Vestimenta,Remeras y tops,490,81,5,187.0
+117017000001,Top Awwas NEGRO,Vestimenta,Remeras y tops,650,22,4,245.0
+117017000006,Top Awwas VERDE,Vestimenta,Remeras y tops,650,45,5,245.0
+117017000007,Top Awwas ROSA,Vestimenta,Remeras y tops,650,25,5,217.0
+117017000014,Top Awwas GRIS O,Vestimenta,Remeras y tops,650,56,5,254.0
+117017000033,Top Awwas CORAL,Vestimenta,Remeras y tops,650,22,5,223.0
+117017010001,Top Lolita NEGRO,Vestimenta,Remeras y tops,690,26,5,245.0
+117017010002,Top Lolita BLANCO,Vestimenta,Remeras y tops,690,7,3,250.0
+117017010006,Top Lolita VERDE,Vestimenta,Remeras y tops,690,10,4,256.0
+117017010008,Top Lolita CELESTE,Vestimenta,Remeras y tops,690,22,5,224.0
+117017010010,Top Lolita VIOLETA,Vestimenta,Remeras y tops,690,7,3,258.0
+117017020001,Top Libia NEGRO,Vestimenta,Remeras y tops,890,25,5,324.0
+117017020005,Top Libia AZUL,Vestimenta,Remeras y tops,890,20,5,328.0
+117017020024,Top Libia MARRON,Vestimenta,Remeras y tops,890,23,5,304.0
+117017050001,Top Amelie NEGRO,Vestimenta,Remeras y tops,590,1,1,218.0
+117017070004,T-Shirt Agon AMARILLO,Vestimenta,Remeras y tops,690,1,1,244.0
+117018020004,T-Shirt Eter AMARILLO,Vestimenta,Remeras y tops,790,3,2,224.0
+117018020008,T-Shirt Eter CELESTE,Vestimenta,Remeras y tops,790,1,1,254.0
+117018450008,T-Shirt Satin CELESTE,Vestimenta,Remeras y tops,790,1,1,299.0
+117018450023,T-Shirt Satin BEIGE,Vestimenta,Remeras y tops,790,2,1,270.0
+117018710002,Sleeves Etnika BLANCO,Vestimenta,Remeras y tops,590,3,2,224.0
+117018710004,Sleeves Etnika AMARILLO,Vestimenta,Remeras y tops,590,23,4,232.0
+117018710006,Sleeves Etnika VERDE,Vestimenta,Remeras y tops,590,13,4,209.0
+117018710009,Sleeves Etnika LILA,Vestimenta,Remeras y tops,590,29,4,242.0
+117018710023,Sleeves Etnika BEIGE,Vestimenta,Remeras y tops,590,22,4,186.0
+117018720006,Sleeves Susurro VERDE,Vestimenta,Remeras y tops,690,1,1,265.0
+117018950001,Top Bravo NEGRO,Vestimenta,Remeras y tops,990,1,1,332.0
+117018950005,Top Bravo AZUL,Vestimenta,Remeras y tops,990,30,4,363.0
+117019020006,Top Naranjo VERDE,Vestimenta,Remeras y tops,790,1,1,316.0
+117019020009,Top Naranjo LILA,Vestimenta,Remeras y tops,790,1,1,235.0
+117019040007,Top Junta ROSA,Vestimenta,Remeras y tops,890,21,4,308.0
+117019040023,Top Junta BEIGE,Vestimenta,Remeras y tops,890,21,4,297.0
+117019050001,Top Traful NEGRO,Vestimenta,Remeras y tops,890,30,4,366.0
+117019050019,Top Traful PLATEADO,Vestimenta,Remeras y tops,890,47,4,325.0
+117019050020,Top Traful DORADO,Vestimenta,Remeras y tops,890,9,3,352.0
+117019330002,Top Riaseto BLANCO,Vestimenta,Remeras y tops,890,2,1,387.0
+117019330007,Top Riaseto ROSA,Vestimenta,Remeras y tops,890,21,4,364.0
+117019370029,Musculosa Naciente GRIS,Vestimenta,Remeras y tops,790,3,2,277.0
+117019380006,Musculosa Opalo VERDE,Vestimenta,Remeras y tops,790,27,2,333.0
+117019380029,Musculosa Opalo GRIS,Vestimenta,Remeras y tops,790,1,1,262.0
+117019430001,Top Deportivo Plenitud NEGRO,Vestimenta,Remeras y tops,790,1,1,307.0
+117019430002,Top Deportivo Plenitud BLANCO,Vestimenta,Remeras y tops,790,3,1,330.0
+117019430006,Top Deportivo Plenitud VERDE,Vestimenta,Remeras y tops,790,23,2,277.0
+117019430029,Top Deportivo Plenitud GRIS,Vestimenta,Remeras y tops,790,16,2,278.0
+117019460001,Musculosa Silvestre NEGRO,Vestimenta,Remeras y tops,890,8,4,323.0
+117019460002,Musculosa Silvestre BLANCO,Vestimenta,Remeras y tops,890,49,4,331.0
+117019460006,Musculosa Silvestre VERDE,Vestimenta,Remeras y tops,890,49,4,310.0
+117019470001,Top Deportivo Maravilla NEGRO,Vestimenta,Remeras y tops,890,21,4,364.0
+117019470006,Top Deportivo Maravilla VERDE,Vestimenta,Remeras y tops,890,30,4,323.0
+117023540006,T-Shirt Lufa VERDE,Vestimenta,Remeras y tops,590,18,3,236.0
+117023540029,T-Shirt Lufa GRIS,Vestimenta,Remeras y tops,590,16,3,201.0
+117023540048,T-Shirt Lufa Kaki,Vestimenta,Remeras y tops,590,29,3,223.0
+117023550001,T-Shirt Lufara NEGRO,Vestimenta,Remeras y tops,590,3,1,225.0
+117023550006,T-Shirt Lufara VERDE,Vestimenta,Remeras y tops,590,12,3,228.0
+117023550029,T-Shirt Lufara GRIS,Vestimenta,Remeras y tops,590,16,3,196.0
+117023550048,T-Shirt Lufara Kaki,Vestimenta,Remeras y tops,590,39,3,202.0
+117023560002,T-Shirt Luiani BLANCO,Vestimenta,Remeras y tops,790,1,1,315.0
+117023560023,T-Shirt Luiani BEIGE,Vestimenta,Remeras y tops,790,1,1,310.0
+117023560029,T-Shirt Luiani GRIS,Vestimenta,Remeras y tops,790,7,1,284.0
+117023570001,T-Shirt Lulomi NEGRO,Vestimenta,Remeras y tops,690,1,1,251.0
+117023570002,T-Shirt Lulomi BLANCO,Vestimenta,Remeras y tops,690,1,1,275.0
+117023570023,T-Shirt Lulomi BEIGE,Vestimenta,Remeras y tops,690,1,1,255.0
+117023570024,T-Shirt Lulomi MARRON,Vestimenta,Remeras y tops,690,1,1,267.0
+117023570029,T-Shirt Lulomi GRIS,Vestimenta,Remeras y tops,690,1,1,236.0
+117023580029,T-Shirt Luma GRIS,Vestimenta,Remeras y tops,490,27,4,184.0
+117023590002,T-Shirt Lumasu BLANCO,Vestimenta,Remeras y tops,790,5,3,263.0
+117023590029,T-Shirt Lumasu GRIS,Vestimenta,Remeras y tops,790,20,4,306.0
+117023600001,T-Shirt Lumiva NEGRO,Vestimenta,Remeras y tops,690,3,2,254.0
+117023600002,T-Shirt Lumiva BLANCO,Vestimenta,Remeras y tops,690,7,2,239.0
+117023600014,T-Shirt Lumiva GRIS O,Vestimenta,Remeras y tops,690,33,6,264.0
+117023600015,T-Shirt Lumiva GRIS CLARO,Vestimenta,Remeras y tops,690,18,5,255.0
+117023600023,T-Shirt Lumiva BEIGE,Vestimenta,Remeras y tops,690,21,6,242.0
+117023600029,T-Shirt Lumiva GRIS,Vestimenta,Remeras y tops,690,27,5,233.0
+117023600062,T-Shirt Lumiva PURPLE,Vestimenta,Remeras y tops,690,2,1,251.0
+117023610001,T-Shirt Lunalu NEGRO,Vestimenta,Remeras y tops,790,35,4,254.0
+117023610002,T-Shirt Lunalu BLANCO,Vestimenta,Remeras y tops,790,16,3,232.0
+117023620023,T-Shirt Luneta BEIGE,Vestimenta,Remeras y tops,990,1,1,357.0
+117023640001,T-Shirt Lura NEGRO,Vestimenta,Remeras y tops,790,31,4,292.0
+117023640002,T-Shirt Lura BLANCO,Vestimenta,Remeras y tops,790,18,4,309.0
+117023640006,T-Shirt Lura VERDE,Vestimenta,Remeras y tops,790,31,4,272.0
+117023650001,T-Shirt Lure NEGRO,Vestimenta,Remeras y tops,990,9,2,382.0
+117023650002,T-Shirt Lure BLANCO,Vestimenta,Remeras y tops,990,2,1,380.0
+117023660029,T-Shirt Lureel GRIS,Vestimenta,Remeras y tops,790,23,4,306.0
+117023670002,T-Shirt Lusa BLANCO,Vestimenta,Remeras y tops,790,1,1,280.0
+117023670006,T-Shirt Lusa VERDE,Vestimenta,Remeras y tops,790,12,4,297.0
+117023670014,T-Shirt Lusa GRIS O,Vestimenta,Remeras y tops,790,4,1,282.0
+117024700005,Remera Fera Azul,Vestimenta,Remeras y tops,1890,7,4,651.0
+117024790002,Remera Nira Blanco,Vestimenta,Remeras y tops,1890,2,2,700.0
+117024870002,Remera Lune Blanco,Vestimenta,Remeras y tops,1890,119,5,712.0
+117024870005,Remera Lune Azul,Vestimenta,Remeras y tops,1890,12,3,787.0
+117024870008,Remera Lune Celeste,Vestimenta,Remeras y tops,1890,71,4,675.0
+117025010001,T-SHIRT Romi NEGRO,Vestimenta,Remeras y tops,690,29,4,266.0
+117025010002,T-SHIRT Romi BLANCO,Vestimenta,Remeras y tops,690,13,4,228.0
+117025010004,T-SHIRT Romi AMARILLO,Vestimenta,Remeras y tops,690,11,3,250.0
+117025010007,T-SHIRT Romi ROSA,Vestimenta,Remeras y tops,690,25,4,255.0
+117025010014,T-SHIRT Romi GRIS O,Vestimenta,Remeras y tops,690,29,4,253.0
+117025010015,T-SHIRT Romi GRIS CLARO,Vestimenta,Remeras y tops,690,22,4,274.0
+117025030002,Remera Remera Rina Blanco,Vestimenta,Remeras y tops,690,11,2,242.0
+117025030004,Remera Remera Rina Amarillo,Vestimenta,Remeras y tops,690,1,1,249.0
+117025030008,Remera Remera Rina Celeste,Vestimenta,Remeras y tops,690,7,4,235.0
+117025030029,Remera Remera Rina Gris,Vestimenta,Remeras y tops,690,12,3,207.0
+117025050001,TOP Vena NEGRO,Vestimenta,Remeras y tops,990,32,4,396.0
+117025050002,TOP Vena BLANCO,Vestimenta,Remeras y tops,990,61,4,376.0
+117025050004,TOP Vena AMARILLO,Vestimenta,Remeras y tops,990,51,4,414.0
+117025050088,TOP Vena CHOCO,Vestimenta,Remeras y tops,990,21,3,357.0
+117025060001,T-SHIRT Vero NEGRO,Vestimenta,Remeras y tops,790,4,2,266.0
+117025060008,T-SHIRT Vero CELESTE,Vestimenta,Remeras y tops,790,15,4,263.0
+117025060014,T-SHIRT Vero GRIS O,Vestimenta,Remeras y tops,790,14,4,295.0
+117025110001,Remera Zena Negro,Vestimenta,Remeras y tops,2490,3,3,961.0
+117025110024,Remera Zena Marron,Vestimenta,Remeras y tops,2490,19,4,1097.0
+117025140005,Remera Zori Azul,Vestimenta,Remeras y tops,1590,26,4,588.0
+117025320001,Remera Ona Negro,Vestimenta,Remeras y tops,1390,19,1,515.0
+117025320006,Remera Ona Verde,Vestimenta,Remeras y tops,1390,21,1,528.0
+117025320023,Remera Ona Beige,Vestimenta,Remeras y tops,1390,23,1,473.0
+117025360001,Remera Ira Negro,Vestimenta,Remeras y tops,590,29,1,235.0
+117025360006,Remera Ira Verde,Vestimenta,Remeras y tops,590,22,1,182.0
+117025360007,Remera Ira Rosa,Vestimenta,Remeras y tops,590,24,1,214.0
+117025360009,Remera Ira Lila,Vestimenta,Remeras y tops,590,24,1,216.0
+117025360021,Remera Ira Turquesa,Vestimenta,Remeras y tops,590,29,1,222.0
+117025360029,Remera Ira Gris,Vestimenta,Remeras y tops,590,25,1,239.0
+117025400001,Remera Faroa Negro,Vestimenta,Remeras y tops,1690,27,1,629.0
+117025400006,Remera Faroa Verde,Vestimenta,Remeras y tops,1690,24,1,557.0
+117025540025,Remera Fiip Azul Claro,Vestimenta,Remeras y tops,1890,12,4,610.0
+117025700024,Remera Tunu Marron,Vestimenta,Remeras y tops,1890,123,4,757.0
+117025880001,Remera Ehag Negro,Vestimenta,Remeras y tops,690,239,4,270.0
+117025880002,Remera Ehag Blanco,Vestimenta,Remeras y tops,690,238,4,256.0
+117025880008,Remera Ehag Celeste,Vestimenta,Remeras y tops,690,214,4,256.0
+117025880014,Remera Ehag Gris O,Vestimenta,Remeras y tops,690,200,4,222.0
+117025910001,Remera Vuoj Negro,Vestimenta,Remeras y tops,690,226,5,278.0
+117025910002,Remera Vuoj Blanco,Vestimenta,Remeras y tops,690,225,5,239.0
+117025910008,Remera Vuoj Celeste,Vestimenta,Remeras y tops,690,200,5,248.0
+117025910010,Remera Vuoj Violeta,Vestimenta,Remeras y tops,690,206,5,234.0
+117025910023,Remera Vuoj Beige,Vestimenta,Remeras y tops,690,119,5,245.0
+117025970001,Remera Npak Negro,Vestimenta,Remeras y tops,1390,4,1,522.0
+117025970029,Remera Npak Gris,Vestimenta,Remeras y tops,1390,6,1,442.0
+117025970068,Remera Npak Negro,Vestimenta,Remeras y tops,1390,50,1,474.0
+117025970069,Remera Npak Tostado,Vestimenta,Remeras y tops,1390,4,1,502.0
+117026060001,Remera Fauj Negro,Vestimenta,Remeras y tops,690,103,4,274.0
+117026060002,Remera Fauj Blanco,Vestimenta,Remeras y tops,690,108,4,213.0
+117026070001,Remera Ldul Negro,Vestimenta,Remeras y tops,690,54,4,249.0
+117026070002,Remera Ldul Blanco,Vestimenta,Remeras y tops,690,53,4,252.0
+117026090001,Remera Vafe Negro,Vestimenta,Remeras y tops,690,160,4,293.0
+117026090088,Remera Vafe Choco,Vestimenta,Remeras y tops,690,152,4,228.0
+117026100001,Remera Ktun Negro,Vestimenta,Remeras y tops,890,33,4,350.0
+117026100002,Remera Ktun Blanco,Vestimenta,Remeras y tops,890,38,4,288.0
+117026100009,Remera Ktun Lila,Vestimenta,Remeras y tops,890,19,4,326.0
+117026170015,Remera Atug Gris Claro,Vestimenta,Remeras y tops,890,139,4,307.0
+117026170023,Remera Atug Beige,Vestimenta,Remeras y tops,890,127,4,305.0
+117026170034,Remera Atug Crudo,Vestimenta,Remeras y tops,890,141,4,301.0
+117026170081,Remera Atug Print 1,Vestimenta,Remeras y tops,890,142,4,321.0
+117026320001,Remera Emun Negro,Vestimenta,Remeras y tops,1290,220,4,513.0
+117026320002,Remera Emun Blanco,Vestimenta,Remeras y tops,1290,148,4,493.0
+117026320008,Remera Emun Celeste,Vestimenta,Remeras y tops,1290,104,4,468.0
+117026320024,Remera Emun Marron,Vestimenta,Remeras y tops,1290,104,4,508.0
+117026450002,Remera Unot Blanco,Vestimenta,Remeras y tops,990,13,2,363.0
+117026450004,Remera Unot Amarillo,Vestimenta,Remeras y tops,990,21,2,347.0
+117026450007,Remera Unot Rosa,Vestimenta,Remeras y tops,990,11,2,374.0
+117026450008,Remera Unot Celeste,Vestimenta,Remeras y tops,990,7,2,359.0
+117026460002,Remera Kaok Blanco,Vestimenta,Remeras y tops,1290,37,4,465.0
+117026460008,Remera Kaok Celeste,Vestimenta,Remeras y tops,1290,34,4,506.0
+117026460009,Remera Kaok Lila,Vestimenta,Remeras y tops,1290,36,4,434.0
+117026590005,Remera Vemu Azul,Vestimenta,Remeras y tops,1990,21,1,695.0
+117026590029,Remera Vemu Gris,Vestimenta,Remeras y tops,1990,52,1,692.0
+117026700002,Remera Bhom Blanco,Vestimenta,Remeras y tops,690,153,1,238.0
+117026700023,Remera Bhom Beige,Vestimenta,Remeras y tops,690,146,1,230.0
+117026730023,Remera Amoz Beige,Vestimenta,Remeras y tops,1490,221,4,550.0
+117026730088,Remera Amoz Choco,Vestimenta,Remeras y tops,1490,207,4,500.0
+117026750001,Remera Upez Negro,Vestimenta,Remeras y tops,1590,94,4,645.0
+117026750023,Remera Upez Beige,Vestimenta,Remeras y tops,1590,86,4,639.0
+117026750024,Remera Upez Marron,Vestimenta,Remeras y tops,1590,82,4,598.0
+117026900005,Remera Uhil Azul,Vestimenta,Remeras y tops,1390,58,5,529.0
+117026910029,Remera Obel Gris,Vestimenta,Remeras y tops,1390,29,4,587.0
+117026910034,Remera Obel Crudo,Vestimenta,Remeras y tops,1390,28,4,507.0
+117026930029,Remera Leuc Gris,Vestimenta,Remeras y tops,1390,26,4,633.0
+117026990002,Remera Huab Blanco,Vestimenta,Remeras y tops,1390,71,4,546.0
+117027000001,Remera Rire Negro,Vestimenta,Remeras y tops,1690,96,4,607.0
+117027000002,Remera Rire Blanco,Vestimenta,Remeras y tops,1690,98,4,642.0
+117027050001,Remera Mupe Negro,Vestimenta,Remeras y tops,1390,77,4,509.0
+117027050002,Remera Mupe Blanco,Vestimenta,Remeras y tops,1390,67,4,504.0
+117027050004,Remera Mupe Amarillo,Vestimenta,Remeras y tops,1390,84,4,561.0
+117027050007,Remera Mupe Rosa,Vestimenta,Remeras y tops,1390,81,4,488.0
+117027050008,Remera Mupe Celeste,Vestimenta,Remeras y tops,1390,90,4,492.0
+117027050010,Remera Mupe Violeta,Vestimenta,Remeras y tops,1390,96,4,572.0
+117027100001,Remera Ntor Negro,Vestimenta,Remeras y tops,1290,168,4,472.0
+117027100023,Remera Ntor Beige,Vestimenta,Remeras y tops,1290,174,4,474.0
+117027120002,Remera Lfad Blanco,Vestimenta,Remeras y tops,1890,187,4,694.0
+117027130006,Remera Zlaf Verde,Vestimenta,Remeras y tops,1690,141,4,575.0
+117027210005,Remera Olol Azul,Vestimenta,Remeras y tops,1390,200,4,519.0
+117027360025,Remera Nemi Azul Claro,Vestimenta,Remeras y tops,1390,140,5,488.0
+117027420025,Remera Lrot Azul Claro,Vestimenta,Remeras y tops,1390,71,4,469.0
+117027460024,Remera Rtif Marron,Vestimenta,Remeras y tops,1390,21,3,537.0
+117027480024,Remera Vaki Marron,Vestimenta,Remeras y tops,1290,15,3,484.0
+117027510002,Remera Kelv Blanco,Vestimenta,Remeras y tops,1890,9,4,666.0
+117027560001,Remera Cap Amiv Negro,Vestimenta,Remeras y tops,690,70,1,242.0
+117027560002,Remera Cap Amiv Blanco,Vestimenta,Remeras y tops,690,44,1,268.0
+117027560004,Remera Cap Amiv Amarillo,Vestimenta,Remeras y tops,690,69,1,283.0
+117027560005,Remera Cap Amiv Azul,Vestimenta,Remeras y tops,690,49,1,234.0
+117027560006,Remera Cap Amiv Verde,Vestimenta,Remeras y tops,690,46,1,251.0
+117027560008,Remera Cap Amiv Celeste,Vestimenta,Remeras y tops,690,80,1,243.0
+117027560010,Remera Cap Amiv Violeta,Vestimenta,Remeras y tops,690,70,1,240.0
+117027560024,Remera Cap Amiv Marron,Vestimenta,Remeras y tops,690,70,1,240.0
+117027560027,Remera Cap Amiv Rosa Oscur,Vestimenta,Remeras y tops,690,70,1,288.0
+117027560029,Remera Cap Amiv Gris,Vestimenta,Remeras y tops,690,43,1,254.0
+117027810003,Remera Rocu Rojo,Vestimenta,Remeras y tops,1890,16,4,763.0
+117027820008,Remera Cloc Celeste,Vestimenta,Remeras y tops,1890,5,3,774.0
+117028000023,Remera Ciru Beige,Vestimenta,Remeras y tops,2990,181,8,1032.0
+117028000024,Remera Ciru Marron,Vestimenta,Remeras y tops,2990,181,8,1141.0
+117028000029,Remera Ciru Gris,Vestimenta,Remeras y tops,2990,181,8,1113.0
+117028020023,Remera Johu Beige,Vestimenta,Remeras y tops,2390,181,8,904.0
+117028020024,Remera Johu Marron,Vestimenta,Remeras y tops,2390,181,8,983.0
+117028020029,Remera Johu Gris,Vestimenta,Remeras y tops,2390,181,8,961.0
+117028130001,Remera Okod Negro,Vestimenta,Remeras y tops,1590,294,6,678.0
+117028130002,Remera Okod Blanco,Vestimenta,Remeras y tops,1590,294,6,512.0
+117001100014,Sweater Found Gris O,Vestimenta,Tejidos,500,3,1,186.0
+117003820002,Sweater Azua Blanco,Vestimenta,Tejidos,500,4,2,130.0
+117003820004,Sweater Azua Amarillo,Vestimenta,Tejidos,500,42,4,176.0
+117003820005,Sweater Azua Azul,Vestimenta,Tejidos,500,50,4,162.0
+117006050023,Sweater Jutai Beige,Vestimenta,Tejidos,1690,13,4,619.0
+117006060002,Sweater Atalaia Blanco,Vestimenta,Tejidos,1690,27,2,597.0
+117006060023,Sweater Atalaia Beige,Vestimenta,Tejidos,1690,7,1,417.0
+117007330001,Sweater Maesot Negro,Vestimenta,Tejidos,500,2,1,142.0
+117008650003,Sweater Dalia Ii Rojo,Vestimenta,Tejidos,500,6,2,188.0
+117008650013,Sweater Dalia Ii Mostaza,Vestimenta,Tejidos,500,23,3,154.0
+117009940005,Sweater Last Azul,Vestimenta,Tejidos,500,14,3,174.0
+117010270038,Sweater Bracelet 27 Plata,Vestimenta,Tejidos,290,1,1,90.0
+117010480038,Sweater Bracelet 48 Plata,Vestimenta,Tejidos,290,3,1,88.0
+117011150001,Sweater Cuenca Negro,Vestimenta,Tejidos,1390,7,3,482.0
+117011150002,Sweater Cuenca Blanco,Vestimenta,Tejidos,1390,4,3,435.0
+117011150005,Sweater Cuenca Azul,Vestimenta,Tejidos,1390,37,4,444.0
+117011150015,Sweater Cuenca Gris Claro,Vestimenta,Tejidos,1390,13,2,397.0
+117011170004,Sweater Duran Amarillo,Vestimenta,Tejidos,590,10,4,187.0
+117011680004,Sweater Thara Amarillo,Vestimenta,Tejidos,600,12,1,194.0
+117011680006,Sweater Thara Verde,Vestimenta,Tejidos,600,6,1,190.0
+117011680007,Sweater Thara Rosa,Vestimenta,Tejidos,600,6,1,180.0
+117011680008,Sweater Thara Celeste,Vestimenta,Tejidos,600,16,1,213.0
+117013780069,Knit Can TOSTADO,Vestimenta,Tejidos,990,1,1,356.0
+117014560006,Sweater Sunny 456 VERDE,Vestimenta,Tejidos,390,44,4,125.0
+117014600001,Sweater Sunny 460 NEGRO,Vestimenta,Tejidos,390,1,1,95.0
+117014630001,Sweater Sunny 463 NEGRO,Vestimenta,Tejidos,390,1,1,142.0
+117014950005,Sweater Sunny 495 AZUL,Vestimenta,Tejidos,390,52,4,130.0
+117014960006,Sweater Sunny 496 VERDE,Vestimenta,Tejidos,390,15,2,124.0
+117014960033,Sweater Sunny 496 CORAL,Vestimenta,Tejidos,390,16,4,143.0
+117014970003,Sweater Sunny 497 ROJO,Vestimenta,Tejidos,390,29,3,144.0
+117015000029,Sweater Sunny 500 GRIS,Vestimenta,Tejidos,790,12,2,205.0
+117015050029,Sweater Sunny 505 GRIS,Vestimenta,Tejidos,790,11,2,194.0
+117015270029,Sweater Sunny 527 GRIS,Vestimenta,Tejidos,790,1,1,254.0
+117015450029,Sweater Sunny 512 Gris,Vestimenta,Tejidos,790,3,2,246.0
+117015930006,Sweater Tailoring Autumm 593 Verde,Vestimenta,Tejidos,990,1,1,281.0
+117015970029,Knit Autumm 597 GRIS,Vestimenta,Tejidos,790,1,1,268.0
+117016020006,Knit Autumm 602 VERDE,Vestimenta,Tejidos,790,3,3,255.0
+117016020029,Knit Autumm 602 GRIS,Vestimenta,Tejidos,790,3,3,289.0
+117016080029,Knit Autumm 608 GRIS,Vestimenta,Tejidos,790,1,1,268.0
+117016120007,Knit Autumm 612 ROSA,Vestimenta,Tejidos,790,1,1,262.0
+117016130007,Knit Autumm 613 ROSA,Vestimenta,Tejidos,790,1,1,303.0
+117016780001,Knit Autumm 678 NEGRO,Vestimenta,Tejidos,1490,174,5,601.0
+117016780002,Knit Autumm 678 BLANCO,Vestimenta,Tejidos,1490,142,5,534.0
+117016780023,Knit Autumm 678 BEIGE,Vestimenta,Tejidos,1490,114,5,382.0
+117017920002,Knit Latte BLANCO,Vestimenta,Tejidos,990,11,1,302.0
+117017940002,Knit Bastion BLANCO,Vestimenta,Tejidos,1490,40,2,484.0
+117017940023,Knit Bastion BEIGE,Vestimenta,Tejidos,1490,15,2,484.0
+117017950002,Knit Templario BLANCO,Vestimenta,Tejidos,1490,94,2,420.0
+117017950023,Knit Templario BEIGE,Vestimenta,Tejidos,1490,66,2,353.0
+117017960002,Knit Legado BLANCO,Vestimenta,Tejidos,1490,86,2,434.0
+117017960023,Knit Legado BEIGE,Vestimenta,Tejidos,1490,47,2,518.0
+117018070001,Knit Estrella NEGRO,Vestimenta,Tejidos,1190,1,1,377.0
+117018070006,Knit Estrella VERDE,Vestimenta,Tejidos,1190,35,3,414.0
+117018070009,Knit Estrella LILA,Vestimenta,Tejidos,1190,38,3,416.0
+117018070029,Knit Estrella GRIS,Vestimenta,Tejidos,1190,26,3,414.0
+117018090002,Knit Nacar BLANCO,Vestimenta,Tejidos,790,5,4,246.0
+117018100002,Knit Isadora BLANCO,Vestimenta,Tejidos,790,2,1,283.0
+117018100023,Knit Isadora BEIGE,Vestimenta,Tejidos,790,6,2,272.0
+117018120002,Knit Nerina BLANCO,Vestimenta,Tejidos,990,51,2,314.0
+117018120023,Knit Nerina BEIGE,Vestimenta,Tejidos,990,5,1,406.0
+117018130002,Knit Carolina BLANCO,Vestimenta,Tejidos,790,8,2,272.0
+117018130023,Knit Carolina BEIGE,Vestimenta,Tejidos,790,3,1,222.0
+117018480023,Knit Musa BEIGE,Vestimenta,Tejidos,1290,1,1,433.0
+117018490002,Knit Zafira BLANCO,Vestimenta,Tejidos,1290,2,2,403.0
+117018490014,Knit Zafira GRIS O,Vestimenta,Tejidos,1290,2,2,453.0
+117018570002,Knit Distrito BLANCO,Vestimenta,Tejidos,1290,2,1,433.0
+117018570007,Knit Distrito ROSA,Vestimenta,Tejidos,1290,3,3,390.0
+117018570014,Knit Distrito GRIS O,Vestimenta,Tejidos,1290,6,2,365.0
+117018580002,Knit Rastro BLANCO,Vestimenta,Tejidos,1290,1,1,385.0
+117018580023,Knit Rastro BEIGE,Vestimenta,Tejidos,1290,1,1,427.0
+117018600001,Knit Chispa NEGRO,Vestimenta,Tejidos,1290,2,2,427.0
+117018600007,Knit Chispa ROSA,Vestimenta,Tejidos,1290,4,3,401.0
+117018870001,Knit Clara NEGRO,Vestimenta,Tejidos,1290,1,1,487.0
+117020120002,Cotton Sweater Face BLANCO,Vestimenta,Tejidos,1390,1,1,446.0
+117020840001,Sweater Colero Colero 084 Negro,Vestimenta,Tejidos,390,10,1,143.0
+117020840023,Sweater Colero Colero 084 Beige,Vestimenta,Tejidos,390,30,1,126.0
+117020840024,Sweater Colero Colero 084 Marron,Vestimenta,Tejidos,390,25,1,111.0
+117020840029,Sweater Colero Colero 084 Gris,Vestimenta,Tejidos,390,31,1,121.0
+117020850004,Sweater Colero Colero 085 Amarillo,Vestimenta,Tejidos,390,34,1,132.0
+117020850006,Sweater Colero Colero 085 Verde,Vestimenta,Tejidos,390,30,1,129.0
+117020850007,Sweater Colero Colero 085 Rosa,Vestimenta,Tejidos,390,35,1,108.0
+117020850008,Sweater Colero Colero 085 Celeste,Vestimenta,Tejidos,390,32,1,136.0
+117020850023,Sweater Colero Colero 085 Beige,Vestimenta,Tejidos,390,36,1,121.0
+117020870001,Sweater Colero Colero 087 Negro,Vestimenta,Tejidos,390,18,1,110.0
+117020880002,Sweater Colero Colero 088 Blanco,Vestimenta,Tejidos,390,3,1,132.0
+117020880004,Sweater Colero Colero 088 Amarillo,Vestimenta,Tejidos,390,18,1,128.0
+117020880007,Sweater Colero Colero 088 Rosa,Vestimenta,Tejidos,390,26,1,139.0
+117020880023,Sweater Colero Colero 088 Beige,Vestimenta,Tejidos,390,6,1,108.0
+117020890002,Sweater Colero Colero 089 Blanco,Vestimenta,Tejidos,390,20,1,137.0
+117020900001,Sweater Colero Colero 090 Negro,Vestimenta,Tejidos,390,10,1,125.0
+117020900007,Sweater Colero Colero 090 Rosa,Vestimenta,Tejidos,390,21,1,134.0
+117020900009,Sweater Colero Colero 090 Lila,Vestimenta,Tejidos,390,22,1,113.0
+117020900023,Sweater Colero Colero 090 Beige,Vestimenta,Tejidos,390,11,1,142.0
+117020900029,Sweater Colero Colero 090 Gris,Vestimenta,Tejidos,390,23,1,144.0
+117020910001,Sweater Colero Colero 091 Negro,Vestimenta,Tejidos,390,18,1,130.0
+117020910002,Sweater Colero Colero 091 Blanco,Vestimenta,Tejidos,390,16,1,142.0
+117020920001,Sweater Colero Colero 092 Negro,Vestimenta,Tejidos,390,20,1,137.0
+117020920002,Sweater Colero Colero 092 Blanco,Vestimenta,Tejidos,390,13,1,140.0
+117022900006,Cotton Sweater Iane VERDE,Vestimenta,Tejidos,990,3,2,319.0
+117022900023,Cotton Sweater Iane BEIGE,Vestimenta,Tejidos,990,7,2,334.0
+117023030002,Cotton Sweater Iavira BLANCO,Vestimenta,Tejidos,1290,8,3,444.0
+117023030007,Cotton Sweater Iavira ROSA,Vestimenta,Tejidos,1290,2,2,447.0
+117023030008,Cotton Sweater Iavira CELESTE,Vestimenta,Tejidos,1290,26,3,429.0
+117023030015,Cotton Sweater Iavira GRIS CLARO,Vestimenta,Tejidos,1290,1,1,376.0
+117023030029,Cotton Sweater Iavira GRIS,Vestimenta,Tejidos,1290,4,1,430.0
+117023050003,Cotton Sweater Licata ROJO,Vestimenta,Tejidos,1290,5,2,433.0
+117023050006,Cotton Sweater Licata VERDE,Vestimenta,Tejidos,1290,17,3,451.0
+117023050007,Cotton Sweater Licata ROSA,Vestimenta,Tejidos,1290,7,3,455.0
+117023050062,Cotton Sweater Licata PURPLE,Vestimenta,Tejidos,1290,11,4,379.0
+117023060023,Cotton Sweater Liel BEIGE,Vestimenta,Tejidos,1290,1,1,444.0
+117023070001,Cotton Sweater Lielna NEGRO,Vestimenta,Tejidos,1290,1,1,401.0
+117023070002,Cotton Sweater Lielna BLANCO,Vestimenta,Tejidos,1290,1,1,391.0
+117023070023,Cotton Sweater Lielna BEIGE,Vestimenta,Tejidos,1290,4,1,440.0
+117023090006,Cotton Sweater Lilisu VERDE,Vestimenta,Tejidos,1290,8,2,417.0
+117023100001,Knit Limael NEGRO,Vestimenta,Tejidos,1290,3,2,443.0
+117023100005,Knit Limael AZUL,Vestimenta,Tejidos,1290,20,4,456.0
+117023110005,Knit Limeca AZUL,Vestimenta,Tejidos,1290,1,1,442.0
+117023230002,Knit Lodi BLANCO,Vestimenta,Tejidos,1390,3,2,429.0
+117023250029,Knit Loia GRIS,Vestimenta,Tejidos,1490,1,1,513.0
+117023260002,Knit Loli BLANCO,Vestimenta,Tejidos,1390,6,2,411.0
+117023260005,Knit Loli AZUL,Vestimenta,Tejidos,1390,4,2,407.0
+117023270023,Knit Loliia BEIGE,Vestimenta,Tejidos,1490,2,1,445.0
+117023330023,Knit Loniia BEIGE,Vestimenta,Tejidos,990,20,1,319.0
+117023330029,Knit Loniia GRIS,Vestimenta,Tejidos,1290,13,1,393.0
+117023340001,Knit Lorefa NEGRO,Vestimenta,Tejidos,990,14,1,308.0
+117023340003,Knit Lorefa ROJO,Vestimenta,Tejidos,990,19,1,349.0
+117023340023,Knit Lorefa BEIGE,Vestimenta,Tejidos,990,30,1,343.0
+117023340029,Knit Lorefa GRIS,Vestimenta,Tejidos,990,17,1,373.0
+117023350001,Knit Losali NEGRO,Vestimenta,Tejidos,1290,4,1,413.0
+117023350095,Knit Losali CHAMPAG,Vestimenta,Tejidos,1290,8,1,435.0
+117023360001,Knit Loso NEGRO,Vestimenta,Tejidos,990,10,1,335.0
+117023360029,Knit Loso GRIS,Vestimenta,Tejidos,990,7,1,314.0
+117023370001,Knit Losoma NEGRO,Vestimenta,Tejidos,990,36,1,344.0
+117023370023,Knit Losoma BEIGE,Vestimenta,Tejidos,990,26,1,324.0
+117023370029,Knit Losoma GRIS,Vestimenta,Tejidos,990,20,1,316.0
+117023390023,Knit Losu BEIGE,Vestimenta,Tejidos,990,4,1,350.0
+117023400001,Knit Losual NEGRO,Vestimenta,Tejidos,1490,4,2,414.0
+117023400023,Knit Losual BEIGE,Vestimenta,Tejidos,1490,1,1,544.0
+117023410001,Knit Losuta NEGRO,Vestimenta,Tejidos,1490,3,1,463.0
+117023410003,Knit Losuta ROJO,Vestimenta,Tejidos,1490,9,3,521.0
+117023410006,Knit Losuta VERDE,Vestimenta,Tejidos,1490,2,2,392.0
+117023410013,Knit Losuta MOSTAZA,Vestimenta,Tejidos,1490,3,2,413.0
+117023410023,Knit Losuta BEIGE,Vestimenta,Tejidos,1490,10,2,485.0
+117023440002,Knit Lovefa BLANCO,Vestimenta,Tejidos,1490,6,2,477.0
+117023480014,Knit Lual GRIS O,Vestimenta,Tejidos,1490,1,1,505.0
+117023500001,Knit Lualso NEGRO,Vestimenta,Tejidos,990,2,2,329.0
+117023500002,Knit Lualso BLANCO,Vestimenta,Tejidos,990,1,1,337.0
+117023500015,Knit Lualso GRIS CLARO,Vestimenta,Tejidos,990,1,1,335.0
+117023500023,Knit Lualso BEIGE,Vestimenta,Tejidos,990,1,1,282.0
+117023510002,Knit Lucano BLANCO,Vestimenta,Tejidos,1290,2,1,494.0
+117023510029,Knit Lucano GRIS,Vestimenta,Tejidos,1290,13,4,446.0
+117024070023,Knit FW407 BEIGE,Vestimenta,Tejidos,590,12,3,193.0
+117024090023,Knit FW409 BEIGE,Vestimenta,Tejidos,790,106,4,258.0
+117024090024,Knit FW409 MARRON,Vestimenta,Tejidos,790,137,4,286.0
+117024100001,Knit FW410 NEGRO,Vestimenta,Tejidos,590,137,4,204.0
+117024110001,Knit FW411 NEGRO,Vestimenta,Tejidos,990,147,5,301.0
+117024110008,Knit FW411 CELESTE,Vestimenta,Tejidos,990,153,5,305.0
+117024120003,Knit FW412 ROJO,Vestimenta,Tejidos,990,112,5,310.0
+117024120006,Knit FW412 VERDE,Vestimenta,Tejidos,990,122,5,317.0
+117024180005,Knit FW418 AZUL,Vestimenta,Tejidos,990,30,4,341.0
+117024190008,Knit FW419 CELESTE,Vestimenta,Tejidos,990,14,2,314.0
+117024200008,Knit FW420 CELESTE,Vestimenta,Tejidos,590,145,3,196.0
+117024200023,Knit FW420 BEIGE,Vestimenta,Tejidos,590,131,4,178.0
+117024240029,Knit FW424 GRIS,Vestimenta,Tejidos,590,2,1,193.0
+117024260006,Knit FW426 VERDE,Vestimenta,Tejidos,990,123,5,313.0
+117024270023,Knit FW427 BEIGE,Vestimenta,Tejidos,990,25,3,324.0
+117024270024,Knit FW427 MARRON,Vestimenta,Tejidos,990,80,4,312.0
+117024280007,Knit FW428 ROSA,Vestimenta,Tejidos,990,55,5,364.0
+117024280029,Knit FW428 GRIS,Vestimenta,Tejidos,990,52,4,353.0
+117024300001,Knit FW430 NEGRO,Vestimenta,Tejidos,990,24,3,359.0
+117024310006,Knit FW431 VERDE,Vestimenta,Tejidos,990,42,3,291.0
+117024330001,Knit FW433 NEGRO,Vestimenta,Tejidos,990,96,4,337.0
+117024330003,Knit FW433 ROJO,Vestimenta,Tejidos,990,61,3,303.0
+117024340002,Knit FW434 BLANCO,Vestimenta,Tejidos,990,30,2,362.0
+117024350001,Knit FW435 NEGRO,Vestimenta,Tejidos,990,137,5,316.0
+117024360001,Knit FW436 NEGRO,Vestimenta,Tejidos,990,70,3,387.0
+117024360023,Knit FW436 BEIGE,Vestimenta,Tejidos,990,98,4,279.0
+117024360024,Knit FW436 MARRON,Vestimenta,Tejidos,990,15,4,300.0
+117024370029,Knit FW437 GRIS,Vestimenta,Tejidos,990,94,4,306.0
+117024380002,Knit FW438 BLANCO,Vestimenta,Tejidos,990,27,4,295.0
+117024390001,Knit FW439 NEGRO,Vestimenta,Tejidos,990,70,5,359.0
+117024390024,Knit FW439 MARRON,Vestimenta,Tejidos,990,8,2,321.0
+117024400003,Cotton Sweater FW440 ROJO,Vestimenta,Tejidos,990,60,3,335.0
+117024410023,Cotton Sweater FW441 BEIGE,Vestimenta,Tejidos,990,1,1,334.0
+117024420007,Cotton Sweater FW442 ROSA,Vestimenta,Tejidos,990,1,1,344.0
+117024420029,Cotton Sweater FW442 GRIS,Vestimenta,Tejidos,990,1,1,337.0
+117024430007,Cotton Sweater FW443 ROSA,Vestimenta,Tejidos,990,3,2,297.0
+117024440024,Cotton Sweater FW444 MARRON,Vestimenta,Tejidos,590,1,1,172.0
+117024450006,Cotton Sweater FW445 VERDE,Vestimenta,Tejidos,990,53,5,361.0
+117024450007,Cotton Sweater FW445 ROSA,Vestimenta,Tejidos,990,8,2,337.0
+117024450029,Cotton Sweater FW445 GRIS,Vestimenta,Tejidos,990,117,5,309.0
+117024460029,Cotton Sweater FW446 GRIS,Vestimenta,Tejidos,590,118,4,178.0
+117024470024,Cotton Sweater FW447 MARRON,Vestimenta,Tejidos,590,4,1,195.0
+117024470030,Cotton Sweater FW447 ANARAN,Vestimenta,Tejidos,590,73,3,217.0
+117024480001,Cotton Sweater FW448 NEGRO,Vestimenta,Tejidos,990,6,4,319.0
+117024510007,Cotton Sweater FW451 ROSA,Vestimenta,Tejidos,990,122,5,376.0
+117024520098,Cotton Sweater FW452 VERDE SECO,Vestimenta,Tejidos,990,1,1,334.0
+117024530085,Cotton Sweater FW453 CFLL,Vestimenta,Tejidos,990,61,4,396.0
+117024580029,Cotton Sweater FW458 GRIS,Vestimenta,Tejidos,590,179,3,200.0
+117024590005,Cotton Sweater FW459 AZUL,Vestimenta,Tejidos,790,76,4,296.0
+117024600005,Cotton Sweater FW460 AZUL,Vestimenta,Tejidos,590,91,4,188.0
+117024610005,Cotton Sweater FW461 AZUL,Vestimenta,Tejidos,790,10,2,239.0
+117024620002,Cotton Sweater FW462 BLANCO,Vestimenta,Tejidos,790,4,1,288.0
+117024640006,Cotton Sweater FW464 VERDE,Vestimenta,Tejidos,590,101,5,220.0
+117024640023,Cotton Sweater FW464 BEIGE,Vestimenta,Tejidos,590,175,6,183.0
+117025200002,Sweater Chaleco Aila Blanco,Vestimenta,Tejidos,1790,53,4,699.0
+117025260024,Sweater Chaleco Ena Marron,Vestimenta,Tejidos,1290,22,3,390.0
+117025270024,Sweater Chaleco Eli Marron,Vestimenta,Tejidos,1290,17,3,404.0
+117025290055,Sweater Olia Camel,Vestimenta,Tejidos,2990,12,2,953.0
+117025290088,Sweater Olia Choco,Vestimenta,Tejidos,2990,3,1,967.0
+117025310055,Sweater Ovi Camel,Vestimenta,Tejidos,2990,9,2,884.0
+117025350001,Sweater Ivia Negro,Vestimenta,Tejidos,1490,29,1,446.0
+117025350006,Sweater Ivia Verde,Vestimenta,Tejidos,1490,27,1,453.0
+117025350007,Sweater Ivia Rosa,Vestimenta,Tejidos,1490,26,1,512.0
+117025470023,Sweater Seka Beige,Vestimenta,Tejidos,1890,4,2,671.0
+117025800005,Sweater Davu Azul,Vestimenta,Tejidos,1890,141,4,645.0
+117025810005,Sweater Faos Azul,Vestimenta,Tejidos,1890,1,1,632.0
+117026310001,Sweater Shoj Negro,Vestimenta,Tejidos,1490,220,4,455.0
+117026310002,Sweater Shoj Blanco,Vestimenta,Tejidos,1490,220,4,457.0
+117026310007,Sweater Shoj Rosa,Vestimenta,Tejidos,1490,220,4,477.0
+117026390007,Sweater Lihu Rosa,Vestimenta,Tejidos,1290,42,4,453.0
+117026390023,Sweater Lihu Beige,Vestimenta,Tejidos,1290,51,4,374.0
+117026490006,Sweater Hiot Verde,Vestimenta,Tejidos,1890,36,3,713.0
+117026490023,Sweater Hiot Beige,Vestimenta,Tejidos,1890,32,3,579.0
+117027570004,Sweater Bliv Amarillo,Vestimenta,Tejidos,790,32,1,245.0
+117027570005,Sweater Bliv Azul,Vestimenta,Tejidos,790,33,1,253.0
+117027570029,Sweater Bliv Gris,Vestimenta,Tejidos,790,33,1,245.0
+117002009001,Buzo Calza Blondair Negro,Vestimenta,Buzos,790,3,2,292.0
+117002009029,Buzo Calza Blondair Gris,Vestimenta,Buzos,790,6,3,272.0
+117007440005,Buzo Taunat Azul,Vestimenta,Buzos,500,1,1,188.0
+117007460001,Buzo Paqueta Negro,Vestimenta,Buzos,990,3,1,334.0
+117007460023,Buzo Paqueta Beige,Vestimenta,Buzos,990,45,5,345.0
+117008530078,Buzo Orquidea Ii Print 3,Vestimenta,Buzos,500,6,3,148.0
+117008530081,Buzo Orquidea Ii Print 1,Vestimenta,Buzos,500,8,3,199.0
+117008570006,Buzo Petunia Verde,Vestimenta,Buzos,500,1,1,139.0
+117008700005,Buzo Calandiva Azul,Vestimenta,Buzos,500,2,2,152.0
+117008700006,Buzo Calandiva Verde,Vestimenta,Buzos,500,52,3,170.0
+117008700023,Buzo Calandiva Beige,Vestimenta,Buzos,500,58,3,172.0
+117008830003,Buzo Melocoton Rojo,Vestimenta,Buzos,500,39,4,175.0
+117008830013,Buzo Melocoton Mostaza,Vestimenta,Buzos,500,46,5,185.0
+117009970006,Buzo Needed Verde,Vestimenta,Buzos,500,1,1,180.0
+117009970014,Buzo Needed Gris O,Vestimenta,Buzos,500,16,4,157.0
+117012420008,Buzo Nines Celeste,Vestimenta,Buzos,600,1,1,193.0
+117020050001,Buzo Socks No Show Negro Negro,Vestimenta,Buzos,100,1,1,38.0
+117024770025,Buzo Dfok Azul Claro,Vestimenta,Buzos,1890,183,4,740.0
+117024770081,Buzo Dfok Print 1,Vestimenta,Buzos,1890,208,4,651.0
+117024890001,BUZO Suri NEGRO,Vestimenta,Buzos,1390,43,4,465.0
+117024890002,BUZO Suri BLANCO,Vestimenta,Buzos,1390,34,3,467.0
+117024890015,BUZO Suri GRIS CLARO,Vestimenta,Buzos,1390,78,4,481.0
+117024890024,BUZO Suri MARRON,Vestimenta,Buzos,1390,22,3,457.0
+117024900004,BUZO Sena AMARILLO,Vestimenta,Buzos,1390,65,4,482.0
+117024900007,BUZO Sena ROSA,Vestimenta,Buzos,1390,40,3,541.0
+117024900008,BUZO Sena CELESTE,Vestimenta,Buzos,1390,25,3,445.0
+117024900009,BUZO Sena LILA,Vestimenta,Buzos,1390,69,4,455.0
+117024900023,BUZO Sena BEIGE,Vestimenta,Buzos,1390,22,3,521.0
+117024920001,Buzo Sune Negro,Vestimenta,Buzos,1490,27,3,505.0
+117024920002,Buzo Sune Blanco,Vestimenta,Buzos,1490,88,4,547.0
+117024920005,Buzo Sune Azul,Vestimenta,Buzos,1490,80,4,522.0
+117024920029,Buzo Sune Gris,Vestimenta,Buzos,1490,46,4,462.0
+117024940001,Buzo Kora Negro,Vestimenta,Buzos,1390,39,3,466.0
+117024940014,Buzo Kora Gris O,Vestimenta,Buzos,1390,31,4,427.0
+117024940015,Buzo Kora Gris Claro,Vestimenta,Buzos,1390,43,4,501.0
+117024940024,Buzo Kora Marron,Vestimenta,Buzos,1390,43,4,430.0
+117025020001,Buzo Rave Negro,Vestimenta,Buzos,690,26,3,286.0
+117025020004,Buzo Rave Amarillo,Vestimenta,Buzos,690,15,4,251.0
+117025020008,Buzo Rave Celeste,Vestimenta,Buzos,690,23,4,239.0
+117025020014,Buzo Rave Gris O,Vestimenta,Buzos,690,28,4,268.0
+117025020015,Buzo Rave Gris Claro,Vestimenta,Buzos,690,29,4,231.0
+117025020023,Buzo Rave Beige,Vestimenta,Buzos,690,32,4,239.0
+117025080001,Buzo Vexa Negro,Vestimenta,Buzos,790,2,2,318.0
+117025080002,Buzo Vexa Blanco,Vestimenta,Buzos,790,3,2,263.0
+117025080004,Buzo Vexa Amarillo,Vestimenta,Buzos,790,9,3,262.0
+117025080008,Buzo Vexa Celeste,Vestimenta,Buzos,790,12,4,308.0
+117025080014,Buzo Vexa Gris O,Vestimenta,Buzos,790,4,2,299.0
+117025090001,BUZO Vina NEGRO,Vestimenta,Buzos,1290,2,1,418.0
+117025090002,BUZO Vina BLANCO,Vestimenta,Buzos,1290,11,3,421.0
+117025090023,BUZO Vina BEIGE,Vestimenta,Buzos,1290,8,2,463.0
+117025100002,BUZO Vori BLANCO,Vestimenta,Buzos,1290,5,3,515.0
+117025100008,BUZO Vori CELESTE,Vestimenta,Buzos,1290,5,2,427.0
+117025100014,BUZO Vori GRIS O,Vestimenta,Buzos,1290,11,4,460.0
+117025330001,Buzo Ova Negro,Vestimenta,Buzos,1490,19,1,472.0
+117025330006,Buzo Ova Verde,Vestimenta,Buzos,1490,25,1,582.0
+117025330023,Buzo Ova Beige,Vestimenta,Buzos,1490,20,1,513.0
+117025390001,Buzo Ive Negro,Vestimenta,Buzos,1890,22,1,588.0
+117025390006,Buzo Ive Verde,Vestimenta,Buzos,1890,28,1,665.0
+117025480025,Buzo Peed Azul Claro,Vestimenta,Buzos,1890,11,4,690.0
+117025530005,Buzo Cudu Azul,Vestimenta,Buzos,1890,9,4,633.0
+117025740006,Buzo Alap Verde,Vestimenta,Buzos,1890,208,4,639.0
+117025740023,Buzo Alap Beige,Vestimenta,Buzos,1890,206,4,650.0
+117025740025,Buzo Alap Azul Claro,Vestimenta,Buzos,1890,214,4,681.0
+117025740030,Buzo Alap Anaran,Vestimenta,Buzos,1890,208,4,536.0
+117026120001,Buzo Umoh Negro,Vestimenta,Buzos,790,55,4,257.0
+117026120002,Buzo Umoh Blanco,Vestimenta,Buzos,790,47,4,298.0
+117026120006,Buzo Umoh Verde,Vestimenta,Buzos,790,71,4,239.0
+117026120008,Buzo Umoh Celeste,Vestimenta,Buzos,790,59,4,262.0
+117026120029,Buzo Umoh Gris,Vestimenta,Buzos,790,68,4,284.0
+117026300001,Buzo Rdog Negro,Vestimenta,Buzos,1290,42,4,484.0
+117026300002,Buzo Rdog Blanco,Vestimenta,Buzos,1290,46,4,524.0
+117026300008,Buzo Rdog Celeste,Vestimenta,Buzos,1290,45,4,442.0
+117026300069,Buzo Rdog Tostado,Vestimenta,Buzos,1290,60,4,423.0
+117026360008,Buzo Laaf Celeste,Vestimenta,Buzos,1490,50,4,523.0
+117026360023,Buzo Laaf Beige,Vestimenta,Buzos,1490,30,4,453.0
+117026370002,Buzo Kimo Blanco,Vestimenta,Buzos,1390,51,4,475.0
+117026370008,Buzo Kimo Celeste,Vestimenta,Buzos,1390,67,4,417.0
+117026370023,Buzo Kimo Beige,Vestimenta,Buzos,1390,65,4,382.0
+117026670005,Buzo Joic Azul,Vestimenta,Buzos,1690,197,4,542.0
+117026670024,Buzo Joic Marron,Vestimenta,Buzos,1690,170,4,505.0
+117026980005,Buzo Zoit Azul,Vestimenta,Buzos,1390,80,4,486.0
+117027140025,Buzo Hohi Azul Claro,Vestimenta,Buzos,1690,149,4,580.0
+117027150011,Buzo Teve Azul Oscur,Vestimenta,Buzos,1690,158,4,513.0
+117027390001,Buzo Rmom Negro,Vestimenta,Buzos,1390,140,5,449.0
+117005770013,Jean Cap 2 Mostaza,Vestimenta,Jeans,200,1,1,63.0
+117008620001,Jean Campanilla Negro,Vestimenta,Jeans,500,19,5,165.0
+117008620006,Jean Campanilla Verde,Vestimenta,Jeans,500,58,5,179.0
+117008620023,Jean Campanilla Beige,Vestimenta,Jeans,500,2,1,172.0
+117009350081,Jean Pijama I Print 1,Vestimenta,Jeans,500,3,1,192.0
+117009350082,Jean Pijama I Print 2,Vestimenta,Jeans,500,1,1,192.0
+117013220069,Jean Bag Mini Tostado,Vestimenta,Jeans,490,6,1,160.0
+117013700001,Jean Chula NEGRO,Vestimenta,Jeans,1290,7,2,472.0
+117013700011,Jean Chula AZUL OSCUR,Vestimenta,Jeans,1290,26,3,434.0
+117013700025,Jean Chula AZUL CLARO,Vestimenta,Jeans,1290,3,2,457.0
+117013710001,Jean Flec NEGRO,Vestimenta,Jeans,1290,4,2,483.0
+117013710011,Jean Flec AZUL OSCUR,Vestimenta,Jeans,1290,3,1,452.0
+117014220001,Jean Cap Parana Negro,Vestimenta,Jeans,400,1,1,136.0
+117014220024,Jean Cap Parana Marron,Vestimenta,Jeans,400,1,1,146.0
+117014360082,Jean Scarf Sun Print 2,Vestimenta,Jeans,190,3,1,74.0
+117014360083,Jean Scarf Sun Print 7,Vestimenta,Jeans,190,1,1,75.0
+117014830025,Jean Sunny 483 AZUL CLARO,Vestimenta,Jeans,790,1,1,273.0
+117014890024,Jean Pijama Sunny 489 Marron,Vestimenta,Jeans,390,34,2,163.0
+117014890029,Jean Pijama Sunny 489 Gris,Vestimenta,Jeans,390,11,1,145.0
+117016820005,Jean Aldea AZUL,Vestimenta,Jeans,990,2,2,356.0
+117016930005,Jean Tily AZUL,Vestimenta,Jeans,990,1,1,352.0
+117016950005,Jean Sheena AZUL,Vestimenta,Jeans,990,1,1,358.0
+117016960005,Jean Cher AZUL,Vestimenta,Jeans,990,1,1,329.0
+117016980005,Jean Kika AZUL,Vestimenta,Jeans,990,4,3,332.0
+117018330001,Jean Cap Cleo Negro,Vestimenta,Jeans,590,7,1,225.0
+117018330002,Jean Cap Cleo Blanco,Vestimenta,Jeans,590,1,1,223.0
+117018330004,Jean Cap Cleo Amarillo,Vestimenta,Jeans,590,1,1,202.0
+117018330006,Jean Cap Cleo Verde,Vestimenta,Jeans,590,5,1,228.0
+117018330025,Jean Cap Cleo Azul Claro,Vestimenta,Jeans,590,1,1,214.0
+117018380004,Jean Bag Vittoria Amarillo,Vestimenta,Jeans,1290,1,1,457.0
+117018930006,Jean Vest Ronda Verde,Vestimenta,Jeans,1290,21,3,411.0
+117018930009,Jean Vest Ronda Lila,Vestimenta,Jeans,1290,31,3,447.0
+117018940008,Jean Vest Agarraz Celeste,Vestimenta,Jeans,990,4,1,389.0
+117022390005,Jean Diniia AZUL,Vestimenta,Jeans,1890,18,5,668.0
+117022400001,Jean Dino NEGRO,Vestimenta,Jeans,1890,2,2,694.0
+117022400002,Jean Dino BLANCO,Vestimenta,Jeans,1890,90,5,683.0
+117022400023,Jean Dino BEIGE,Vestimenta,Jeans,1890,29,5,609.0
+117022430008,Jean Diso CELESTE,Vestimenta,Jeans,1890,1,1,738.0
+117022470001,Jean Elalso NEGRO,Vestimenta,Jeans,1290,16,4,527.0
+117022470002,Jean Elalso BLANCO,Vestimenta,Jeans,1290,105,6,476.0
+117022470023,Jean Elalso BEIGE,Vestimenta,Jeans,1290,57,6,465.0
+117022510002,Jean Elfane BLANCO,Vestimenta,Jeans,1890,54,6,700.0
+117022510023,Jean Elfane BEIGE,Vestimenta,Jeans,1890,33,6,623.0
+117022540023,Jean Elli BEIGE,Vestimenta,Jeans,1890,23,6,555.0
+117022590002,Jean Elre BLANCO,Vestimenta,Jeans,1890,11,4,641.0
+117022600005,Jean Elsa AZUL,Vestimenta,Jeans,1890,1,1,744.0
+117022610004,Jean Elta AMARILLO,Vestimenta,Jeans,1290,13,4,474.0
+117022700005,Jean Famelu AZUL,Vestimenta,Jeans,1890,2,1,621.0
+117022720001,Jean Fanena NEGRO,Vestimenta,Jeans,1890,1,1,639.0
+117023920005,Jean Scarf Mavalu Azul,Vestimenta,Jeans,590,2,1,201.0
+117023930001,Jean Cap Meel Negro,Vestimenta,Jeans,590,5,1,212.0
+117023940001,Jean Cap Melilo Negro,Vestimenta,Jeans,590,12,1,225.0
+117023940003,Jean Cap Melilo Rojo,Vestimenta,Jeans,590,9,1,240.0
+117023940006,Jean Cap Melilo Verde,Vestimenta,Jeans,590,3,1,212.0
+117023940013,Jean Cap Melilo Mostaza,Vestimenta,Jeans,590,2,1,225.0
+117023960001,Jean Scarf Melora Negro,Vestimenta,Jeans,590,1,1,241.0
+117023960006,Jean Scarf Melora Verde,Vestimenta,Jeans,590,3,1,203.0
+117023960024,Jean Scarf Melora Marron,Vestimenta,Jeans,590,1,1,208.0
+117024030003,Jean Bag Mena Rojo,Vestimenta,Jeans,1390,1,1,498.0
+117024030048,Jean Bag Mena Kaki,Vestimenta,Jeans,1390,1,1,430.0
+117024710069,JEAN Feri TOSTADO,Vestimenta,Jeans,1890,5,2,749.0
+117024720025,JEAN Ferae AZUL CLARO,Vestimenta,Jeans,1890,14,4,714.0
+117024730005,JEAN FENA AZUL,Vestimenta,Jeans,1890,5,2,669.0
+117024740025,JEAN Fira AZUL CLARO,Vestimenta,Jeans,1890,22,3,677.0
+117024750002,JEAN Fiva BLANCO,Vestimenta,Jeans,1890,12,5,592.0
+117024750005,JEAN Fiva AZUL,Vestimenta,Jeans,1890,2,2,680.0
+117024750023,JEAN Fiva BEIGE,Vestimenta,Jeans,1890,10,4,695.0
+117024760005,Jean Noma Azul,Vestimenta,Jeans,1890,143,4,663.0
+117024760023,Jean Noma Beige,Vestimenta,Jeans,1890,64,4,669.0
+117024780023,JEAN Nara BEIGE,Vestimenta,Jeans,1890,56,4,790.0
+117024800069,JEAN Nela TOSTADO,Vestimenta,Jeans,1890,1,1,694.0
+117024810005,JEAN Nave AZUL,Vestimenta,Jeans,1890,20,4,802.0
+117024810008,JEAN Nave CELESTE,Vestimenta,Jeans,1890,16,4,655.0
+117024830005,JEAN Luni AZUL,Vestimenta,Jeans,1890,29,4,643.0
+117024840005,JEAN Lira AZUL,Vestimenta,Jeans,1890,6,2,649.0
+117024850005,JEAN Lena AZUL,Vestimenta,Jeans,1890,6,2,724.0
+117024880001,JEAN Sora NEGRO,Vestimenta,Jeans,1890,32,5,551.0
+117024880002,JEAN Sora BLANCO,Vestimenta,Jeans,1890,71,4,666.0
+117024880005,JEAN Sora AZUL,Vestimenta,Jeans,1890,1,1,642.0
+117025150005,CAMPERA DE JEAN ZUNA AZUL,Vestimenta,Jeans,2590,35,4,950.0
+117025160005,CHALECO DE JEAN ZIRAE AZUL,Vestimenta,Jeans,1590,55,4,570.0
+117025170005,CAMPERA DE JEAN AIRA AZUL,Vestimenta,Jeans,1790,47,4,688.0
+117025180005,CAMISA DE JEAN AIVA AZUL,Vestimenta,Jeans,1790,33,4,600.0
+117025190005,CAMISA DE JEAN AINE AZUL,Vestimenta,Jeans,1790,5,2,681.0
+117025340001,Jean Mochila Oira Negro,Vestimenta,Jeans,1390,2,1,534.0
+117025340006,Jean Mochila Oira Verde,Vestimenta,Jeans,1390,19,1,494.0
+117025340007,Jean Mochila Oira Rosa,Vestimenta,Jeans,1390,12,1,528.0
+117025340008,Jean Mochila Oira Celeste,Vestimenta,Jeans,1390,13,1,513.0
+117025340009,Jean Mochila Oira Lila,Vestimenta,Jeans,1390,10,1,460.0
+117025340014,Jean Mochila Oira Gris O,Vestimenta,Jeans,1390,18,1,526.0
+117025340023,Jean Mochila Oira Beige,Vestimenta,Jeans,1390,13,1,487.0
+117025340024,Jean Mochila Oira Marron,Vestimenta,Jeans,1390,8,1,480.0
+117025340048,Jean Mochila Oira Kaki,Vestimenta,Jeans,1390,5,1,544.0
+117025380001,Jean Illa Negro,Vestimenta,Jeans,690,32,1,203.0
+117025380006,Jean Illa Verde,Vestimenta,Jeans,690,24,1,244.0
+117025380007,Jean Illa Rosa,Vestimenta,Jeans,690,26,1,239.0
+117025380009,Jean Illa Lila,Vestimenta,Jeans,690,25,1,255.0
+117025380021,Jean Illa Turquesa,Vestimenta,Jeans,690,31,1,240.0
+117025380029,Jean Illa Gris,Vestimenta,Jeans,690,26,1,249.0
+117025590001,Jean Jeot Negro,Vestimenta,Jeans,1890,139,4,728.0
+117025590005,Jean Jeot Azul,Vestimenta,Jeans,1890,187,4,676.0
+117025590011,Jean Jeot Azul Oscur,Vestimenta,Jeans,1890,125,4,642.0
+117025590025,Jean Jeot Azul Claro,Vestimenta,Jeans,1890,116,4,655.0
+117026380004,Jean Vete Amarillo,Vestimenta,Jeans,1590,37,4,573.0
+117026380007,Jean Vete Rosa,Vestimenta,Jeans,1590,28,4,626.0
+117026380008,Jean Vete Celeste,Vestimenta,Jeans,1590,20,4,604.0
+117026760013,Jean Pmor Mostaza,Vestimenta,Jeans,1590,104,4,572.0
+117026760088,Jean Pmor Choco,Vestimenta,Jeans,1590,106,4,572.0
+117026970008,Jean Ghec Celeste,Vestimenta,Jeans,1390,41,4,551.0
+117027030008,Jean Igeb Celeste,Vestimenta,Jeans,990,240,4,351.0
+117027030010,Jean Igeb Violeta,Vestimenta,Jeans,990,240,4,373.0
+117027030014,Jean Igeb Gris O,Vestimenta,Jeans,990,188,4,367.0
+117027030015,Jean Igeb Gris Claro,Vestimenta,Jeans,990,146,4,338.0
+117027030023,Jean Igeb Beige,Vestimenta,Jeans,990,146,4,393.0
+117027090001,Jean Caeb Negro,Vestimenta,Jeans,1490,30,4,616.0
+117027090081,Jean Caeb Print 1,Vestimenta,Jeans,1490,37,4,519.0
+118028160005,Jean Vnep Azul,Vestimenta,Jeans,1890,20,1,722.0
+118028160023,Jean Vnep Beige,Vestimenta,Jeans,1890,166,5,755.0
+117005550031,Biker BORDEAUX,Vestimenta,Pantalones y shorts,300,58,4,112.0
+117005550033,Biker CORAL,Vestimenta,Pantalones y shorts,300,12,2,94.0
+117005880001,Pantalón Teresa Negro,Vestimenta,Pantalones y shorts,500,4,3,188.0
+117008430078,Pantalón Espirea - (P14) Print 3,Vestimenta,Pantalones y shorts,500,2,1,173.0
+117008430082,Pantalón Espirea - (P14) Print 2,Vestimenta,Pantalones y shorts,500,6,2,186.0
+117008580081,Pantalón Buganvilla - (P2) Print 1,Vestimenta,Pantalones y shorts,500,3,1,205.0
+117008660003,Pantalón Dracena Rojo,Vestimenta,Pantalones y shorts,500,27,3,163.0
+117008660013,Pantalón Dracena Mostaza,Vestimenta,Pantalones y shorts,500,69,5,182.0
+117008820009,Pantalón Cerezo Lila,Vestimenta,Pantalones y shorts,500,5,1,189.0
+117008820030,Pantalón Cerezo Anaran,Vestimenta,Pantalones y shorts,500,1,1,186.0
+117009760007,Pantalón Cafayat Rosa,Vestimenta,Pantalones y shorts,600,2,2,216.0
+117011180004,Pantalón Tulcan Amarillo,Vestimenta,Pantalones y shorts,590,13,4,206.0
+117011780006,Pantalón Meli Verde,Vestimenta,Pantalones y shorts,600,7,2,205.0
+117011780030,Pantalón Meli Anaran,Vestimenta,Pantalones y shorts,600,4,2,229.0
+117011950006,Pantalón Tawaen Verde,Vestimenta,Pantalones y shorts,600,2,1,207.0
+117011950030,Pantalón Tawaen Anaran,Vestimenta,Pantalones y shorts,600,1,1,231.0
+117012000005,Pantalón Lima Azul,Vestimenta,Pantalones y shorts,600,3,2,203.0
+117014670007,Tight Sunny 467 ROSA,Vestimenta,Pantalones y shorts,390,37,5,139.0
+117016360006,Pants Autumm 636 VERDE,Vestimenta,Pantalones y shorts,590,1,1,193.0
+117016440007,Tight Autumm 644 ROSA,Vestimenta,Pantalones y shorts,290,13,2,86.0
+117016490005,Short Autumm 649 AZUL,Vestimenta,Pantalones y shorts,290,1,1,101.0
+117016490006,Short Autumm 649 VERDE,Vestimenta,Pantalones y shorts,290,1,1,97.0
+117016490029,Short Autumm 649 GRIS,Vestimenta,Pantalones y shorts,290,1,1,94.0
+117016520001,Short Autumm 652 NEGRO,Vestimenta,Pantalones y shorts,590,56,2,201.0
+117016530007,Short Autumm 653 ROSA,Vestimenta,Pantalones y shorts,590,6,2,224.0
+117017330002,Short Rebel BLANCO,Vestimenta,Pantalones y shorts,1290,3,3,423.0
+117017590002,Short Luna BLANCO,Vestimenta,Pantalones y shorts,1490,4,2,496.0
+117017590004,Short Luna AMARILLO,Vestimenta,Pantalones y shorts,1490,88,5,523.0
+117017590007,Short Luna ROSA,Vestimenta,Pantalones y shorts,1490,52,5,570.0
+117017600005,Short Silencio AZUL,Vestimenta,Pantalones y shorts,1290,33,5,454.0
+117017810005,Short Flex AZUL,Vestimenta,Pantalones y shorts,1290,22,4,444.0
+117017830005,Short Flash AZUL,Vestimenta,Pantalones y shorts,1290,14,5,457.0
+117018150005,Short Celia AZUL,Vestimenta,Pantalones y shorts,1290,2,1,404.0
+117018160005,Short Aliva AZUL,Vestimenta,Pantalones y shorts,1290,3,2,450.0
+117018170005,Short Aria AZUL,Vestimenta,Pantalones y shorts,1290,7,2,476.0
+117018190005,Short Castola AZUL,Vestimenta,Pantalones y shorts,1290,1,1,463.0
+117018200004,Cotton Pants Bambu AMARILLO,Vestimenta,Pantalones y shorts,1390,1,1,509.0
+117018200008,Cotton Pants Bambu CELESTE,Vestimenta,Pantalones y shorts,1390,16,3,474.0
+117019140003,Pants Tilcara ROJO,Vestimenta,Pantalones y shorts,1690,68,4,600.0
+117019140007,Pants Tilcara ROSA,Vestimenta,Pantalones y shorts,1290,19,4,473.0
+117019140009,Pants Tilcara LILA,Vestimenta,Pantalones y shorts,1690,97,4,594.0
+117019140013,Pants Tilcara MOSTAZA,Vestimenta,Pantalones y shorts,1290,19,4,411.0
+117019240024,Short Mojacart MARRON,Vestimenta,Pantalones y shorts,890,3,2,303.0
+117019360007,Pants Vela ROSA,Vestimenta,Pantalones y shorts,1490,33,4,574.0
+117019440001,Tight Fabula NEGRO,Vestimenta,Pantalones y shorts,990,16,2,320.0
+117019440009,Tight Fabula LILA,Vestimenta,Pantalones y shorts,990,65,2,355.0
+117019440014,Tight Fabula GRIS O,Vestimenta,Pantalones y shorts,990,64,2,355.0
+117019450001,Tight Cautiva NEGRO,Vestimenta,Pantalones y shorts,1290,6,2,485.0
+117019450009,Tight Cautiva LILA,Vestimenta,Pantalones y shorts,1290,53,2,529.0
+117019450029,Tight Cautiva GRIS,Vestimenta,Pantalones y shorts,1290,45,2,455.0
+117019770005,Short Striker AZUL,Vestimenta,Pantalones y shorts,1290,6,4,494.0
+117019780005,Short Novacion AZUL,Vestimenta,Pantalones y shorts,1290,1,1,488.0
+117019790005,Short Fuego AZUL,Vestimenta,Pantalones y shorts,1490,1,1,552.0
+117019940001,Pantalón Malla Tijuca Negro,Vestimenta,Pantalones y shorts,1690,130,2,607.0
+117019940003,Pantalón Malla Tijuca Rojo,Vestimenta,Pantalones y shorts,1690,80,2,524.0
+117019950001,Pantalón Malla Prainha Negro,Vestimenta,Pantalones y shorts,1690,67,2,502.0
+117022910003,Cotton Pants Ianica ROJO,Vestimenta,Pantalones y shorts,1390,77,4,493.0
+117022910006,Cotton Pants Ianica VERDE,Vestimenta,Pantalones y shorts,1390,1,1,540.0
+117022910023,Cotton Pants Ianica BEIGE,Vestimenta,Pantalones y shorts,1390,5,3,509.0
+117022910029,Cotton Pants Ianica GRIS,Vestimenta,Pantalones y shorts,1390,4,2,446.0
+117022920002,Cotton Pants Iano BLANCO,Vestimenta,Pantalones y shorts,1390,1,1,513.0
+117022930002,Cotton Pants Iare BLANCO,Vestimenta,Pantalones y shorts,1390,1,1,444.0
+117022940001,Cotton Pants Iareca NEGRO,Vestimenta,Pantalones y shorts,1390,23,3,428.0
+117022940014,Cotton Pants Iareca GRIS O,Vestimenta,Pantalones y shorts,1390,31,4,487.0
+117022940015,Cotton Pants Iareca GRIS CLARO,Vestimenta,Pantalones y shorts,1390,5,2,528.0
+117022950001,Cotton Pants Iareel NEGRO,Vestimenta,Pantalones y shorts,1390,15,2,507.0
+117022950014,Cotton Pants Iareel GRIS O,Vestimenta,Pantalones y shorts,1390,26,4,479.0
+117022950015,Cotton Pants Iareel GRIS CLARO,Vestimenta,Pantalones y shorts,1390,9,2,512.0
+117022950023,Cotton Pants Iareel BEIGE,Vestimenta,Pantalones y shorts,1390,8,1,456.0
+117022990029,Cotton Pants Iatave GRIS,Vestimenta,Pantalones y shorts,1390,3,2,471.0
+117024060001,Tight FW406 NEGRO,Vestimenta,Pantalones y shorts,790,55,4,258.0
+117024950001,PANT Kira NEGRO,Vestimenta,Pantalones y shorts,1390,5,2,517.0
+117024950004,PANT Kira AMARILLO,Vestimenta,Pantalones y shorts,1390,79,4,390.0
+117024950008,PANT Kira CELESTE,Vestimenta,Pantalones y shorts,1390,75,4,502.0
+117024950014,PANT Kira GRIS O,Vestimenta,Pantalones y shorts,1390,59,3,455.0
+117024950015,PANT Kira GRIS CLARO,Vestimenta,Pantalones y shorts,1390,52,4,468.0
+117025240005,Pantalón Evi Azul,Vestimenta,Pantalones y shorts,1490,44,4,483.0
+117025240010,Pantalón Evi Violeta,Vestimenta,Pantalones y shorts,1490,33,4,494.0
+117025240022,Pantalón Evi Fucsia,Vestimenta,Pantalones y shorts,1490,34,3,487.0
+117025240024,Pantalón Evi Marron,Vestimenta,Pantalones y shorts,1490,38,4,484.0
+117025300001,Pantalón Oria Negro,Vestimenta,Pantalones y shorts,2990,12,2,967.0
+117025370001,Pantalón Ina Negro,Vestimenta,Pantalones y shorts,990,26,1,428.0
+117025370006,Pantalón Ina Verde,Vestimenta,Pantalones y shorts,990,24,1,341.0
+117025370007,Pantalón Ina Rosa,Vestimenta,Pantalones y shorts,990,32,1,354.0
+117025410001,Pantalón Fari Negro,Vestimenta,Pantalones y shorts,1490,19,1,550.0
+117025410006,Pantalón Fari Verde,Vestimenta,Pantalones y shorts,1490,24,1,533.0
+117025550034,Pantalón Svaz Crudo,Vestimenta,Pantalones y shorts,1890,12,5,685.0
+117025710002,Pantalón Icag Blanco,Vestimenta,Pantalones y shorts,1890,170,4,699.0
+117025720002,Pantalón Abiz Blanco,Vestimenta,Pantalones y shorts,1890,119,4,748.0
+117025930001,Pantalón Hpob Negro,Vestimenta,Pantalones y shorts,790,200,4,294.0
+117025930002,Pantalón Hpob Blanco,Vestimenta,Pantalones y shorts,790,220,4,251.0
+117025930008,Pantalón Hpob Celeste,Vestimenta,Pantalones y shorts,790,220,4,263.0
+117025930023,Pantalón Hpob Beige,Vestimenta,Pantalones y shorts,790,220,4,304.0
+117025950001,Pantalón Onas Negro,Vestimenta,Pantalones y shorts,590,240,4,229.0
+117025950002,Pantalón Onas Blanco,Vestimenta,Pantalones y shorts,590,243,4,229.0
+117025950006,Pantalón Onas Verde,Vestimenta,Pantalones y shorts,590,170,4,229.0
+117025950007,Pantalón Onas Rosa,Vestimenta,Pantalones y shorts,590,170,4,201.0
+117025950010,Pantalón Onas Violeta,Vestimenta,Pantalones y shorts,590,168,4,230.0
+117025950023,Pantalón Onas Beige,Vestimenta,Pantalones y shorts,590,248,4,236.0
+117025950034,Pantalón Onas Crudo,Vestimenta,Pantalones y shorts,590,240,4,204.0
+117026150001,Pantalón Kema Negro,Vestimenta,Pantalones y shorts,790,156,3,296.0
+117026150002,Pantalón Kema Blanco,Vestimenta,Pantalones y shorts,790,144,3,274.0
+117026150029,Pantalón Kema Gris,Vestimenta,Pantalones y shorts,790,144,3,264.0
+117026440002,Pantalón Bgeg Blanco,Vestimenta,Pantalones y shorts,1590,203,2,638.0
+117026440023,Pantalón Bgeg Beige,Vestimenta,Pantalones y shorts,1590,199,2,611.0
+117026600001,Pantalón Daki Negro,Vestimenta,Pantalones y shorts,1390,159,3,542.0
+117026600002,Pantalón Daki Blanco,Vestimenta,Pantalones y shorts,1390,159,3,481.0
+117026690001,Pantalón Helo Negro,Vestimenta,Pantalones y shorts,1290,111,1,433.0
+117026690002,Pantalón Helo Blanco,Vestimenta,Pantalones y shorts,1290,101,1,474.0
+117026710001,Pantalón Ejas Negro,Vestimenta,Pantalones y shorts,990,128,4,355.0
+117026710002,Pantalón Ejas Blanco,Vestimenta,Pantalones y shorts,990,119,4,316.0
+117026710029,Pantalón Ejas Gris,Vestimenta,Pantalones y shorts,990,128,4,355.0
+117026740001,Pantalón Cizi Negro,Vestimenta,Pantalones y shorts,1390,138,4,502.0
+117026740023,Pantalón Cizi Beige,Vestimenta,Pantalones y shorts,1390,138,4,452.0
+117026920023,Pantalón Lihi Beige,Vestimenta,Pantalones y shorts,1390,216,4,543.0
+117027060007,Pantalón Crak Rosa,Vestimenta,Pantalones y shorts,1390,163,4,457.0
+117027060023,Pantalón Crak Beige,Vestimenta,Pantalones y shorts,1390,176,4,478.0
+117027060029,Pantalón Crak Gris,Vestimenta,Pantalones y shorts,1390,151,4,553.0
+117027070001,Pantalón Dnub Negro,Vestimenta,Pantalones y shorts,1390,252,4,390.0
+117027070002,Pantalón Dnub Blanco,Vestimenta,Pantalones y shorts,1390,180,4,566.0
+117027070004,Pantalón Dnub Amarillo,Vestimenta,Pantalones y shorts,1390,216,4,474.0
+117027070008,Pantalón Dnub Celeste,Vestimenta,Pantalones y shorts,1390,211,4,593.0
+117027070023,Pantalón Dnub Beige,Vestimenta,Pantalones y shorts,1390,186,4,518.0
+117027240001,Pantalón Koec Negro,Vestimenta,Pantalones y shorts,1390,163,4,403.0
+117027240002,Pantalón Koec Blanco,Vestimenta,Pantalones y shorts,1390,158,4,480.0
+117027240023,Pantalón Koec Beige,Vestimenta,Pantalones y shorts,1390,176,4,432.0
+117028010006,Pantalón Ajov Verde,Vestimenta,Pantalones y shorts,2390,181,8,816.0
+117028010023,Pantalón Ajov Beige,Vestimenta,Pantalones y shorts,2390,181,8,811.0
+117028010024,Pantalón Ajov Marron,Vestimenta,Pantalones y shorts,2390,181,8,847.0
+117006960013,Vestido Nimes Mostaza,Vestimenta,Vestidos,300,1,1,99.0
+117006960014,Vestido Nimes Gris O,Vestimenta,Vestidos,300,3,1,105.0
+117006960030,Vestido Nimes Anaran,Vestimenta,Vestidos,300,14,3,99.0
+117008340006,Vestido Pensamiento Verde,Vestimenta,Vestidos,500,4,2,168.0
+117009910001,Vestido Schedule Negro,Vestimenta,Vestidos,500,7,2,180.0
+117009910006,Vestido Schedule Verde,Vestimenta,Vestidos,500,10,3,145.0
+117009910009,Vestido Schedule Lila,Vestimenta,Vestidos,500,50,4,162.0
+117018030001,Dress Zenit NEGRO,Vestimenta,Vestidos,1390,1,1,461.0
+117018030002,Dress Zenit BLANCO,Vestimenta,Vestidos,1390,25,4,452.0
+117018030006,Dress Zenit VERDE,Vestimenta,Vestidos,1390,38,4,477.0
+117018030013,Dress Zenit MOSTAZA,Vestimenta,Vestidos,1390,38,4,485.0
+117018050001,Dress Estilo NEGRO,Vestimenta,Vestidos,1390,4,2,479.0
+117018050006,Dress Estilo VERDE,Vestimenta,Vestidos,1390,38,4,465.0
+117018050029,Dress Estilo GRIS,Vestimenta,Vestidos,1390,11,4,387.0
+117018060001,Dress Miranda NEGRO,Vestimenta,Vestidos,1390,1,1,449.0
+117018060002,Dress Miranda BLANCO,Vestimenta,Vestidos,1390,7,4,403.0
+117018060023,Dress Miranda BEIGE,Vestimenta,Vestidos,1390,9,3,511.0
+117018410007,Vestido Sleevles Mistica Rosa,Vestimenta,Vestidos,490,3,2,145.0
+117018410023,Vestido Sleevles Mistica Beige,Vestimenta,Vestidos,490,6,2,154.0
+117018770008,Vestido Sleevles Nirvana Celeste,Vestimenta,Vestidos,690,8,4,189.0
+117018780004,Vestido Sleevles Kira Amarillo,Vestimenta,Vestidos,590,1,1,185.0
+117018780008,Vestido Sleevles Kira Celeste,Vestimenta,Vestidos,590,2,2,175.0
+117019010015,DRESS MIGUEL GRIS CLARO,Vestimenta,Vestidos,1890,6,3,576.0
+117019010018,DRESS MIGUEL VERDE AGUA,Vestimenta,Vestidos,1890,17,4,563.0
+117019090009,Dress Ainsa LILA,Vestimenta,Vestidos,1690,38,4,538.0
+117019090023,Dress Ainsa BEIGE,Vestimenta,Vestidos,1690,8,3,626.0
+117019160001,Dress Areco NEGRO,Vestimenta,Vestidos,1690,12,4,524.0
+117019170001,Dress Antiguo NEGRO,Vestimenta,Vestidos,1890,2,2,579.0
+117019170006,Dress Antiguo VERDE,Vestimenta,Vestidos,1890,2,2,596.0
+117019170030,Dress Antiguo ANARAN,Vestimenta,Vestidos,1890,11,4,597.0
+117019180001,Dress Mompox NEGRO,Vestimenta,Vestidos,1890,10,4,750.0
+117019180002,Dress Mompox BLANCO,Vestimenta,Vestidos,1890,29,4,569.0
+117019180005,Dress Mompox AZUL,Vestimenta,Vestidos,1890,4,3,609.0
+117019210001,Dress Leyva NEGRO,Vestimenta,Vestidos,1890,2,1,646.0
+117019220001,Dress Almansa NEGRO,Vestimenta,Vestidos,1590,1,1,536.0
+117019230001,Dress Hervas NEGRO,Vestimenta,Vestidos,1590,3,2,550.0
+117019230002,Dress Hervas BLANCO,Vestimenta,Vestidos,1590,1,1,507.0
+117019230024,Dress Hervas MARRON,Vestimenta,Vestidos,1590,6,2,561.0
+117019260001,Dress Andes NEGRO,Vestimenta,Vestidos,1890,4,3,590.0
+117019260002,Dress Andes BLANCO,Vestimenta,Vestidos,1890,28,4,598.0
+117019270001,Dress Ancud NEGRO,Vestimenta,Vestidos,1890,9,3,708.0
+117019270006,Dress Ancud VERDE,Vestimenta,Vestidos,1890,8,3,598.0
+117019270023,Dress Ancud BEIGE,Vestimenta,Vestidos,1890,37,4,524.0
+117019290001,Dress Mercedes NEGRO,Vestimenta,Vestidos,1590,14,4,602.0
+117019290006,Dress Mercedes VERDE,Vestimenta,Vestidos,1590,33,4,549.0
+117019290023,Dress Mercedes BEIGE,Vestimenta,Vestidos,1590,82,4,524.0
+117019300001,Dress Cafayate NEGRO,Vestimenta,Vestidos,1890,35,4,512.0
+117019300007,Dress Cafayate ROSA,Vestimenta,Vestidos,1890,84,4,508.0
+117019340001,Dress Rayo NEGRO,Vestimenta,Vestidos,1890,1,1,744.0
+117019350002,Dress Pradera BLANCO,Vestimenta,Vestidos,1690,135,4,602.0
+117019350006,Dress Pradera VERDE,Vestimenta,Vestidos,1690,111,4,545.0
+117019350009,Dress Pradera LILA,Vestimenta,Vestidos,1690,110,4,539.0
+117023910001,Vestido Skirt Mava Negro,Vestimenta,Vestidos,1590,6,2,637.0
+117023910023,Vestido Skirt Mava Beige,Vestimenta,Vestidos,1590,2,2,528.0
+117024930001,Vestido Sari Negro,Vestimenta,Vestidos,1390,46,3,450.0
+117024930002,Vestido Sari Blanco,Vestimenta,Vestidos,1390,67,4,482.0
+117024930029,Vestido Sari Gris,Vestimenta,Vestidos,1390,57,4,470.0
+117025560005,Vestido Vonu Azul,Vestimenta,Vestidos,1890,20,4,636.0
+117025890007,Vestido Vezo Rosa,Vestimenta,Vestidos,790,51,4,268.0
+117025890008,Vestido Vezo Celeste,Vestimenta,Vestidos,790,37,4,266.0
+117025890010,Vestido Vezo Violeta,Vestimenta,Vestidos,790,66,4,228.0
+117025890024,Vestido Vezo Marron,Vestimenta,Vestidos,790,58,4,263.0
+117026110001,Vestido Phob Negro,Vestimenta,Vestidos,990,197,4,305.0
+117026110002,Vestido Phob Blanco,Vestimenta,Vestidos,990,197,4,337.0
+117026110029,Vestido Phob Gris,Vestimenta,Vestidos,990,198,4,348.0
+117026400002,Vestido Fuof Blanco,Vestimenta,Vestidos,1290,51,3,404.0
+117026400014,Vestido Fuof Gris O,Vestimenta,Vestidos,1290,47,3,419.0
+117026400023,Vestido Fuof Beige,Vestimenta,Vestidos,1290,56,3,382.0
+117026400029,Vestido Fuof Gris,Vestimenta,Vestidos,1290,48,3,348.0
+117026470005,Vestido Ufib Azul,Vestimenta,Vestidos,1290,15,2,392.0
+117026470023,Vestido Ufib Beige,Vestimenta,Vestidos,1290,37,4,438.0
+117027110002,Vestido Elod Blanco,Vestimenta,Vestidos,1290,105,4,432.0
+117027110023,Vestido Elod Beige,Vestimenta,Vestidos,1290,176,4,406.0
+117186810002,Dress Alondra BLANCO,Vestimenta,Vestidos,1490,2,1,420.0
+120000130020,Vestido Peach Caravanas Medio Aro Nacar Dorado,Vestimenta,Vestidos,490,2,1,141.0
+120000310001,Vestido Peach Pulsera All Negro,Vestimenta,Vestidos,390,50,1,129.0
+120000310007,Vestido Peach Pulsera All Rosa,Vestimenta,Vestidos,390,70,1,137.0
+120000310020,Vestido Peach Pulsera All Dorado,Vestimenta,Vestidos,390,10,1,132.0
+120000310029,Vestido Peach Pulsera All Gris,Vestimenta,Vestidos,390,16,1,131.0
+120000310093,Vestido Peach Pulsera All Comb,Vestimenta,Vestidos,390,2,1,143.0
+117001000002,Blusa Team Blanco,Vestimenta,Camisas y blusas,500,4,1,168.0
+117001000081,Blusa Team Print 1,Vestimenta,Camisas y blusas,500,38,3,205.0
+117007650001,Blusa Belt Iv Negro,Vestimenta,Camisas y blusas,500,4,1,154.0
+117007650029,Blusa Belt Iv Gris,Vestimenta,Camisas y blusas,500,9,1,159.0
+117008450078,Blusa Gazania - (P4) Print 3,Vestimenta,Camisas y blusas,500,32,5,203.0
+117008450081,Blusa Gazania - (P4) Print 1,Vestimenta,Camisas y blusas,500,49,5,189.0
+117009040001,Blusa Isabel Negro,Vestimenta,Camisas y blusas,200,3,1,68.0
+117009270005,Blusa Gurus Azul,Vestimenta,Camisas y blusas,600,1,1,209.0
+117009930002,Blusa Plan Blanco,Vestimenta,Camisas y blusas,500,13,4,202.0
+117010780038,Blusa Jeans Brisa Ii Plata,Vestimenta,Camisas y blusas,1890,10,1,524.0
+117011390005,Blusa Pattaya Azul,Vestimenta,Camisas y blusas,600,2,2,189.0
+117011810004,Blusa Socks I Amarillo,Vestimenta,Camisas y blusas,100,5,1,30.0
+117011810005,Blusa Socks I Azul,Vestimenta,Camisas y blusas,100,4,1,37.0
+117011810006,Blusa Socks I Verde,Vestimenta,Camisas y blusas,100,1,1,35.0
+117011810030,Blusa Socks I Anaran,Vestimenta,Camisas y blusas,100,5,1,31.0
+117011850006,Blusa Lipa Verde,Vestimenta,Camisas y blusas,600,1,1,185.0
+117014060023,Shirt Spica BEIGE,Vestimenta,Camisas y blusas,990,1,1,302.0
+117016620029,Shirt Autumm 662 GRIS,Vestimenta,Camisas y blusas,790,33,1,266.0
+117016660006,Blusa Autumm 666 VERDE,Vestimenta,Camisas y blusas,490,57,3,166.0
+117016670023,Blusa Autumm 667 BEIGE,Vestimenta,Camisas y blusas,490,1,1,191.0
+117016680005,Blusa Autumm 668 AZUL,Vestimenta,Camisas y blusas,490,1,1,158.0
+117016680006,Blusa Autumm 668 VERDE,Vestimenta,Camisas y blusas,490,2,1,135.0
+117016680030,Blusa Autumm 668 ANARAN,Vestimenta,Camisas y blusas,490,22,4,168.0
+117016690007,Blusa Autumm 669 ROSA,Vestimenta,Camisas y blusas,490,34,2,168.0
+117016700007,Blusa Autumm 670 ROSA,Vestimenta,Camisas y blusas,490,35,4,173.0
+117016720085,Blusa Autumm 672 CFLL,Vestimenta,Camisas y blusas,490,22,2,179.0
+117016730006,Blusa Autumm 673 VERDE,Vestimenta,Camisas y blusas,490,12,3,170.0
+117017110002,Blusa Jeans Alba Blanco,Vestimenta,Camisas y blusas,1890,6,2,646.0
+117017190005,Blusa Jeans Imperial Azul,Vestimenta,Camisas y blusas,1890,7,3,729.0
+117017550005,Blusa Jeans Oliva Azul,Vestimenta,Camisas y blusas,1890,2,2,702.0
+117017570002,Blusa Jeans Nomad Ii Blanco,Vestimenta,Camisas y blusas,1890,2,2,648.0
+117017580002,Blusa Jeans Calma Blanco,Vestimenta,Camisas y blusas,1890,35,5,606.0
+117017730005,Shirt Sahara AZUL,Vestimenta,Camisas y blusas,1490,1,1,475.0
+117019060002,Shirt Cachi BLANCO,Vestimenta,Camisas y blusas,1290,1,1,408.0
+117019060004,Shirt Cachi AMARILLO,Vestimenta,Camisas y blusas,1290,6,3,470.0
+117019070004,Blusa Salento AMARILLO,Vestimenta,Camisas y blusas,990,7,1,356.0
+117019070006,Blusa Salento VERDE,Vestimenta,Camisas y blusas,990,2,1,356.0
+117019070009,Blusa Salento LILA,Vestimenta,Camisas y blusas,990,10,2,369.0
+117019080002,Blusa Calaceite BLANCO,Vestimenta,Camisas y blusas,990,2,1,321.0
+117019080006,Blusa Calaceite VERDE,Vestimenta,Camisas y blusas,990,66,4,349.0
+117019080029,Blusa Calaceite GRIS,Vestimenta,Camisas y blusas,990,80,4,328.0
+117019100001,Blusa Chonchi NEGRO,Vestimenta,Camisas y blusas,890,3,1,284.0
+117019100002,Blusa Chonchi BLANCO,Vestimenta,Camisas y blusas,890,5,2,300.0
+117019100004,Blusa Chonchi AMARILLO,Vestimenta,Camisas y blusas,890,30,4,291.0
+117019100009,Blusa Chonchi LILA,Vestimenta,Camisas y blusas,890,50,4,325.0
+117019100033,Blusa Chonchi CORAL,Vestimenta,Camisas y blusas,890,13,2,299.0
+117019100099,Blusa Chonchi VERDE PETR,Vestimenta,Camisas y blusas,890,15,3,300.0
+117022770003,Shirt Faso ROJO,Vestimenta,Camisas y blusas,1790,2,2,574.0
+117022770008,Shirt Faso CELESTE,Vestimenta,Camisas y blusas,1790,8,3,521.0
+117022860001,Shirt Iama NEGRO,Vestimenta,Camisas y blusas,2390,1,1,734.0
+117022870008,Shirt Iameno CELESTE,Vestimenta,Camisas y blusas,1490,2,2,539.0
+117022880001,Shirt Iameva NEGRO,Vestimenta,Camisas y blusas,1290,32,3,399.0
+117023980001,Blusa Belt Melual Negro,Vestimenta,Camisas y blusas,490,1,1,178.0
+117023980023,Blusa Belt Melual Beige,Vestimenta,Camisas y blusas,490,8,1,172.0
+117023980024,Blusa Belt Melual Marron,Vestimenta,Camisas y blusas,490,18,1,167.0
+117023980088,Blusa Belt Melual Choco,Vestimenta,Camisas y blusas,490,1,1,162.0
+117023990023,Blusa Belt Memare Beige,Vestimenta,Camisas y blusas,490,1,1,170.0
+117024910001,Blusa Siva Negro,Vestimenta,Camisas y blusas,990,52,4,338.0
+117024910002,Blusa Siva Blanco,Vestimenta,Camisas y blusas,990,45,4,333.0
+117024910004,Blusa Siva Amarillo,Vestimenta,Camisas y blusas,990,73,4,303.0
+117024910006,Blusa Siva Verde,Vestimenta,Camisas y blusas,990,47,4,352.0
+117024910029,Blusa Siva Gris,Vestimenta,Camisas y blusas,990,71,4,337.0
+117024960002,Blusa Kiva Blanco,Vestimenta,Camisas y blusas,1390,55,4,497.0
+117024960005,Blusa Kiva Azul,Vestimenta,Camisas y blusas,1390,9,2,437.0
+117024970004,CAMISA Kare AMARILLO,Vestimenta,Camisas y blusas,1290,38,3,440.0
+117024970007,CAMISA Kare ROSA,Vestimenta,Camisas y blusas,1290,47,3,439.0
+117024970009,CAMISA Kare LILA,Vestimenta,Camisas y blusas,1290,41,3,469.0
+117024970023,CAMISA Kare BEIGE,Vestimenta,Camisas y blusas,1290,53,4,395.0
+117024970039,CAMISA Kare VERDCLAR,Vestimenta,Camisas y blusas,1290,48,3,442.0
+117024980004,CAMISA Kori AMARILLO,Vestimenta,Camisas y blusas,1790,5,1,713.0
+117024980007,CAMISA Kori ROSA,Vestimenta,Camisas y blusas,1790,4,1,604.0
+117025040001,Blusa Rori Negro,Vestimenta,Camisas y blusas,1290,51,3,455.0
+117025040088,Blusa Rori Choco,Vestimenta,Camisas y blusas,1290,45,4,426.0
+117025120005,CAMISA Zira AZUL,Vestimenta,Camisas y blusas,1590,26,3,550.0
+117025130005,CAMISA Zave AZUL,Vestimenta,Camisas y blusas,1590,75,4,636.0
+117025210001,Blusa Aera Negro,Vestimenta,Camisas y blusas,790,4,2,253.0
+117025210006,Blusa Aera Verde,Vestimenta,Camisas y blusas,790,9,3,296.0
+117025210022,Blusa Aera Fucsia,Vestimenta,Camisas y blusas,790,9,3,302.0
+117025210023,Blusa Aera Beige,Vestimenta,Camisas y blusas,790,16,4,291.0
+117025210024,Blusa Aera Marron,Vestimenta,Camisas y blusas,790,7,3,260.0
+117025210030,Blusa Aera Anaran,Vestimenta,Camisas y blusas,790,44,4,264.0
+117025210098,Blusa Aera Verde Seco,Vestimenta,Camisas y blusas,790,6,4,253.0
+117025250024,Blusa Elva Marron,Vestimenta,Camisas y blusas,1290,15,3,433.0
+117025280006,Blusa Evia Verde,Vestimenta,Camisas y blusas,2790,13,2,905.0
+117025280024,Blusa Evia Marron,Vestimenta,Camisas y blusas,2790,6,2,900.0
+117025420002,CAMISA Fario BLANCO,Vestimenta,Camisas y blusas,1590,47,3,487.0
+117025420005,CAMISA Fario AZUL,Vestimenta,Camisas y blusas,1590,57,4,556.0
+117025430008,CAMISA Fasa CELESTE,Vestimenta,Camisas y blusas,1590,51,4,568.0
+117025430011,CAMISA Fasa AZUL OSCUR,Vestimenta,Camisas y blusas,1590,61,4,464.0
+117025520029,Blusa Ksuc Gris,Vestimenta,Camisas y blusas,1890,16,4,594.0
+117025960001,Blusa Geve Negro,Vestimenta,Camisas y blusas,790,42,4,241.0
+117025960002,Blusa Geve Blanco,Vestimenta,Camisas y blusas,790,26,4,250.0
+117025960088,Blusa Geve Choco,Vestimenta,Camisas y blusas,790,42,4,258.0
+117026160001,Blusa Hhav Negro,Vestimenta,Camisas y blusas,690,147,3,234.0
+117026160002,Blusa Hhav Blanco,Vestimenta,Camisas y blusas,690,155,3,274.0
+117026160004,Blusa Hhav Amarillo,Vestimenta,Camisas y blusas,690,158,3,215.0
+117026160014,Blusa Hhav Gris O,Vestimenta,Camisas y blusas,690,135,3,239.0
+117026160024,Blusa Hhav Marron,Vestimenta,Camisas y blusas,690,143,3,256.0
+117026160099,Blusa Hhav Verde Petr,Vestimenta,Camisas y blusas,690,117,3,257.0
+117026210023,Blusa Fube Beige,Vestimenta,Camisas y blusas,1290,150,1,446.0
+117026480001,Blusa Modi Negro,Vestimenta,Camisas y blusas,1190,159,3,369.0
+117026480002,Blusa Modi Blanco,Vestimenta,Camisas y blusas,1190,159,3,436.0
+117026550009,Blusa Osak Lila,Vestimenta,Camisas y blusas,1390,204,4,456.0
+117026550014,Blusa Osak Gris O,Vestimenta,Camisas y blusas,1390,212,4,504.0
+117026550015,Blusa Osak Gris Claro,Vestimenta,Camisas y blusas,1390,260,4,527.0
+117026550023,Blusa Osak Beige,Vestimenta,Camisas y blusas,1390,218,4,525.0
+117026940005,Blusa Ruet Azul,Vestimenta,Camisas y blusas,1990,59,4,726.0
+117026960005,Blusa Ltif Azul,Vestimenta,Camisas y blusas,1390,105,5,372.0
+117027040007,Blusa Kpak Rosa,Vestimenta,Camisas y blusas,1490,89,4,495.0
+117027040013,Blusa Kpak Mostaza,Vestimenta,Camisas y blusas,1490,54,4,545.0
+117027040023,Blusa Kpak Beige,Vestimenta,Camisas y blusas,1490,52,4,546.0
+117027670001,Blusa Jniv Negro,Vestimenta,Camisas y blusas,990,200,1,303.0
+117027670002,Blusa Jniv Blanco,Vestimenta,Camisas y blusas,990,200,1,341.0
+117027670006,Blusa Jniv Verde,Vestimenta,Camisas y blusas,990,200,1,294.0
+117027670010,Blusa Jniv Violeta,Vestimenta,Camisas y blusas,990,200,1,361.0
+117027670022,Blusa Jniv Fucsia,Vestimenta,Camisas y blusas,990,200,1,329.0
+117027690001,Blusa Pniv Negro,Vestimenta,Camisas y blusas,990,80,1,389.0
+117027690003,Blusa Pniv Rojo,Vestimenta,Camisas y blusas,990,80,1,329.0
+117027690006,Blusa Pniv Verde,Vestimenta,Camisas y blusas,990,80,1,338.0
+117036110002,Shirt Romance BLANCO,Vestimenta,Camisas y blusas,990,1,1,327.0
+117003490002,Campera Canales Blanco,Vestimenta,Abrigos,1690,18,2,514.0
+117015120029,Campera Cardigan Sunny 522 Gris,Vestimenta,Abrigos,990,1,1,296.0
+117015140023,Campera Cardigan Sunny 514 Beige,Vestimenta,Abrigos,590,2,1,181.0
+117015160001,Campera Cardigan Sunny 516 Negro,Vestimenta,Abrigos,790,1,1,250.0
+117016790001,Jacket Casual NEGRO,Vestimenta,Abrigos,1490,186,5,488.0
+117016790002,Jacket Casual BLANCO,Vestimenta,Abrigos,1490,172,5,401.0
+117016790006,Jacket Casual VERDE,Vestimenta,Abrigos,1490,129,5,446.0
+117016800024,Jacket Alexa MARRON,Vestimenta,Abrigos,1490,31,4,359.0
+117017840002,Jacket Serena BLANCO,Vestimenta,Abrigos,1790,1,1,509.0
+117023690001,Outerwear Luta NEGRO,Vestimenta,Abrigos,1990,19,4,536.0
+117023690002,Outerwear Luta BLANCO,Vestimenta,Abrigos,1990,51,5,604.0
+117023690007,Outerwear Luta ROSA,Vestimenta,Abrigos,1990,57,5,566.0
+117023690018,Outerwear Luta VERDE AGUA,Vestimenta,Abrigos,1990,55,5,536.0
+117023690048,Outerwear Luta Kaki,Vestimenta,Abrigos,1990,48,5,612.0
+117023710001,Outerwear Luvema NEGRO,Vestimenta,Abrigos,1690,1,1,545.0
+117023720001,Outerwear Luveve NEGRO,Vestimenta,Abrigos,2590,81,3,655.0
+117023720024,Outerwear Luveve MARRON,Vestimenta,Abrigos,2590,97,3,856.0
+117023720088,Outerwear Luveve CHOCO,Vestimenta,Abrigos,2590,81,3,789.0
+117023730007,Outerwear Luvi ROSA,Vestimenta,Abrigos,2590,1,1,751.0
+117023730029,Outerwear Luvi GRIS,Vestimenta,Abrigos,2590,7,2,742.0
+117023740013,Outerwear Maal MOSTAZA,Vestimenta,Abrigos,2690,2,1,845.0
+117023740029,Outerwear Maal GRIS,Vestimenta,Abrigos,2690,12,2,856.0
+117023780023,Outerwear Maiara BEIGE,Vestimenta,Abrigos,2990,1,1,896.0
+117023810006,Outerwear Mamene VERDE,Vestimenta,Abrigos,1690,2,1,570.0
+117023820001,Outerwear Manere NEGRO,Vestimenta,Abrigos,2690,3,3,790.0
+117023820023,Outerwear Manere BEIGE,Vestimenta,Abrigos,2690,1,1,785.0
+117023820088,Outerwear Manere CHOCO,Vestimenta,Abrigos,2690,1,1,725.0
+117023830001,Outerwear Manilu NEGRO,Vestimenta,Abrigos,2590,1,1,891.0
+117023830023,Outerwear Manilu BEIGE,Vestimenta,Abrigos,2590,2,2,752.0
+117023840024,Outerwear Manire MARRON,Vestimenta,Abrigos,2490,2,2,794.0
+117023860024,Outerwear Mara MARRON,Vestimenta,Abrigos,2490,2,1,671.0
+117023860029,Outerwear Mara GRIS,Vestimenta,Abrigos,2490,35,3,847.0
+117023870001,Outerwear Mare NEGRO,Vestimenta,Abrigos,2190,6,2,725.0
+117023870023,Outerwear Mare BEIGE,Vestimenta,Abrigos,2190,4,2,670.0
+117023870088,Outerwear Mare CHOCO,Vestimenta,Abrigos,2190,4,2,741.0
+117024680024,Outerwear FW468 MARRON,Vestimenta,Abrigos,1490,215,4,461.0
+117024690029,Outerwear FW469 GRIS,Vestimenta,Abrigos,1490,31,2,420.0
+117025000024,Campera Riva Marron,Vestimenta,Abrigos,1590,4,1,466.0
+117025070002,Campera Vira Blanco,Vestimenta,Abrigos,790,1,1,202.0
+117025070014,Campera Vira Gris O,Vestimenta,Abrigos,790,3,3,209.0
+117025070023,Campera Vira Beige,Vestimenta,Abrigos,790,6,4,210.0
+117025500011,Campera Keka Azul Oscur,Vestimenta,Abrigos,1890,18,3,533.0
+117026130001,Campera Juzo Negro,Vestimenta,Abrigos,790,67,4,240.0
+117026130002,Campera Juzo Blanco,Vestimenta,Abrigos,790,66,4,247.0
+117026130014,Campera Juzo Gris O,Vestimenta,Abrigos,790,74,4,235.0
+117026130015,Campera Juzo Gris Claro,Vestimenta,Abrigos,790,73,4,236.0
+117026510001,Campera Snib Negro,Vestimenta,Abrigos,990,244,4,314.0
+117026510002,Campera Snib Blanco,Vestimenta,Abrigos,990,242,4,265.0
+117026510007,Campera Snib Rosa,Vestimenta,Abrigos,990,200,4,324.0
+117026510008,Campera Snib Celeste,Vestimenta,Abrigos,990,134,4,283.0
+117026510023,Campera Snib Beige,Vestimenta,Abrigos,990,206,4,306.0
+117026510029,Campera Snib Gris,Vestimenta,Abrigos,990,226,4,314.0
+117026950011,Campera Bisa Azul Oscur,Vestimenta,Abrigos,1390,26,4,376.0
+117027160001,Campera Ijof Negro,Vestimenta,Abrigos,790,92,4,257.0
+117027160002,Campera Ijof Blanco,Vestimenta,Abrigos,790,92,4,228.0
+117027160014,Campera Ijof Gris O,Vestimenta,Abrigos,790,92,4,246.0
+117027220011,Campera Ovac Azul Oscur,Vestimenta,Abrigos,1490,200,4,425.0
+117027230002,Campera Duev Blanco,Vestimenta,Abrigos,1390,127,4,440.0
+117027230005,Campera Duev Azul,Vestimenta,Abrigos,1390,129,4,431.0
+117027230011,Campera Duev Azul Oscur,Vestimenta,Abrigos,1390,132,4,395.0
+117027230048,Campera Duev Kaki,Vestimenta,Abrigos,1390,125,4,384.0
+117027470024,Campera Lhuj Marron,Vestimenta,Abrigos,1390,21,3,413.0
+117019960001,Bikini Top Margarita NEGRO,Playa,Bikinis,790,11,4,266.0
+117019960003,Bikini Top Margarita ROJO,Playa,Bikinis,790,4,1,237.0
+117019960004,Bikini Top Margarita AMARILLO,Playa,Bikinis,790,2,1,246.0
+117019960062,Bikini Top Margarita PURPLE,Playa,Bikinis,790,1,1,296.0
+117019970001,Bikini Buttom Coquerinho NEGRO,Playa,Bikinis,790,60,4,265.0
+117019970002,Bikini Buttom Coquerinho BLANCO,Playa,Bikinis,790,139,4,256.0
+117019970003,Bikini Buttom Coquerinho ROJO,Playa,Bikinis,790,68,4,318.0
+117019970004,Bikini Buttom Coquerinho AMARILLO,Playa,Bikinis,790,65,4,301.0
+117019970006,Bikini Buttom Coquerinho VERDE,Playa,Bikinis,790,56,4,254.0
+117019970042,Bikini Buttom Coquerinho BL/VDE,Playa,Bikinis,790,47,4,262.0
+117019970060,Bikini Buttom Coquerinho NEG/PUR,Playa,Bikinis,790,49,4,275.0
+117019970061,Bikini Buttom Coquerinho AMAR/PURP,Playa,Bikinis,790,67,4,306.0
+117019980001,Bikini Top Ipanema NEGRO,Playa,Bikinis,790,26,3,288.0
+117019980004,Bikini Top Ipanema AMARILLO,Playa,Bikinis,790,7,2,240.0
+117019980061,Bikini Top Ipanema AMAR/PURP,Playa,Bikinis,790,5,2,265.0
+117019990001,Bikini Buttom Ceara NEGRO,Playa,Bikinis,790,23,3,236.0
+117019990003,Bikini Buttom Ceara ROJO,Playa,Bikinis,790,54,4,252.0
+117019990004,Bikini Buttom Ceara AMARILLO,Playa,Bikinis,790,63,4,272.0
+117019990006,Bikini Buttom Ceara VERDE,Playa,Bikinis,790,122,4,259.0
+117019990042,Bikini Buttom Ceara BL/VDE,Playa,Bikinis,790,43,4,262.0
+117019990049,Bikini Buttom Ceara BLANCO 2,Playa,Bikinis,790,121,4,305.0
+117019990060,Bikini Buttom Ceara NEG/PUR,Playa,Bikinis,790,58,4,279.0
+117019990061,Bikini Buttom Ceara AMAR/PURP,Playa,Bikinis,790,47,4,274.0
+117020000001,Bikini Top Espelho NEGRO,Playa,Bikinis,790,16,4,285.0
+117020000003,Bikini Top Espelho ROJO,Playa,Bikinis,790,4,2,261.0
+117020000049,Bikini Top Espelho BLANCO 2,Playa,Bikinis,790,6,2,266.0
+117020000060,Bikini Top Espelho NEG/PUR,Playa,Bikinis,790,33,4,257.0
+117020010001,Bikini Buttom Pipa NEGRO,Playa,Bikinis,790,113,4,281.0
+117020010003,Bikini Buttom Pipa ROJO,Playa,Bikinis,790,91,4,281.0
+117020010004,Bikini Buttom Pipa AMARILLO,Playa,Bikinis,790,89,4,251.0
+117020010006,Bikini Buttom Pipa VERDE,Playa,Bikinis,790,93,4,288.0
+117020010042,Bikini Buttom Pipa BL/VDE,Playa,Bikinis,790,72,4,294.0
+117020010049,Bikini Buttom Pipa BLANCO 2,Playa,Bikinis,790,104,4,249.0
+117020010060,Bikini Buttom Pipa NEG/PUR,Playa,Bikinis,790,98,4,239.0
+117020010061,Bikini Buttom Pipa AMAR/PURP,Playa,Bikinis,790,73,4,256.0
+117020020001,Bikini Buttom Lopes NEGRO,Playa,Bikinis,790,43,2,305.0
+117020020003,Bikini Buttom Lopes ROJO,Playa,Bikinis,790,41,4,262.0
+117020020004,Bikini Buttom Lopes AMARILLO,Playa,Bikinis,790,42,3,281.0
+117020020006,Bikini Buttom Lopes VERDE,Playa,Bikinis,790,66,4,290.0
+117020020042,Bikini Buttom Lopes BL/VDE,Playa,Bikinis,790,49,4,271.0
+117020020049,Bikini Buttom Lopes BLANCO 2,Playa,Bikinis,790,107,4,298.0
+117020020060,Bikini Buttom Lopes NEG/PUR,Playa,Bikinis,790,84,4,263.0
+117020020061,Bikini Buttom Lopes AMAR/PURP,Playa,Bikinis,790,56,4,260.0
+117020030001,Bikini Top Copacabana NEGRO,Playa,Bikinis,790,9,3,248.0
+117020030006,Bikini Top Copacabana VERDE,Playa,Bikinis,790,5,2,250.0
+117020030060,Bikini Top Copacabana NEG/PUR,Playa,Bikinis,790,12,3,287.0
+117002070001,Sandals Duna NEGRO,Calzado,Sandalias,2490,16,7,982.0
+117002070023,Sandals Duna BEIGE,Calzado,Sandalias,2490,12,4,1007.0
+117002080001,Sandals Lira NEGRO,Calzado,Sandalias,2490,35,7,1131.0
+117002080006,Sandals Lira VERDE,Calzado,Sandalias,2490,42,7,916.0
+117002080024,Sandals Lira MARRON,Calzado,Sandalias,2490,13,4,1062.0
+117019490006,Sandals Toscana VERDE,Calzado,Sandalias,2490,1,1,974.0
+117019490023,Sandals Toscana BEIGE,Calzado,Sandalias,2490,7,3,1096.0
+117019490024,Sandals Toscana MARRON,Calzado,Sandalias,2490,18,6,1010.0
+117019500001,Sandals Olmo NEGRO,Calzado,Sandalias,2490,51,7,1060.0
+117019500007,Sandals Olmo ROSA,Calzado,Sandalias,2490,24,7,942.0
+117019500008,Sandals Olmo CELESTE,Calzado,Sandalias,2490,60,7,1123.0
+117019510006,Sandals Zinia VERDE,Calzado,Sandalias,2490,54,7,951.0
+117019510023,Sandals Zinia BEIGE,Calzado,Sandalias,2490,50,7,996.0
+117019510024,Sandals Zinia MARRON,Calzado,Sandalias,2490,53,7,959.0
+117019560001,Sandals Malva NEGRO,Calzado,Sandalias,2490,17,5,957.0
+117019560006,Sandals Malva VERDE,Calzado,Sandalias,2490,57,7,1045.0
+117019560019,Sandals Malva PLATEADO,Calzado,Sandalias,2490,21,6,1005.0
+117019560020,Sandals Malva DORADO,Calzado,Sandalias,2490,34,7,938.0
+117019580001,Sandals FTW Aura NEGRO,Calzado,Sandalias,1790,74,6,665.0
+117019580024,Sandals FTW Aura MARRON,Calzado,Sandalias,1790,49,6,685.0
+117019590001,Sandals FTW Estilo NEGRO,Calzado,Sandalias,1790,112,6,781.0
+117019590024,Sandals FTW Estilo MARRON,Calzado,Sandalias,1790,97,6,738.0
+117019600001,Sandals FTW Bella NEGRO,Calzado,Sandalias,1790,67,6,644.0
+117019600024,Sandals FTW Bella MARRON,Calzado,Sandalias,1790,12,4,775.0
+117019610001,Sandals Tamar NEGRO,Calzado,Sandalias,2490,31,7,1010.0
+117019610006,Sandals Tamar VERDE,Calzado,Sandalias,2490,58,7,1079.0
+117019610023,Sandals Tamar BEIGE,Calzado,Sandalias,2490,36,7,1095.0
+117019610024,Sandals Tamar MARRON,Calzado,Sandalias,2490,16,5,1079.0
+117019630001,Sandals Indra NEGRO,Calzado,Sandalias,2290,119,7,813.0
+117019630019,Sandals Indra PLATEADO,Calzado,Sandalias,2290,83,7,1028.0
+117019630024,Sandals Indra MARRON,Calzado,Sandalias,2290,55,7,847.0
+117019670001,Sandals FTW Alma NEGRO,Calzado,Sandalias,1290,4,1,555.0
+117019680001,Sandals FTW Solea NEGRO,Calzado,Sandalias,1290,5,2,527.0
+117019680024,Sandals FTW Solea MARRON,Calzado,Sandalias,1290,2,2,557.0
+117019690023,Sandals FTW Venus BEIGE,Calzado,Sandalias,1290,1,1,575.0
+117019690024,Sandals FTW Venus MARRON,Calzado,Sandalias,1290,1,1,572.0
+117019690066,Sandals FTW Venus LHT BEIGE,Calzado,Sandalias,1290,6,4,471.0
+117019700001,Sandals FTW Gala NEGRO,Calzado,Sandalias,1290,7,3,477.0
+117019700023,Sandals FTW Gala BEIGE,Calzado,Sandalias,1290,2,2,557.0
+117019700024,Sandals FTW Gala MARRON,Calzado,Sandalias,1290,4,3,505.0
+117019710024,Sandals FTW Brisa MARRON,Calzado,Sandalias,1290,1,1,485.0
+117019720001,Sandals FTW Nova NEGRO,Calzado,Sandalias,1290,1,1,553.0
+117019740007,Sandals FTW Urbana ROSA,Calzado,Sandalias,1490,1,1,613.0
+117019740023,Sandals FTW Urbana BEIGE,Calzado,Sandalias,1490,1,1,588.0
+117025940001,Geta NEGRO,Calzado,Sandalias,590,79,4,206.0
+117025940002,Geta BLANCO,Calzado,Sandalias,590,70,4,241.0
+117025940005,Geta AZUL,Calzado,Sandalias,590,40,4,209.0
+117025940008,Geta CELESTE,Calzado,Sandalias,590,30,4,222.0
+117025940009,Geta LILA,Calzado,Sandalias,590,17,4,257.0
+117025940014,Geta GRIS O,Calzado,Sandalias,590,66,4,247.0
+117025940019,Geta PLATEADO,Calzado,Sandalias,590,76,4,260.0
+117025940069,Geta TOSTADO,Calzado,Sandalias,590,53,4,242.0
+117011790001,Canvas Hi NEGRO,Calzado,Zapatillas y botas,990,21,6,442.0
+117011790002,Canvas Hi BLANCO,Calzado,Zapatillas y botas,990,21,5,492.0
+117011790006,Canvas Hi VERDE,Calzado,Zapatillas y botas,990,23,4,458.0
+117011790012,Canvas Hi AZUL FRANC,Calzado,Zapatillas y botas,990,66,6,433.0
+117011790023,Canvas Hi BEIGE,Calzado,Zapatillas y botas,990,27,5,468.0
+117011800001,Canvas Low NEGRO,Calzado,Zapatillas y botas,790,13,3,377.0
+117011800002,Canvas Low BLANCO,Calzado,Zapatillas y botas,790,7,2,308.0
+117011800010,Canvas Low VIOLETA,Calzado,Zapatillas y botas,790,26,6,339.0
+117011800023,Canvas Low BEIGE,Calzado,Zapatillas y botas,790,9,4,356.0
+117011800098,Canvas Low VERDE SECO,Calzado,Zapatillas y botas,790,20,4,332.0
+117021980001,Calzado Alca NEGRO,Calzado,Zapatillas y botas,2990,2,2,1378.0
+117021980024,Calzado Alca MARRON,Calzado,Zapatillas y botas,2990,1,1,1416.0
+117022020024,Calzado Alloal MARRON,Calzado,Zapatillas y botas,3990,1,1,1782.0
+117022040001,Calzado Alluve NEGRO,Calzado,Zapatillas y botas,3990,1,1,1846.0
+117022050001,Calzado Alma NEGRO,Calzado,Zapatillas y botas,2290,1,1,1011.0
+117022090001,Calzado Alni NEGRO,Calzado,Zapatillas y botas,3890,3,3,1894.0
+117022090024,Calzado Alni MARRON,Calzado,Zapatillas y botas,3890,1,1,1408.0
+117022160001,Calzado Cacani NEGRO,Calzado,Zapatillas y botas,2490,1,1,1105.0
+117022160024,Calzado Cacani MARRON,Calzado,Zapatillas y botas,2490,3,1,1081.0
+117022160088,Calzado Cacani CHOCO,Calzado,Zapatillas y botas,2490,2,2,1207.0
+117022170023,Calzado Cael BEIGE,Calzado,Zapatillas y botas,2490,55,6,1093.0
+117022170024,Calzado Cael MARRON,Calzado,Zapatillas y botas,2490,27,4,1231.0
+117022170069,Calzado Cael TOSTADO,Calzado,Zapatillas y botas,2490,20,5,1047.0
+117022180006,Calzado Cafaal VERDE,Calzado,Zapatillas y botas,2290,2,2,995.0
+117022180023,Calzado Cafaal BEIGE,Calzado,Zapatillas y botas,2290,11,3,918.0
+117022180088,Calzado Cafaal CHOCO,Calzado,Zapatillas y botas,2290,1,1,978.0
+117010150040,Earring 15 Perla,Accesorios,Bijou,290,7,1,71.0
+117010160040,Earring 16 Perla,Accesorios,Bijou,290,3,1,74.0
+117010170040,Earring 17 Perla,Accesorios,Bijou,290,3,1,77.0
+117010240038,Earring 24 Plata,Accesorios,Bijou,290,1,1,72.0
+117010290040,Necklace 29 Perla,Accesorios,Bijou,290,12,1,75.0
+117010300002,Necklace 30 BLANCO,Accesorios,Bijou,290,20,1,52.0
+117010300007,Necklace 30 ROSA,Accesorios,Bijou,290,16,1,69.0
+117010300038,Necklace 30 Plata,Accesorios,Bijou,290,2,1,64.0
+117010310039,Necklace 31 VERDCLAR,Accesorios,Bijou,290,1,1,66.0
+117010330038,Necklace 33 Plata,Accesorios,Bijou,290,17,1,65.0
+117010360038,Necklace 36 Plata,Accesorios,Bijou,290,5,1,73.0
+117010400039,Earring 40 VERDCLAR,Accesorios,Bijou,290,1,1,69.0
+117010410039,Earring 41 VERDCLAR,Accesorios,Bijou,290,1,1,65.0
+117010420038,Earring 42 Plata,Accesorios,Bijou,290,2,1,59.0
+117010430039,Earring 43 VERDCLAR,Accesorios,Bijou,290,1,1,76.0
+117010440038,Earring 44 Plata,Accesorios,Bijou,290,3,1,56.0
+117010440039,Earring 44 VERDCLAR,Accesorios,Bijou,290,11,1,70.0
+117010450039,Earring 45 VERDCLAR,Accesorios,Bijou,290,2,1,74.0
+117010490038,Necklace 49 Plata,Accesorios,Bijou,290,14,1,70.0
+117010530038,Earring 53 Plata,Accesorios,Bijou,290,1,1,59.0
+117010570039,Earring 57 VERDCLAR,Accesorios,Bijou,390,8,1,95.0
+117010610040,Earring 61 Perla,Accesorios,Bijou,390,3,1,88.0
+117010660038,Earring 66 Plata,Accesorios,Bijou,390,3,1,102.0
+117010680038,Earring 68 Plata,Accesorios,Bijou,390,2,1,99.0
+117010710039,Earring 71 VERDCLAR,Accesorios,Bijou,390,4,1,88.0
+117010730039,Earring 73 VERDCLAR,Accesorios,Bijou,390,1,1,72.0
+117010740038,Necklace 74 Plata,Accesorios,Bijou,600,2,1,148.0
+117010750038,Necklace 75 Plata,Accesorios,Bijou,600,4,1,159.0
+117010760038,Necklace 76 Plata,Accesorios,Bijou,600,2,1,155.0
+117010770038,Necklace 77 Plata,Accesorios,Bijou,600,3,1,138.0
+117010790038,Necklace 79 Plata,Accesorios,Bijou,600,3,1,134.0
+117010800038,Necklace 80 Plata,Accesorios,Bijou,600,17,1,120.0
+117010830038,Necklace 83 Plata,Accesorios,Bijou,600,7,1,130.0
+117010840040,Necklace 84 Perla,Accesorios,Bijou,600,1,1,133.0
+117010860038,Necklace 86 Plata,Accesorios,Bijou,600,7,1,112.0
+117012460006,Jewelry 01 Green VERDE,Accesorios,Bijou,590,22,1,129.0
+117012460007,Jewelry 01 Green ROSA,Accesorios,Bijou,590,25,1,115.0
+117012460008,Jewelry 01 Green CELESTE,Accesorios,Bijou,590,19,1,112.0
+117012460009,Jewelry 01 Green LILA,Accesorios,Bijou,590,26,1,140.0
+117012460030,Jewelry 01 Green ANARAN,Accesorios,Bijou,590,26,1,146.0
+117012470005,Jewelry 02 Blue AZUL,Accesorios,Bijou,590,20,1,104.0
+117012470009,Jewelry 02 Blue LILA,Accesorios,Bijou,590,21,1,137.0
+117012480007,Jewelry 03 Pink ROSA,Accesorios,Bijou,590,14,1,140.0
+117012480030,Jewelry 03 Pink ANARAN,Accesorios,Bijou,590,27,1,107.0
+117012490007,Jewelry 04 Pink ROSA,Accesorios,Bijou,590,25,1,149.0
+117012490030,Jewelry 04 Pink ANARAN,Accesorios,Bijou,590,29,1,177.0
+117012500006,Jewelry 05 Green VERDE,Accesorios,Bijou,590,5,1,141.0
+117012500007,Jewelry 05 Green ROSA,Accesorios,Bijou,590,1,1,117.0
+117012510006,Jewelry 06 Green VERDE,Accesorios,Bijou,590,4,1,115.0
+117012510007,Jewelry 06 Green ROSA,Accesorios,Bijou,590,2,1,151.0
+117012520020,Jewelry 07 Gold DORADO,Accesorios,Bijou,590,5,1,116.0
+117012530019,Jewelry 08 Silver PLATEADO,Accesorios,Bijou,590,8,1,153.0
+117012530020,Jewelry 08 Silver DORADO,Accesorios,Bijou,590,10,1,130.0
+117012540020,Jewelry 09 Silver DORADO,Accesorios,Bijou,590,15,1,153.0
+117012570019,Jewelry 12 Silver PLATEADO,Accesorios,Bijou,590,2,1,133.0
+117012580020,Jewelry 013 Gold DORADO,Accesorios,Bijou,590,3,1,115.0
+117012590019,Jewelry 014 Silver PLATEADO,Accesorios,Bijou,590,44,1,132.0
+117012590020,Jewelry 014 Silver DORADO,Accesorios,Bijou,590,49,1,172.0
+117012600006,Jewelry 015 Green VERDE,Accesorios,Bijou,590,1,1,133.0
+117012620002,Jewelry 017 White BLANCO,Accesorios,Bijou,590,15,1,166.0
+117012630002,Jewelry 018 White BLANCO,Accesorios,Bijou,590,2,1,110.0
+117012640006,Jewelry 019 White VERDE,Accesorios,Bijou,590,5,1,161.0
+117012650019,Jewelry 020 Silver PLATEADO,Accesorios,Bijou,590,11,1,108.0
+117012650020,Jewelry 020 Silver DORADO,Accesorios,Bijou,590,21,1,159.0
+117012660002,Jewelry 021 White BLANCO,Accesorios,Bijou,590,4,1,125.0
+117012670020,Jewelry 022 Gold DORADO,Accesorios,Bijou,590,26,1,129.0
+117012680023,Jewelry 023 Beige BEIGE,Accesorios,Bijou,590,7,1,122.0
+117012680024,Jewelry 023 Beige MARRON,Accesorios,Bijou,590,4,1,151.0
+117012690023,Jewelry 024 Beige BEIGE,Accesorios,Bijou,590,8,1,161.0
+117012700001,Jewelry 025 Black NEGRO,Accesorios,Bijou,590,19,1,106.0
+117012700002,Jewelry 025 Black BLANCO,Accesorios,Bijou,590,18,1,148.0
+117012700004,Jewelry 025 Black AMARILLO,Accesorios,Bijou,590,21,1,118.0
+117012700006,Jewelry 025 Black VERDE,Accesorios,Bijou,590,25,1,150.0
+117012720019,Jewelry 027 Silver PLATEADO,Accesorios,Bijou,600,1,1,107.0
+117012730019,Jewelry 028 Silver PLATEADO,Accesorios,Bijou,600,1,1,137.0
+117012750019,Jewelry 030 Silver PLATEADO,Accesorios,Bijou,600,10,1,126.0
+117012750020,Jewelry 030 Silver DORADO,Accesorios,Bijou,600,1,1,136.0
+117012760007,Jewelry 031 White ROSA,Accesorios,Bijou,600,22,1,141.0
+117012760014,Jewelry 031 White GRIS O,Accesorios,Bijou,600,29,1,143.0
+117012770019,Jewelry 032 Silver PLATEADO,Accesorios,Bijou,600,6,1,118.0
+117012780019,Jewelry 033 Silver PLATEADO,Accesorios,Bijou,600,3,1,137.0
+117012800019,Jewelry 035 Silver PLATEADO,Accesorios,Bijou,600,5,1,140.0
+117012810019,Jewelry 036 Silver PLATEADO,Accesorios,Bijou,600,2,1,124.0
+117012830001,Jewelry 038 Black NEGRO,Accesorios,Bijou,600,7,1,149.0
+117012830006,Jewelry 038 Black VERDE,Accesorios,Bijou,600,1,1,122.0
+117012830007,Jewelry 038 Black ROSA,Accesorios,Bijou,600,1,1,151.0
+117012830030,Jewelry 038 Black ANARAN,Accesorios,Bijou,600,2,1,203.0
+117012840019,Jewelry 039 Silver PLATEADO,Accesorios,Bijou,790,2,1,170.0
+117012850019,Jewelry 040 Silver PLATEADO,Accesorios,Bijou,600,5,1,132.0
+117012860019,Jewelry 041 Silver PLATEADO,Accesorios,Bijou,600,5,1,157.0
+117020280019,Caravana Jewel 028 Silver PLATEADO,Accesorios,Bijou,490,2,1,131.0
+117020300019,Caravana Jewel 030 Silver PLATEADO,Accesorios,Bijou,490,2,1,140.0
+117020300020,Caravana Jewel 030 Silver DORADO,Accesorios,Bijou,490,3,1,88.0
+117020310019,Caravana Jewel 031 Silver PLATEADO,Accesorios,Bijou,490,1,1,107.0
+117020310020,Caravana Jewel 031 Silver DORADO,Accesorios,Bijou,490,1,1,138.0
+117020350019,Caravana Jewel 035 Silver PLATEADO,Accesorios,Bijou,490,3,1,113.0
+117020350020,Caravana Jewel 035 Silver DORADO,Accesorios,Bijou,490,3,1,103.0
+117020360020,Caravana Jewel 036 Silver DORADO,Accesorios,Bijou,490,3,1,113.0
+117020370019,Caravana Jewel 037 Silver PLATEADO,Accesorios,Bijou,490,3,1,110.0
+117020370020,Caravana Jewel 037 Silver DORADO,Accesorios,Bijou,490,3,1,103.0
+117020390005,Caravana Jewel 039 White AZUL,Accesorios,Bijou,490,1,1,107.0
+117020400019,Caravana Jewel 040 Silver PLATEADO,Accesorios,Bijou,490,2,1,113.0
+117020400020,Caravana Jewel 040 Silver DORADO,Accesorios,Bijou,490,3,1,116.0
+117020430020,Caravana Jewel 043 Gold DORADO,Accesorios,Bijou,490,3,1,135.0
+117020440019,Caravana Jewel 044 Silver PLATEADO,Accesorios,Bijou,490,3,1,118.0
+117020440020,Caravana Jewel 044 Silver DORADO,Accesorios,Bijou,490,3,1,105.0
+117020470019,Caravana Jewel 047 Silver PLATEADO,Accesorios,Bijou,490,4,1,93.0
+117020470020,Caravana Jewel 047 Silver DORADO,Accesorios,Bijou,490,3,1,120.0
+117020480019,Caravana Jewel 048 Silver PLATEADO,Accesorios,Bijou,490,2,1,112.0
+117020480020,Caravana Jewel 048 Silver DORADO,Accesorios,Bijou,490,2,1,120.0
+117020490019,Caravana Jewel 049 Silver PLATEADO,Accesorios,Bijou,490,4,1,125.0
+117020490020,Caravana Jewel 049 Silver DORADO,Accesorios,Bijou,490,3,1,93.0
+117020500019,Caravana Jewel 050 PLATEADO,Accesorios,Bijou,490,3,1,95.0
+117020520019,Caravana Jewel 052 PLATEADO,Accesorios,Bijou,490,2,1,123.0
+117020530020,Caravana Jewel 053 Silver DORADO,Accesorios,Bijou,490,3,1,130.0
+117020540019,Caravana Jewel 054 Silver PLATEADO,Accesorios,Bijou,490,3,1,100.0
+117020540020,Caravana Jewel 054 Silver DORADO,Accesorios,Bijou,490,2,1,97.0
+117020550019,Caravana Jewel 055 Silver PLATEADO,Accesorios,Bijou,490,4,1,128.0
+117020570019,Caravana Jewel 057 Silver PLATEADO,Accesorios,Bijou,490,3,1,106.0
+117020580019,Caravana Jewel 058 Silver PLATEADO,Accesorios,Bijou,490,3,1,123.0
+117020580020,Caravana Jewel 058 Silver DORADO,Accesorios,Bijou,490,2,1,122.0
+117020590001,Caravana Jewel 059 Black NEGRO,Accesorios,Bijou,490,2,1,105.0
+117020610019,Caravana Jewel 061 Silver PLATEADO,Accesorios,Bijou,490,2,1,115.0
+117020610020,Caravana Jewel 061 Silver DORADO,Accesorios,Bijou,490,3,1,104.0
+117020630019,Caravana Jewel 063 Silver PLATEADO,Accesorios,Bijou,490,3,1,97.0
+117020630020,Caravana Jewel 063 Silver DORADO,Accesorios,Bijou,490,3,1,95.0
+117020640019,Caravana Jewel 064 Silver PLATEADO,Accesorios,Bijou,490,1,1,112.0
+117020660019,Caravana Jewel 066 Silver PLATEADO,Accesorios,Bijou,490,3,1,127.0
+117020660020,Caravana Jewel 066 Silver DORADO,Accesorios,Bijou,490,1,1,139.0
+117020670020,Caravana Jewel 067 Silver DORADO,Accesorios,Bijou,490,3,1,91.0
+117020680019,Caravana Jewel 068 Silver PLATEADO,Accesorios,Bijou,490,4,1,102.0
+117020690019,Caravana Jewel 069 Silver PLATEADO,Accesorios,Bijou,490,3,1,104.0
+117020690020,Caravana Jewel 069 Silver DORADO,Accesorios,Bijou,490,4,1,90.0
+117020700019,Caravana Jewel 070 Silver PLATEADO,Accesorios,Bijou,490,5,1,122.0
+117020710019,Caravana Jewel 071 Silver PLATEADO,Accesorios,Bijou,490,3,1,113.0
+117020710020,Caravana Jewel 071 Silver DORADO,Accesorios,Bijou,490,2,1,108.0
+117020730019,Caravana Jewel 073 Silver PLATEADO,Accesorios,Bijou,490,3,1,97.0
+117020740019,Caravana Jewel 074 Silver PLATEADO,Accesorios,Bijou,490,3,1,101.0
+117020780019,Collar Jewel 078 PLATEADO,Accesorios,Bijou,590,2,1,129.0
+117020790019,Collar Jewel 079 PLATEADO,Accesorios,Bijou,590,1,1,125.0
+117020800019,Collar Jewel 080 Silver PLATEADO,Accesorios,Bijou,590,2,1,127.0
+117020800020,Collar Jewel 080 Silver DORADO,Accesorios,Bijou,590,1,1,174.0
+117020810019,Collar Jewel 081 Silver PLATEADO,Accesorios,Bijou,590,4,1,110.0
+117020830019,Collar Jewel 083 Silver PLATEADO,Accesorios,Bijou,590,2,1,141.0
+117034140020,Caravana Jewel 034 Gold DORADO,Accesorios,Bijou,490,4,1,99.0
+120000020020,PEACH CARAVANA CHATA DESIGUAL DORADO,Accesorios,Bijou,490,1,1,122.0
+120000020029,PEACH CARAVANA CHATA DESIGUAL GRIS,Accesorios,Bijou,490,1,1,109.0
+120000040008,PEACH CARAVANA CIRCULAR CELESTE,Accesorios,Bijou,490,1,1,126.0
+120000090014,PEACH CARAVANA ESFERA GRIS O,Accesorios,Bijou,490,1,1,127.0
+120000110023,PEACH CARAVANA CUADRADA BEIGE,Accesorios,Bijou,490,1,1,117.0
+12000022,PEACH COLLAR PIEDRA MARRON CON ACERO,Accesorios,Bijou,590,4,1,134.0
+12000024,PEACH COLLAR PIEDRAS CHATAS COMB EN BEIGE,Accesorios,Bijou,590,3,1,143.0
+120000330023,PEACH CARAVANA MADERA BEIGE,Accesorios,Bijou,490,2,1,132.0
+120000330032,PEACH CARAVANA MADERA MARRON OSC,Accesorios,Bijou,490,2,1,104.0
+120000350020,PEACH CARAVANA BOTON DORADO,Accesorios,Bijou,490,14,1,115.0
+120000350029,PEACH CARAVANA BOTON GRIS,Accesorios,Bijou,490,8,1,101.0
+117020950002,Bottle III BLANCO,Accesorios,Carteras y otros,690,2,1,204.0
+117020950019,Bottle III PLATEADO,Accesorios,Carteras y otros,690,11,1,232.0
+117020950044,Bottle III Silver/Bro,Accesorios,Carteras y otros,690,8,1,215.0
+117020960003,Bottle IV ROJO,Accesorios,Carteras y otros,390,4,1,113.0
+117020960006,Bottle IV VERDE,Accesorios,Carteras y otros,390,4,1,96.0
+117020970001,Bottle V NEGRO,Accesorios,Carteras y otros,690,3,1,182.0
+117020970002,Bottle V BLANCO,Accesorios,Carteras y otros,690,4,1,169.0
+117020980001,Bottle VI NEGRO,Accesorios,Carteras y otros,690,21,1,235.0
+117020980002,Bottle VI BLANCO,Accesorios,Carteras y otros,690,20,1,202.0
+117020980006,Bottle VI VERDE,Accesorios,Carteras y otros,690,23,1,223.0
+117020980009,Bottle VI LILA,Accesorios,Carteras y otros,690,21,1,200.0
+117020980030,Bottle VI ANARAN,Accesorios,Carteras y otros,690,23,1,175.0
+117020980098,Bottle VI VERDE SECO,Accesorios,Carteras y otros,690,21,1,197.0
+117020990001,Bottle VII NEGRO,Accesorios,Carteras y otros,690,23,1,214.0
+117020990002,Bottle VII BLANCO,Accesorios,Carteras y otros,690,18,1,223.0
+117020990005,Bottle VII AZUL,Accesorios,Carteras y otros,690,23,1,188.0
+117020990006,Bottle VII VERDE,Accesorios,Carteras y otros,690,21,1,199.0
+117020990007,Bottle VII ROSA,Accesorios,Carteras y otros,690,23,1,210.0
+117020990009,Bottle VII LILA,Accesorios,Carteras y otros,690,24,1,207.0
+117026140001,Food NEGRO,Accesorios,Carteras y otros,790,240,4,199.0
+117026140002,Food BLANCO,Accesorios,Carteras y otros,790,240,4,258.0
+117026140008,Food CELESTE,Accesorios,Carteras y otros,790,240,4,292.0
+117026140019,Food PLATEADO,Accesorios,Carteras y otros,790,240,4,265.0

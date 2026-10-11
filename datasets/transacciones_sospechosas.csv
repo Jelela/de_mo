@@ -1,0 +1,37 @@
+date,t,s,who,type,amt,score,why
+2026-09-30,11:31,TCR,TCR-C04,Devolución sin ticket,2390.0,0.9366246503240804,"Devolución en efectivo sin comprobante original, fuera del horario pico"
+2026-09-29,21:44,WEB,Checkout web,Pedido online sospechoso,9890.0,0.98,"Pedido de alto valor, cuenta creada hace <24 h, envío a agencia"
+2026-09-29,19:02,TCR,TCR-C04,Devolución sin ticket,1490.0,0.970307301610106,"Devolución en efectivo sin comprobante original, fuera del horario pico"
+2026-09-27,12:51,LPS,LPS-C03,Descuento manual,3290.0,0.9090790002027743,Descuento manual sin promoción vigente
+2026-09-22,10:50,TCR,TCR-C04,Devolución sin ticket,1090.0,0.8623962693375754,"Devolución en efectivo sin comprobante original, fuera del horario pico"
+2026-09-19,10:45,PDE,PDE-C05,Anulación post-cobro,990.0,0.8435703980758866,"Venta anulada después de cobrada, sin reingreso de mercadería"
+2026-09-17,22:48,WEB,Checkout web,Pedido online sospechoso,11390.0,0.8117360678293084,Misma tarjeta en 4 pedidos con 3 direcciones distintas
+2026-09-16,19:18,PDE,PDE-C05,Anulación post-cobro,590.0,0.8227768707764561,"Venta anulada después de cobrada, sin reingreso de mercadería"
+2026-09-13,12:07,LPS,LPS-C02,Descuento manual,2590.0,0.9135255178317109,Descuento manual >35% aplicado a la misma tarjeta de cliente
+2026-09-11,19:02,PDE,PDE-C05,Anulación post-cobro,2090.0,0.9004314922120622,"Venta anulada después de cobrada, sin reingreso de mercadería"
+2026-09-09,09:29,WEB,Checkout web,Pedido online sospechoso,5890.0,0.8366969918788961,Misma tarjeta en 4 pedidos con 3 direcciones distintas
+2026-09-07,20:37,TCR,TCR-C04,Devolución sin ticket,2990.0,0.9198876411773487,"Devolución en efectivo sin comprobante original, fuera del horario pico"
+2026-09-06,18:46,WEB,Checkout web,Pedido online sospechoso,5490.0,0.8356131444074111,"Pedido de alto valor, cuenta creada hace <24 h, envío a agencia"
+2026-09-01,21:44,TCR,TCR-C04,Devolución sin ticket,790.0,0.8495733704316777,"Devolución en efectivo sin comprobante original, fuera del horario pico"
+2026-09-01,09:21,WEB,Checkout web,Pedido online sospechoso,6790.0,0.8838206429008506,"Pedido de alto valor, cuenta creada hace <24 h, envío a agencia"
+2026-08-29,20:30,PDE,PDE-C05,Anulación post-cobro,1690.0,0.8591732065492848,"Venta anulada después de cobrada, sin reingreso de mercadería"
+2026-08-26,01:53,WEB,Checkout web,Pedido online sospechoso,10790.0,0.8255823228975522,Misma tarjeta en 4 pedidos con 3 direcciones distintas
+2026-08-25,11:50,WEB,Checkout web,Pedido online sospechoso,7690.0,0.7871034157032472,"Pedido de alto valor, cuenta creada hace <24 h, envío a agencia"
+2026-08-24,20:27,PDE,PDE-C05,Anulación post-cobro,1990.0,0.8442406771378472,"Venta anulada después de cobrada, sin reingreso de mercadería"
+2026-08-21,15:53,LPS,LPS-C02,Descuento manual,1090.0,0.9687185687355362,Descuento manual >35% aplicado a la misma tarjeta de cliente
+2026-08-19,21:30,TCR,TCR-C04,Devolución sin ticket,290.0,0.8666783668034805,"Devolución en efectivo sin comprobante original, fuera del horario pico"
+2026-08-19,20:19,LPS,LPS-C03,Descuento manual,390.0,0.9656505947427007,Descuento manual sin promoción vigente
+2026-08-18,17:42,LPS,LPS-C02,Descuento manual,1990.0,0.9452032716361343,Descuento manual >35% aplicado a la misma tarjeta de cliente
+2026-08-14,19:20,PDE,PDE-C05,Anulación post-cobro,690.0,0.8726222770349413,"Venta anulada después de cobrada, sin reingreso de mercadería"
+2026-08-12,18:30,WEB,Checkout web,Pedido online sospechoso,11090.0,0.8820568350425252,"Pedido de alto valor, cuenta creada hace <24 h, envío a agencia"
+2026-08-10,19:48,TCR,TCR-C04,Devolución sin ticket,1190.0,0.9606547860422815,"Devolución en efectivo sin comprobante original, fuera del horario pico"
+2026-08-05,19:27,LPS,LPS-C02,Descuento manual,1090.0,0.7725816829674588,Descuento manual >35% aplicado a la misma tarjeta de cliente
+2026-08-04,10:27,TCR,TCR-C04,Devolución sin ticket,490.0,0.8917677209228032,"Devolución en efectivo sin comprobante original, fuera del horario pico"
+2026-08-04,05:24,WEB,Checkout web,Pedido online sospechoso,7390.0,0.8966113717482266,"Pedido de alto valor, cuenta creada hace <24 h, envío a agencia"
+2026-08-02,14:31,LPS,LPS-C02,Descuento manual,1190.0,0.8168966219266686,Descuento manual >35% aplicado a la misma tarjeta de cliente
+2026-07-29,15:44,LPS,LPS-C02,Descuento manual,1690.0,0.99,Descuento manual >35% aplicado a la misma tarjeta de cliente
+2026-07-26,20:15,PDE,PDE-C05,Anulación post-cobro,990.0,0.8805392333526553,"Venta anulada después de cobrada, sin reingreso de mercadería"
+2026-07-26,12:29,LPS,LPS-C03,Descuento manual,2890.0,0.9133631351345187,Descuento manual sin promoción vigente
+2026-07-24,15:38,LPS,LPS-C02,Descuento manual,1390.0,0.8869183306836517,Descuento manual >35% aplicado a la misma tarjeta de cliente
+2026-07-20,19:55,LPS,LPS-C02,Descuento manual,1190.0,0.8416316344815972,Descuento manual >35% aplicado a la misma tarjeta de cliente
+2026-07-20,11:30,PDE,PDE-C05,Anulación post-cobro,690.0,0.9165744469852662,"Venta anulada después de cobrada, sin reingreso de mercadería"

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Peach · Centro de Gestión</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div>
+          <div class="brand-name">peach</div>
+          <div class="brand-sub">Centro de Gestión</div>
+        </div>
+      </div>
+      <nav class="nav" id="nav"></nav>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="topbar-row">
+          <div>
+            <h1 class="page-title" id="page-title"></h1>
+            <p class="page-sub" id="page-sub"></p>
+          </div>
+          <div class="spacer"></div>
+          <span class="demo-badge" title="Todos los datos de esta demo son ficticios">Datos de demostración</span>
+          <button class="icon-btn" id="theme-btn" title="Cambiar tema claro / oscuro">◐ Tema</button>
+        </div>
+        <div class="filters">
+          <div class="filter" id="f-store">
+            <label for="sel-store">Sucursal</label>
+            <select id="sel-store"></select>
+          </div>
+          <div class="filter" id="f-period">
+            <label for="sel-period">Período</label>
+            <select id="sel-period"></select>
+          </div>
+          <div class="filter-note" id="filter-note"></div>
+        </div>
+      </header>
+      <div id="view"></div>
+    </main>
+  </div>
+  <div class="tip" id="tip"></div>
+
+  <script src="vendor/chart.umd.min.js"></script>
+  <script src="data/data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
