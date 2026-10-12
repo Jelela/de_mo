@@ -1418,11 +1418,27 @@
   const nav = document.getElementById("nav");
   function buildNav() {
     nav.textContent = "";
-    for (const p of PAGES) {
-      if (p.g) { nav.append(h("div", { class: "nav-group" }, p.g)); continue; }
-      nav.append(h("a", { href: `#${p.k}`, class: state.page === p.k ? "active" : "" }, svgIcon(p.icon), p.t));
-    }
+    let group = null;
+    PAGES.forEach((p, i) => {
+      if (p.g) { group = p.g; if (i > 0) nav.append(h("div", { class: "dock-sep", "aria-hidden": "true" })); return; }
+      nav.append(h("a", { href: `#${p.k}`, class: `dock-item ${state.page === p.k ? "active" : ""}`, "aria-label": p.t,
+        "aria-current": state.page === p.k ? "page" : null },
+      svgIcon(p.icon), h("span", { class: "dock-label" }, p.t, h("small", {}, group))));
+    });
   }
+  // efecto lupa del dock: los íconos crecen según la distancia al cursor
+  const MAG = { max: 1.6, reach: 110 };
+  const dockItems = () => [...nav.querySelectorAll(".dock-item")];
+  nav.addEventListener("mousemove", (e) => {
+    if (matchMedia("(max-width: 760px)").matches) return;
+    for (const it of dockItems()) {
+      const r = it.getBoundingClientRect();
+      const d = Math.abs(e.clientY - (r.top + r.height / 2));
+      const t = Math.max(0, 1 - d / MAG.reach);
+      it.style.setProperty("--s", (1 + (MAG.max - 1) * t * t * (3 - 2 * t)).toFixed(3));
+    }
+  });
+  nav.addEventListener("mouseleave", () => dockItems().forEach((it) => it.style.setProperty("--s", 1)));
   const selStore = document.getElementById("sel-store");
   const selPeriod = document.getElementById("sel-period");
   selStore.append(h("option", { value: "ALL" }, "Todas las sucursales"), ...STORES.map((s) => h("option", { value: s.id }, s.name)));

@@ -17,6 +17,13 @@
   --good-text: #006300; --bad-text: #b42323;
   --div-neg: #d03b3b; --div-mid: #f0efec; --div-pos: #2a78d6;
   --shadow: 0 1px 2px rgba(0,0,0,.04), 0 4px 16px rgba(0,0,0,.04);
+  --glass-bg: rgba(255, 255, 255, 0.45);
+  --glass-bg-strong: rgba(255, 255, 255, 0.78);
+  --glass-tile: rgba(255, 255, 255, 0.55);
+  --glass-border: rgba(255, 255, 255, 0.65);
+  --glass-shadow: 0 10px 40px rgba(60, 40, 30, 0.14), inset 0 1px 0 rgba(255,255,255,.6);
+  --page-glow-1: rgba(232, 115, 79, 0.16);
+  --page-glow-2: rgba(42, 120, 214, 0.10);
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
@@ -30,6 +37,13 @@
     --good-text: #0ca30c; --bad-text: #ef6b6b;
     --div-neg: #e66767; --div-mid: #383835; --div-pos: #3987e5;
     --shadow: none;
+    --glass-bg: rgba(40, 40, 38, 0.45);
+    --glass-bg-strong: rgba(36, 36, 34, 0.82);
+    --glass-tile: rgba(255, 255, 255, 0.06);
+    --glass-border: rgba(255, 255, 255, 0.12);
+    --glass-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255,255,255,.06);
+    --page-glow-1: rgba(240, 138, 104, 0.10);
+    --page-glow-2: rgba(57, 135, 229, 0.08);
   }
 }
 :root[data-theme="dark"] {
@@ -43,12 +57,23 @@
   --good-text: #0ca30c; --bad-text: #ef6b6b;
   --div-neg: #e66767; --div-mid: #383835; --div-pos: #3987e5;
   --shadow: none;
+  --glass-bg: rgba(40, 40, 38, 0.45);
+  --glass-bg-strong: rgba(36, 36, 34, 0.82);
+  --glass-tile: rgba(255, 255, 255, 0.06);
+  --glass-border: rgba(255, 255, 255, 0.12);
+  --glass-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255,255,255,.06);
+  --page-glow-1: rgba(240, 138, 104, 0.10);
+  --page-glow-2: rgba(57, 135, 229, 0.08);
 }
 
 * { box-sizing: border-box; }
 html, body { margin: 0; }
 body {
-  background: var(--page);
+  background:
+    radial-gradient(900px 600px at 0% 0%, var(--page-glow-1), transparent 60%),
+    radial-gradient(800px 700px at 0% 100%, var(--page-glow-2), transparent 60%),
+    var(--page);
+  background-attachment: fixed;
   color: var(--ink);
   font: 14px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -56,30 +81,64 @@ body {
 button, select, input { font: inherit; color: inherit; }
 
 /* ------------------------------------------------------------ layout */
-.app { display: grid; grid-template-columns: 232px 1fr; min-height: 100vh; }
-.sidebar {
-  position: sticky; top: 0; height: 100vh; overflow-y: auto;
-  background: var(--surface); border-right: 1px solid var(--border);
-  padding: 20px 12px;
+.app { min-height: 100vh; }
+
+/* Dock flotante estilo macOS: vidrio, 20px de radio, lupa al pasar el cursor */
+.dock {
+  position: fixed; left: 16px; top: 50%; transform: translateY(-50%); z-index: 20;
+  padding: 10px 8px; border-radius: 20px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(22px) saturate(180%); -webkit-backdrop-filter: blur(22px) saturate(180%);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  max-height: calc(100vh - 32px);
 }
-.brand { display: flex; align-items: center; gap: 10px; padding: 0 8px 18px; }
+.dock-nav { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; }
+.dock-sep { width: 28px; height: 1px; background: var(--glass-border); margin: 4px 6px; flex: none; }
+.dock-item {
+  --s: 1;
+  position: relative; display: grid; place-items: center; flex: none;
+  width: calc(40px * var(--s)); height: calc(40px * var(--s));
+  border-radius: calc(12px * var(--s));
+  color: var(--ink-2); text-decoration: none;
+  background: var(--glass-tile);
+  border: 1px solid var(--glass-border);
+  transition: width .12s ease-out, height .12s ease-out, border-radius .12s ease-out, background .15s, color .15s;
+}
+.dock-item svg {
+  width: calc(19px * var(--s)); height: calc(19px * var(--s));
+  stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
+  transition: width .12s ease-out, height .12s ease-out;
+}
+.dock-item:hover, .dock-item:focus-visible { color: var(--ink); outline: none; }
+.dock-item.active { color: #fff; background: var(--accent); border-color: transparent; }
+/* punto de "app abierta" */
+.dock-item.active::before {
+  content: ""; position: absolute; left: -7px; top: 50%; width: 4px; height: 4px; margin-top: -2px;
+  border-radius: 50%; background: var(--ink-2);
+}
+.dock-label {
+  position: absolute; left: calc(100% + 14px); top: 50%; transform: translate(-6px, -50%);
+  white-space: nowrap; pointer-events: none; opacity: 0;
+  font-size: 12.5px; font-weight: 600; color: var(--ink);
+  padding: 5px 10px; border-radius: 10px;
+  background: var(--glass-bg-strong);
+  backdrop-filter: blur(16px) saturate(180%); -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid var(--glass-border); box-shadow: var(--glass-shadow);
+  transition: opacity .12s, transform .12s;
+}
+.dock-label small { display: block; font-weight: 500; font-size: 11px; color: var(--muted); }
+.dock-item:hover .dock-label, .dock-item:focus-visible .dock-label { opacity: 1; transform: translate(0, -50%); }
+
+.brand { display: flex; align-items: center; gap: 8px; margin-right: 6px; }
 .brand-mark {
-  width: 32px; height: 32px; border-radius: 50%;
+  width: 30px; height: 30px; border-radius: 50%;
   background: radial-gradient(circle at 35% 35%, #ffc7a8, var(--accent));
   flex: none;
 }
 .brand-name { font-weight: 700; font-size: 17px; letter-spacing: -.01em; }
-.brand-sub { font-size: 12px; color: var(--muted); }
-.nav-group { margin: 14px 0 4px; padding: 0 10px; font-size: 11px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
-.nav a {
-  display: flex; align-items: center; gap: 10px;
-  padding: 7px 10px; border-radius: 8px; color: var(--ink-2); text-decoration: none;
-}
-.nav a:hover { background: var(--surface-2); color: var(--ink); }
-.nav a.active { background: var(--accent-soft); color: var(--ink); font-weight: 600; }
-.nav svg { width: 16px; height: 16px; flex: none; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 
-.main { min-width: 0; padding: 0 28px 48px; }
+.main { min-width: 0; padding: 0 28px 48px 96px; }
 .topbar {
   position: sticky; top: 0; z-index: 5;
   background: color-mix(in srgb, var(--page) 92%, transparent);
@@ -216,13 +275,13 @@ table.heat td { text-align: center; padding: 6px 4px; border-radius: 4px; font-v
   .span-3 { grid-column: span 6; }
 }
 @media (max-width: 760px) {
-  .app { grid-template-columns: 1fr; }
-  .sidebar { position: static; height: auto; border-right: 0; border-bottom: 1px solid var(--border); padding: 12px 16px; }
-  .brand { padding-bottom: 8px; }
-  .nav { display: flex; gap: 4px; overflow-x: auto; padding-bottom: 4px; }
-  .nav-group { display: none; }
-  .nav a { white-space: nowrap; }
-  .main { padding: 0 16px 40px; }
+  /* en celular el dock va abajo, horizontal y sin lupa */
+  .dock { left: 50%; top: auto; bottom: 12px; transform: translateX(-50%); max-width: calc(100vw - 24px); max-height: none; padding: 8px; overflow-x: auto; }
+  .dock-nav { flex-direction: row; }
+  .dock-sep { width: 1px; height: 28px; margin: 6px 2px; }
+  .dock-item.active::before { display: none; }
+  .dock-label { display: none; }
+  .main { padding: 0 16px 96px; }
   .topbar { position: static; }
   .span-3 { grid-column: span 12; }
   .filter select { min-width: 140px; }
