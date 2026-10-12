@@ -592,6 +592,7 @@
     const totPrev = (aggSM({ months: P.prev }).get("all") || EMPTY).v;
     const g = h("div", { class: "grid" });
     v.append(g);
+    storeMap(g, rows, P);
 
     const sorted = rows.slice().sort((a, b) => b.roa - a.roa);
     const [b1, c1] = chartBox("tall");
@@ -647,6 +648,240 @@
         foot: { name: "Total compañía", sales: fmtMoney(tot.sales), yoy: fmtDelta(tot.sales / totPrev - 1), gmPct: fmtPct(tot.gmPct), contrib: fmtMoney(tot.contrib),
           contribPct: fmtPct(tot.contribPct), inv: fmtMoney(tot.inv), capex: fmtMoney(tot.capex), roa: fmtPct(tot.roa, 0), gmroi: fmtNum(tot.gmroi, 2), ticket: fmtMoney(tot.ticket, false) },
       })));
+  }
+
+
+  // ================================================================ MAPA DE SUCURSALES
+  // ubicación aproximada de cada sucursal (lat, lon)
+  const GEO = {
+    MVS: [-34.9036, -56.1365], PCS: [-34.9230, -56.1590], TCR: [-34.8941, -56.1665], POR: [-34.8826, -56.0800],
+    NVC: [-34.8705, -56.1690], CUR: [-34.8530, -55.9900], LPS: [-34.7300, -56.2190], PDE: [-34.9380, -54.9330],
+    SAL: [-31.3890, -57.9600], PAY: [-32.3170, -58.0800], COL: [-34.4710, -57.8440], WEB: [-35.25, -54.45],
+  };
+  const SVGNS = "http://www.w3.org/2000/svg";
+  function sv(tag, attrs, ...kids) {
+    const el = document.createElementNS(SVGNS, tag);
+    for (const [k, v] of Object.entries(attrs || {})) if (v != null) el.setAttribute(k, v);
+    for (const kid of kids.flat()) if (kid != null) el.append(kid instanceof Node ? kid : document.createTextNode(String(kid)));
+    return el;
+  }
+  const proj = (v) => (lat, lon) => [(lon - v.lon0) / (v.lon1 - v.lon0) * v.w, (v.lat1 - lat) / (v.lat1 - v.lat0) * v.h];
+  const inView = (v, [lat, lon]) => lon >= v.lon0 && lon <= v.lon1 && lat >= v.lat0 && lat <= v.lat1;
+
+  // alertas por sucursal, calculadas con los mismos datos de los demás módulos
+  function storeAlerts(rows) {
+    const cover = new Map();
+    for (const r of D.skuStore) {
+      const o = cover.get(r[0]) || { st: 0, wd: 0 };
+      o.st += r[6]; o.wd += r[7];
+      cover.set(r[0], o);
+    }
+    const covs = [...cover.values()].map((o) => o.st / Math.max(o.wd, 0.01)).sort((a, b) => a - b);
+    const medCover = covs[Math.floor(covs.length / 2)];
+    const out = new Map();
+    for (const r of rows) {
+      const id = SID[r.i];
+      const list = [];
+      if (r.roa < 0.15) list.push({ sev: "critical", text: `ROA de ${fmtPct(r.roa, 0)}, el más bajo de la red`, page: "sucursales" });
+      D.fraud.cashiers.filter((c) => c.s === id && c.score >= 3).forEach((c) =>
+        list.push({ sev: "critical", text: `Fraude: operador ${c.id} (${fmtNum(c.score, 1)} desvíos)`, page: "fraude" }));
+      if (r.sales && r.lost / r.sales > 0.015) list.push({ sev: "warning", text: `Quiebres: ${fmtPct(r.lost / r.sales)} de venta perdida`, page: "stock" });
+      const cv = cover.get(r.i);
+      const weeks = cv ? cv.st / Math.max(cv.wd, 0.01) : 0;
+      if (weeks > medCover * 1.6) list.push({ sev: "warning", text: `Sobrestock: ${fmtNum(weeks, 0)} semanas de cobertura`, page: "stock" });
+      if (r.yoy != null && r.yoy < 0.05) list.push({ sev: "warning", text: `Venta casi estancada (${fmtDelta(r.yoy)} a/a)`, page: "resumen" });
+      out.set(r.i, { list, status: list.some((a) => a.sev === "critical") ? "critical" : list.length ? "warning" : "good" });
+    }
+    return out;
+  }
+  const STATUS = {
+    good: { label: "Sin alertas", icon: "✓", color: () => css("--good") },
+    warning: { label: "Atención", icon: "▲", color: () => css("--warning") },
+    critical: { label: "Crítico", icon: "●", color: () => css("--critical") },
+  };
+
+  function storeMap(g, rows, P) {
+    const MP = window.PEACH_MAP;
+    const alerts = storeAlerts(rows);
+    const byI = new Map(rows.map((r) => [r.i, r]));
+    const maxSales = Math.max(...rows.map((r) => r.sales));
+    const select = (id) => { state.store = state.store === id ? "ALL" : id; save(); renderPage(); };
+
+    function drawMap(v, opts) {
+      const pr = proj(v);
+      const svg = sv("svg", { viewBox: `0 0 ${v.w} ${v.h}`, class: "map-svg", role: "img", "aria-label": opts.title });
+      const gid = `grid-${opts.key}`;
+      svg.append(sv("defs", {},
+        sv("pattern", { id: gid, width: 24, height: 24, patternUnits: "userSpaceOnUse" },
+          sv("path", { d: "M24 0H0V24", fill: "none", class: "map-gridline" })),
+        sv("radialGradient", { id: `land-${opts.key}`, cx: "50%", cy: "40%", r: "70%" },
+          sv("stop", { offset: "0%", class: "map-land-a" }), sv("stop", { offset: "100%", class: "map-land-b" }))));
+      svg.append(sv("rect", { x: 0, y: 0, width: v.w, height: v.h, class: "map-water" }));
+      svg.append(sv("rect", { x: 0, y: 0, width: v.w, height: v.h, fill: `url(#${gid})` }));
+      if (v.ar) svg.append(sv("path", { d: v.ar, class: "map-neighbor" }));
+      if (v.br) svg.append(sv("path", { d: v.br, class: "map-neighbor" }));
+      svg.append(sv("path", { d: v.uy, class: "map-land", fill: `url(#land-${opts.key})` }));
+      for (const [txt, lat, lon] of opts.labels) {
+        const [x, y] = pr(lat, lon);
+        svg.append(sv("text", { x, y, class: "map-geo-label", "text-anchor": "middle", "font-size": 11 * (opts.k || 1) }, txt));
+      }
+      const reserved = opts.extra ? opts.extra(svg, pr) || [] : [];
+      // pines: primero los puntos, después las etiquetas ubicadas sin superponerse
+      const k = opts.k || 1;
+      const pins = rows.filter((r) => opts.ids.includes(SID[r.i])).map((r) => {
+        const id = SID[r.i];
+        const [x, y] = pr(...GEO[id]);
+        return { r, id, x, y, rad: (6 + 6 * Math.sqrt(r.sales / maxSales)) * k, st: alerts.get(r.i) };
+      });
+      const boxes = [...reserved, ...pins.map((q) => [q.x - q.rad - 2 * k, q.y - q.rad - 2 * k, q.x + q.rad + 2 * k, q.y + q.rad + 2 * k])];
+      const hits = (b) => boxes.some((o) => !(b[2] < o[0] || b[0] > o[2] || b[3] < o[1] || b[1] > o[3]));
+      const labelLayer = sv("g", {});
+      const pinLayer = sv("g", {});
+      for (const q of pins.slice().sort((a, b) => b.rad - a.rad)) {
+        const { r, id, x, y, rad, st } = q;
+        const col = STATUS[st.status].color();
+        const sel = state.store === id;
+        const dim = state.store !== "ALL" && !sel;
+        const lbl = opts.names ? STORES[r.i].name : id === "WEB" ? "E-commerce" : STORES[r.i].city;
+        const tw = (lbl.length * 6.9 + 16) * k, th = 20 * k;
+        // candidatas: derecha, izquierda, arriba, abajo y diagonales, cada vez más lejos
+        let place = null;
+        for (const dist of [6, 22, 40, 60]) {
+          for (const [dx, dy] of [[1, 0], [-1, 0], [1, -1], [1, 1], [-1, -1], [-1, 1], [0, -1], [0, 1]]) {
+            const cx = x + dx * (rad + dist * k), cy = y + dy * (rad + dist * k);
+            const bx = dx > 0 ? cx : dx < 0 ? cx - tw : cx - tw / 2;
+            const b = [bx, cy - th / 2, bx + tw, cy + th / 2];
+            if (b[0] < 2 || b[2] > v.w - 2 || b[1] < 30 * k || b[3] > v.h - 2) continue;
+            if (!hits(b)) { place = { b, cx, cy, dist }; break; }
+          }
+          if (place) break;
+        }
+        const g2 = sv("g", { class: `map-pin ${sel ? "sel" : ""} ${dim ? "dim" : ""}`, tabindex: 0, role: "button",
+          "aria-label": `${STORES[r.i].name}: ${STATUS[st.status].label}` });
+        if (place) {
+          boxes.push(place.b);
+          if (place.dist > 6) g2.append(sv("line", { x1: x, y1: y, x2: place.cx, y2: place.cy, class: "map-leader", "stroke-width": k }));
+          g2.append(sv("rect", { x: place.b[0], y: place.b[1], width: tw, height: th, rx: th / 2, class: "map-chip", "stroke-width": k }));
+          g2.append(sv("text", { x: place.b[0] + tw / 2, y: place.cy + 4 * k, class: "map-chip-text", "text-anchor": "middle", "font-size": 11.5 * k }, lbl));
+        }
+        labelLayer.append(g2);
+        const pin = sv("g", { class: `map-pin ${sel ? "sel" : ""} ${dim ? "dim" : ""}`, transform: `translate(${x.toFixed(1)} ${y.toFixed(1)})`,
+          tabindex: 0, role: "button", "aria-label": `${STORES[r.i].name}: ${STATUS[st.status].label}` });
+        if (st.status !== "good") pin.append(sv("circle", { r: rad, class: "map-pulse", fill: col }));
+        if (sel) pin.append(sv("circle", { r: rad + 7 * k, class: "map-reticle", "stroke-width": 1.5 * k, "stroke-dasharray": `${4 * k} ${4 * k}` }));
+        if (id === "WEB") pin.append(sv("rect", { x: -rad, y: -rad, width: 2 * rad, height: 2 * rad, rx: 5 * k, class: "map-dot", fill: col, "stroke-width": 2.5 * k }));
+        else pin.append(sv("circle", { r: rad, class: "map-dot", fill: col, "stroke-width": 2.5 * k }));
+        pin.append(sv("text", { x: 0, y: 3.5 * k, class: "map-dot-icon", "text-anchor": "middle", "font-size": 9 * k }, STATUS[st.status].icon));
+        pinLayer.append(pin);
+        for (const el of [pin, g2]) {
+          el.addEventListener("click", () => select(id));
+          el.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); select(id); } });
+          attachTip(el, () => [STORES[r.i].name, `Venta ${fmtMoney(r.sales)} · margen ${fmtPct(r.gmPct)}`, `ROA ${fmtPct(r.roa, 0)}`,
+            st.list.length ? `${st.list.length} alerta(s): ${st.list[0].text}` : "Sin alertas", "Clic para ver el detalle"]);
+        }
+      }
+      svg.append(labelLayer, pinLayer);
+      return svg;
+    }
+
+    const metroIds = Object.keys(GEO).filter((id) => inView(MP.metro, GEO[id]) && id !== "WEB");
+    const nationalIds = Object.keys(GEO).filter((id) => !metroIds.includes(id));
+    const national = drawMap(MP.main, {
+      key: "uy", title: "Mapa de sucursales de Uruguay", ids: nationalIds,
+      k: 2, labels: [["ARGENTINA", -30.45, -58.3], ["BRASIL", -30.2, -53.4], ["OCÉANO", -34.3, -53.15], ["ATLÁNTICO", -34.5, -53.15], ["RÍO DE LA PLATA", -35.25, -57.3]],
+      extra: (svg, pr) => {
+        // marcador del área metropolitana
+        const [x, y] = pr(-34.86, -56.12);
+        const n = metroIds.filter((id) => byI.has(SID.indexOf(id))).length;
+        const worst = metroIds.map((id) => alerts.get(SID.indexOf(id))).filter(Boolean)
+          .reduce((a, s2) => (s2.status === "critical" || (s2.status === "warning" && a === "good") ? s2.status : a), "good");
+        svg.append(sv("g", { class: "map-cluster", transform: `translate(${x.toFixed(1)} ${y.toFixed(1)}) scale(2)` },
+          sv("circle", { r: 15, class: "map-cluster-ring", stroke: STATUS[worst].color() }),
+          sv("text", { y: 4, "text-anchor": "middle", class: "map-cluster-text" }, String(n)),
+          sv("text", { x: -2, y: -22, class: "map-geo-label", "font-size": 10, "text-anchor": "middle" }, "MONTEVIDEO")));
+        return [[x - 34, y - 70, x + 34, y + 34]];
+      },
+    });
+    const metro = drawMap(MP.metro, {
+      key: "mvd", title: "Sucursales de Montevideo y alrededores", ids: metroIds, names: true, k: 1,
+      labels: [["RÍO DE LA PLATA", -34.945, -56.24]],
+    });
+
+    const legendEl = h("div", { class: "legend", style: "margin-top:10px" },
+      Object.values(STATUS).map((s2) => h("span", {}, h("i", { style: `background:${s2.color()};border-radius:50%` }), `${s2.icon} ${s2.label}`)),
+      h("span", {}, "Tamaño = venta del período"));
+    const mapCard = card("Mapa de sucursales", "Clic en una sucursal para seleccionarla · el color indica su estado de alertas", 8,
+      h("div", { class: "map-wrap" },
+        h("div", { class: "map-pane" }, h("div", { class: "map-pane-title" }, "Uruguay"), national),
+        h("div", { class: "map-pane" }, h("div", { class: "map-pane-title" }, "Montevideo y alrededores"), metro)),
+      legendEl);
+    if (state.store !== "ALL") addHeadControl(mapCard, h("button", { class: "icon-btn", type: "button", onclick: () => select(state.store) }, "Ver toda la red"));
+    g.append(mapCard);
+    g.append(commandPanel(rows, alerts, P));
+  }
+
+  function commandPanel(rows, alerts, P) {
+    const idx = storeIdx();
+    const panel = h("section", { class: "card span-4 cmd" });
+    if (idx == null || !rows.some((r) => r.i === idx)) {
+      const all = rows.flatMap((r) => alerts.get(r.i).list.map((a) => ({ ...a, r })))
+        .sort((a, b) => (a.sev === b.sev ? 0 : a.sev === "critical" ? -1 : 1));
+      const counts = { critical: 0, warning: 0, good: 0 };
+      rows.forEach((r) => counts[alerts.get(r.i).status]++);
+      panel.append(
+        h("div", { class: "cmd-eyebrow" }, "Centro de comando · red completa"),
+        h("h3", { class: "cmd-title" }, `${rows.length} sucursales activas`),
+        h("div", { class: "cmd-status" }, Object.entries(counts).map(([k, n]) =>
+          h("div", { class: "cmd-stat" }, h("b", { style: `color:${STATUS[k].color()}` }, `${STATUS[k].icon} ${n}`), h("span", {}, STATUS[k].label)))),
+        h("div", { class: "cmd-sub" }, "Alertas activas"),
+        h("div", { class: "cmd-alerts" }, all.length ? all.map((a) => alertRow(a, a.r)) : h("p", { class: "sub" }, "No hay alertas.")),
+        h("p", { class: "sub", style: "margin-top:12px" }, "Seleccioná una sucursal en el mapa para ver su tablero."));
+      return panel;
+    }
+    const r = rows.find((x) => x.i === idx);
+    const s = STORES[idx];
+    const st = alerts.get(idx);
+    const [box, canvas] = chartBox("spark");
+    panel.append(
+      h("div", { class: "cmd-eyebrow" }, `Centro de comando · ${P.label.toLowerCase()}`),
+      h("div", { class: "cmd-head" },
+        h("div", {}, h("h3", { class: "cmd-title" }, s.name), h("div", { class: "sub" }, `${s.city} · ${s.type}${s.m2 ? ` · ${s.m2} m²` : ""}`)),
+        pill(`${STATUS[st.status].icon} ${STATUS[st.status].label}`, STATUS[st.status].color())),
+      h("div", { class: "cmd-kpis" },
+        cmdKpi("Venta neta", fmtMoney(r.sales), r.yoy == null ? "apertura" : `${fmtDelta(r.yoy)} a/a`, r.yoy == null ? "" : r.yoy >= 0 ? "up" : "down"),
+        cmdKpi("Margen bruto", fmtPct(r.gmPct), fmtMoney(r.gm)),
+        cmdKpi("Contribución", fmtMoney(r.contrib), `${fmtPct(r.contribPct)} de la venta`),
+        cmdKpi("ROA", fmtPct(r.roa, 0), `GMROI ${fmtNum(r.gmroi, 2)}`, r.roa < 0.15 ? "down" : ""),
+        cmdKpi("Ticket promedio", fmtMoney(r.ticket, false), `${fmtInt(r.tickets)} tickets`),
+        cmdKpi("Venta perdida", fmtMoney(r.lost), `${fmtPct(r.lost / r.sales)} por quiebres`)),
+      h("div", { class: "cmd-sub" }, "Venta mensual · últimos 12 meses"), box,
+      h("div", { class: "cmd-sub" }, st.list.length ? `Alertas (${st.list.length})` : "Alertas"),
+      h("div", { class: "cmd-alerts" }, st.list.length ? st.list.map((a) => alertRow(a, null)) : h("p", { class: "sub" }, "Sin alertas en este período.")),
+      h("div", { class: "cmd-actions" },
+        h("button", { type: "button", onclick: () => go("resumen") }, "Resumen"),
+        h("button", { type: "button", onclick: () => go("stock") }, "Stock"),
+        h("button", { type: "button", onclick: () => go("clientes") }, "Clientes"),
+        h("button", { type: "button", onclick: () => go("fraude") }, "Fraude")));
+    // mini serie de venta
+    const ms = range(NM - 12, NM);
+    const byM = aggSM({ months: ms, stores: [idx], key: (x) => x[1] });
+    requestAnimationFrame(() => mkChart(canvas, {
+      type: "line",
+      data: { labels: ms.map((m) => monthLabel(M.months[m])), datasets: [{ data: ms.map((m) => (byM.get(m) || EMPTY).v), borderColor: css("--accent"),
+        backgroundColor: css("--accent") + "22", fill: true, tension: .35, pointRadius: 0 }] },
+      options: { scales: { x: { display: false }, y: { display: false, beginAtZero: true } }, interaction: { mode: "index", intersect: false },
+        plugins: { tooltip: { callbacks: { label: (c) => ` ${fmtMoney(c.raw)}` } } } },
+    }));
+    return panel;
+  }
+  function cmdKpi(label, value, sub, cls) {
+    return h("div", { class: "cmd-kpi" }, h("span", {}, label), h("b", {}, value), h("small", { class: cls || "" }, sub));
+  }
+  function alertRow(a, r) {
+    return h("button", { type: "button", class: `cmd-alert ${a.sev}`, onclick: () => { if (r) { state.store = SID[r.i]; save(); } go(a.page); } },
+      h("i", { style: `background:${STATUS[a.sev].color()}` }),
+      h("span", {}, r ? h("b", {}, `${STORES[r.i].name}: `) : null, a.text),
+      h("em", {}, "→"));
   }
 
   // ================================================================ PCVM

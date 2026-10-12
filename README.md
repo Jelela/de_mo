@@ -56,3 +56,5 @@ Los modelos son reales, aplicados sobre datos ficticios:
 - Fraude: z-scores contra la red.
 
 Las métricas que muestran (AUC, MAPE, etc.) son las que resultan de correrlos.
+
+El mapa usa contornos de Natural Earth (dominio público) generados con `generator/build_map.py` a partir de `world-atlas@2`; las ubicaciones de las sucursales son aproximadas y están en `GEO` dentro de `dashboard/app.js`.
