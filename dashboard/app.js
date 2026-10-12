@@ -1418,21 +1418,21 @@
   const nav = document.getElementById("nav");
   function buildNav() {
     nav.textContent = "";
-    let group = null;
-    PAGES.forEach((p, i) => {
-      if (p.g) { group = p.g; if (i > 0) nav.append(h("div", { class: "dock-sep", "aria-hidden": "true" })); return; }
-      nav.append(h("a", { href: `#${p.k}`, class: `dock-item ${state.page === p.k ? "active" : ""}`, "aria-label": p.t,
+    for (const p of PAGES) {
+      if (p.g) { nav.append(h("div", { class: "dock-group" }, p.g)); continue; }
+      nav.append(h("a", { href: `#${p.k}`, class: `dock-item ${state.page === p.k ? "active" : ""}`,
         "aria-current": state.page === p.k ? "page" : null },
-      svgIcon(p.icon), h("span", { class: "dock-label" }, p.t, h("small", {}, group))));
-    });
+      h("span", { class: "dock-icon" }, svgIcon(p.icon)), h("span", { class: "dock-text" }, p.t)));
+    }
   }
   // efecto lupa del dock: los íconos crecen según la distancia al cursor
-  const MAG = { max: 1.6, reach: 110 };
+  const MAG = { max: 1.45, reach: 64 };
   const dockItems = () => [...nav.querySelectorAll(".dock-item")];
   nav.addEventListener("mousemove", (e) => {
     if (matchMedia("(max-width: 760px)").matches) return;
+    // solo crece el ícono (transform), el sidebar no cambia de tamaño
     for (const it of dockItems()) {
-      const r = it.getBoundingClientRect();
+      const r = it.querySelector(".dock-icon").getBoundingClientRect();
       const d = Math.abs(e.clientY - (r.top + r.height / 2));
       const t = Math.max(0, 1 - d / MAG.reach);
       it.style.setProperty("--s", (1 + (MAG.max - 1) * t * t * (3 - 2 * t)).toFixed(3));

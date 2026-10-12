@@ -9,8 +9,8 @@
   --grid: #e1e0d9;
   --axis: #c3c2b7;
   --border: rgba(11, 11, 11, 0.10);
-  --accent: #e8734f;          /* acento de marca (solo chrome, nunca datos) */
-  --accent-soft: #fbe5dc;
+  --accent: #ed715a;          /* coral del logo (solo chrome, nunca datos) */
+  --accent-soft: #fde3dd;
   --s1: #2a78d6; --s2: #eb6834; --s3: #1baf7a; --s4: #eda100;
   --s5: #e87ba4; --s6: #008300; --s7: #6250d6; --s8: #e34948;
   --good: #0ca30c; --warning: #fab219; --serious: #ec835a; --critical: #d03b3b;
@@ -20,6 +20,7 @@
   --glass-bg: rgba(255, 255, 255, 0.45);
   --glass-bg-strong: rgba(255, 255, 255, 0.78);
   --glass-tile: rgba(255, 255, 255, 0.55);
+  --glass-hover: rgba(255, 255, 255, 0.55);
   --glass-border: rgba(255, 255, 255, 0.65);
   --glass-shadow: 0 10px 40px rgba(60, 40, 30, 0.14), inset 0 1px 0 rgba(255,255,255,.6);
   --page-glow-1: rgba(232, 115, 79, 0.16);
@@ -31,7 +32,7 @@
     --page: #0d0d0d; --surface: #1a1a19; --surface-2: #232321;
     --ink: #f0efec; --ink-2: #c3c2b7; --muted: #898781;
     --grid: #2c2c2a; --axis: #383835; --border: rgba(255,255,255,0.10);
-    --accent: #f08a68; --accent-soft: #3a2219;
+    --accent: #ed715a; --accent-soft: #3a2219;
     --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500;
     --s5: #d55181; --s6: #008300; --s7: #9085e9; --s8: #e66767;
     --good-text: #0ca30c; --bad-text: #ef6b6b;
@@ -40,6 +41,8 @@
     --glass-bg: rgba(40, 40, 38, 0.45);
     --glass-bg-strong: rgba(36, 36, 34, 0.82);
     --glass-tile: rgba(255, 255, 255, 0.06);
+  --glass-hover: rgba(255, 255, 255, 0.07);
+    --glass-hover: rgba(255, 255, 255, 0.07);
     --glass-border: rgba(255, 255, 255, 0.12);
     --glass-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255,255,255,.06);
     --page-glow-1: rgba(240, 138, 104, 0.10);
@@ -51,7 +54,7 @@
   --page: #0d0d0d; --surface: #1a1a19; --surface-2: #232321;
   --ink: #f0efec; --ink-2: #c3c2b7; --muted: #898781;
   --grid: #2c2c2a; --axis: #383835; --border: rgba(255,255,255,0.10);
-  --accent: #f08a68; --accent-soft: #3a2219;
+  --accent: #ed715a; --accent-soft: #3a2219;
   --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500;
   --s5: #d55181; --s6: #008300; --s7: #9085e9; --s8: #e66767;
   --good-text: #0ca30c; --bad-text: #ef6b6b;
@@ -60,6 +63,7 @@
   --glass-bg: rgba(40, 40, 38, 0.45);
   --glass-bg-strong: rgba(36, 36, 34, 0.82);
   --glass-tile: rgba(255, 255, 255, 0.06);
+  --glass-hover: rgba(255, 255, 255, 0.07);
   --glass-border: rgba(255, 255, 255, 0.12);
   --glass-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255,255,255,.06);
   --page-glow-1: rgba(240, 138, 104, 0.10);
@@ -83,62 +87,49 @@ button, select, input { font: inherit; color: inherit; }
 /* ------------------------------------------------------------ layout */
 .app { min-height: 100vh; }
 
-/* Dock flotante estilo macOS: vidrio, 20px de radio, lupa al pasar el cursor */
+/* Sidebar flotante de vidrio: textos siempre visibles, lupa solo sobre los íconos */
 .dock {
-  position: fixed; left: 16px; top: 50%; transform: translateY(-50%); z-index: 20;
-  padding: 10px 8px; border-radius: 20px;
+  position: fixed; left: 16px; top: 16px; bottom: 16px; width: 248px; z-index: 20;
+  display: flex; flex-direction: column;
+  padding: 18px 10px 12px; border-radius: 20px;
   background: var(--glass-bg);
   backdrop-filter: blur(22px) saturate(180%); -webkit-backdrop-filter: blur(22px) saturate(180%);
   border: 1px solid var(--glass-border);
   box-shadow: var(--glass-shadow);
-  max-height: calc(100vh - 32px);
 }
-.dock-nav { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; }
-.dock-sep { width: 28px; height: 1px; background: var(--glass-border); margin: 4px 6px; flex: none; }
+.dock-brand { padding: 0 10px 14px; }
+.dock-brand img { display: block; width: 112px; height: auto; }
+.dock-brand span { display: block; margin-top: 4px; font-size: 11.5px; color: var(--muted); letter-spacing: .02em; }
+.dock-nav {
+  display: flex; flex-direction: column; gap: 1px; overflow-y: auto; overflow-x: hidden;
+  margin: 0 -10px; padding: 0 10px; scrollbar-width: none;
+}
+.dock-nav::-webkit-scrollbar { display: none; }
+.dock-group { margin: 12px 0 4px; padding: 0 10px; font-size: 10.5px; font-weight: 650; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); }
 .dock-item {
   --s: 1;
-  position: relative; display: grid; place-items: center; flex: none;
-  width: calc(40px * var(--s)); height: calc(40px * var(--s));
-  border-radius: calc(12px * var(--s));
-  color: var(--ink-2); text-decoration: none;
-  background: var(--glass-tile);
-  border: 1px solid var(--glass-border);
-  transition: width .12s ease-out, height .12s ease-out, border-radius .12s ease-out, background .15s, color .15s;
+  display: flex; align-items: center; gap: 12px; flex: none;
+  padding: 5px 8px; border-radius: 12px;
+  color: var(--ink-2); text-decoration: none; font-size: 13.5px;
+  transition: background .15s, color .15s;
 }
-.dock-item svg {
-  width: calc(19px * var(--s)); height: calc(19px * var(--s));
-  stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
-  transition: width .12s ease-out, height .12s ease-out;
+.dock-icon {
+  width: 30px; height: 30px; flex: none; display: grid; place-items: center;
+  border-radius: 9px; background: var(--glass-tile); border: 1px solid var(--glass-border);
+  transform: scale(var(--s)); transform-origin: center;
+  transition: transform .12s ease-out, background .15s;
+  position: relative; z-index: 1;
 }
-.dock-item:hover, .dock-item:focus-visible { color: var(--ink); outline: none; }
-.dock-item.active { color: #fff; background: var(--accent); border-color: transparent; }
-/* punto de "app abierta" */
-.dock-item.active::before {
-  content: ""; position: absolute; left: -7px; top: 50%; width: 4px; height: 4px; margin-top: -2px;
-  border-radius: 50%; background: var(--ink-2);
-}
-.dock-label {
-  position: absolute; left: calc(100% + 14px); top: 50%; transform: translate(-6px, -50%);
-  white-space: nowrap; pointer-events: none; opacity: 0;
-  font-size: 12.5px; font-weight: 600; color: var(--ink);
-  padding: 5px 10px; border-radius: 10px;
-  background: var(--glass-bg-strong);
-  backdrop-filter: blur(16px) saturate(180%); -webkit-backdrop-filter: blur(16px) saturate(180%);
-  border: 1px solid var(--glass-border); box-shadow: var(--glass-shadow);
-  transition: opacity .12s, transform .12s;
-}
-.dock-label small { display: block; font-weight: 500; font-size: 11px; color: var(--muted); }
-.dock-item:hover .dock-label, .dock-item:focus-visible .dock-label { opacity: 1; transform: translate(0, -50%); }
+.dock-icon svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.dock-text { min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.dock-item:hover, .dock-item:focus-visible { color: var(--ink); background: var(--glass-hover); outline: none; }
+.dock-item.active { color: var(--ink); font-weight: 600; background: var(--glass-hover); }
+.dock-item.active .dock-icon { color: #fff; background: var(--accent); border-color: transparent; }
 
-.brand { display: flex; align-items: center; gap: 8px; margin-right: 6px; }
-.brand-mark {
-  width: 30px; height: 30px; border-radius: 50%;
-  background: radial-gradient(circle at 35% 35%, #ffc7a8, var(--accent));
-  flex: none;
-}
-.brand-name { font-weight: 700; font-size: 17px; letter-spacing: -.01em; }
+.brand-top { display: none; }
+.brand-top img { display: block; height: 22px; width: auto; }
 
-.main { min-width: 0; padding: 0 28px 48px 96px; }
+.main { min-width: 0; padding: 0 28px 48px 288px; }
 .topbar {
   position: sticky; top: 0; z-index: 5;
   background: color-mix(in srgb, var(--page) 92%, transparent);
@@ -275,12 +266,14 @@ table.heat td { text-align: center; padding: 6px 4px; border-radius: 4px; font-v
   .span-3 { grid-column: span 6; }
 }
 @media (max-width: 760px) {
-  /* en celular el dock va abajo, horizontal y sin lupa */
-  .dock { left: 50%; top: auto; bottom: 12px; transform: translateX(-50%); max-width: calc(100vw - 24px); max-height: none; padding: 8px; overflow-x: auto; }
-  .dock-nav { flex-direction: row; }
-  .dock-sep { width: 1px; height: 28px; margin: 6px 2px; }
-  .dock-item.active::before { display: none; }
-  .dock-label { display: none; }
+  /* en celular la barra va abajo, horizontal, solo íconos */
+  .dock { left: 50%; right: auto; top: auto; bottom: 12px; width: auto; max-width: calc(100vw - 24px); transform: translateX(-50%); padding: 8px; }
+  .dock-brand, .dock-group, .dock-text { display: none; }
+  .dock-nav { flex-direction: row; gap: 4px; overflow-x: auto; margin: 0; padding: 0; }
+  .dock-item { padding: 4px; }
+  .dock-item.active { background: none; }
+  .dock-icon { width: 38px; height: 38px; border-radius: 11px; }
+  .brand-top { display: block; margin-bottom: 6px; }
   .main { padding: 0 16px 96px; }
   .topbar { position: static; }
   .span-3 { grid-column: span 12; }
