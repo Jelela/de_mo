@@ -132,11 +132,28 @@ affinity[WEB] *= np.where(np.isin(cj, [CATS.index("Bijou"), CATS.index("Bikinis"
 base = affinity * pop[None, :]                              # [S, J]
 g = season[cj][:, d_moy].T * lift[:, cj]                   # [ND, J]
 
-# calibración: ingreso esperado de los últimos 12 meses = objetivo
+# e-commerce real: venta neta mensual (sin IVA) por mes de la simulación
+ecom = pd.read_csv(HERE / C.ECOM_REAL)
+ecom_ok = ecom[ecom.parcial == 0]
+iva_div = C.IVA if C.ECOM_REVENUE_WITH_IVA else 1.0
+web_net_real = np.array([ecom_ok.set_index("mes").revenue.get(mm, np.nan) / iva_div for mm in MONTHS])
+web_orders_real = np.array([ecom_ok.set_index("mes").ordenes.get(mm, np.nan) for mm in MONTHS])
+web_spend_real = np.array([ecom_ok.set_index("mes").spend.get(mm, np.nan) for mm in MONTHS])
+TARGET_NET_SALES_YEAR = np.nansum(web_net_real[-12:]) / C.WEB_SHARE
+
+# calibración: las sucursales físicas venden (1 - WEB_SHARE) del total en los últimos 12 meses
 last12 = d_month >= NM - 12
 rev_unit = (g * real_net_d)[last12]                         # [n, J]
 exp_rev = (sf[last12] * (1 - manual)[None, :]) * (rev_unit @ base.T)
-K = C.TARGET_NET_SALES_YEAR / exp_rev.sum() / 0.95          # ~5% de quiebres
+phys = np.arange(S) != WEB
+K = TARGET_NET_SALES_YEAR * (1 - C.WEB_SHARE) / exp_rev[:, phys].sum() / 0.95   # ~5% de quiebres
+
+# la demanda web se ajusta mes a mes para reproducir la venta real del e-commerce;
+# los meses sin dato real (antes de may-25) usan el ajuste mediano de 2025
+exp_web_m = np.bincount(d_month, weights=K * sf[:, WEB] * (1 - manual[WEB]) * ((g * real_net_d) @ base[WEB]), minlength=NM)
+web_mult = web_net_real / exp_web_m / 0.97
+web_mult[np.isnan(web_mult)] = np.nanmedian(web_mult[: NM - 12])
+sf[:, WEB] *= web_mult[d_month]
 
 # política de stock
 bias = np.array([C.STORE_STOCK_BIAS.get(s, 1.0) for s in SID])
@@ -198,6 +215,11 @@ for d in range(ND):
     if d >= ND - 30:
         zero_days30 += (stock == 0) & (rate > .02)
 
+# ajuste fino: la venta web de cada mes coincide con la real
+web_fix = np.where(np.isnan(web_net_real), 1.0, web_net_real / np.maximum(revenue[:, WEB].sum(1), 1))
+for arr in (units, revenue, discount):
+    arr[:, WEB, :] *= web_fix[:, None].astype(np.float32)
+
 cogs = units * cost_month[:, None, :]
 avg_inv_units = inv_days / days_in_month[:, None, None]
 inv_cost = avg_inv_units * cost_month[:, None, :]
@@ -231,6 +253,7 @@ capex = np.where(np.arange(S) == WEB, C.WEB_CAPEX, s_m2 * C.CAPEX_M2)
 upt = np.clip(rng.normal(1.75, .12, S), 1.45, 2.1)
 upt[WEB] = 2.15
 tickets = units.sum(2) / upt[None, :]
+tickets[:, WEB] = np.where(np.isnan(web_orders_real), tickets[:, WEB], web_orders_real)
 
 # ------------------------------------------------------------------ PCVM
 
@@ -564,16 +587,24 @@ mk_rows = []
 new_by_ch_m = pd.crosstab(
     ((alta[newc].astype("datetime64[M]") - np.datetime64(C.START, "M")).astype(int)), acq[newc])
 ad_store = np.zeros((NM, S))
+# spend digital real del e-commerce; antes de may-25 se usa la mediana de 2025
+web_spend = np.where(np.isnan(web_spend_real), np.nanmedian(web_spend_real[: NM - 12]), web_spend_real)
+web_gross = revenue[:, WEB].sum(1) * iva_div               # venta web como la reportan las plataformas
 for m in range(NM):
     sales_m = sales_sm[m].sum()
     yrs = m / 12
-    for ci_, (ch, share, roas, tr_) in enumerate(C.AD_CHANNELS):
-        spend = sales_m * C.AD_BUDGET_PCT * share * rng.normal(1, .08)
-        if ch == "Influencers" and m >= 14:
-            spend *= 1.25                                   # se subió el presupuesto en 2026
-        roas_m = roas * (1 + tr_) ** yrs * rng.normal(1, .07) * (0.85 if MONTHS[m][5:] in ("06", "07", "08") else 1)
+    for ci_, (ch, pct, roas, tr_) in enumerate(C.AD_CHANNELS):
+        if pct is None:                                     # Meta y Google: datos reales
+            sh = C.META_SHARE if ch == "Meta Ads" else 1 - C.META_SHARE
+            spend, rev_attr = web_spend[m] * sh, web_gross[m] * sh
+        else:
+            spend = sales_m * pct * rng.normal(1, .08)
+            if ch == "Influencers" and m >= 14:
+                spend *= 1.25                               # se subió el presupuesto en 2026
+            roas_m = roas * (1 + tr_) ** yrs * rng.normal(1, .07) * (0.85 if MONTHS[m][5:] in ("06", "07", "08") else 1)
+            rev_attr = spend * roas_m
         new_c = int(new_by_ch_m.loc[m, ci_]) if m in new_by_ch_m.index and ci_ in new_by_ch_m.columns else 0
-        mk_rows.append(dict(m=m, ch=ci_, spend=spend, rev=spend * roas_m, newc=new_c))
+        mk_rows.append(dict(m=m, ch=ci_, spend=spend, rev=rev_attr, newc=new_c))
         # reparto geográfico: vía pública y 40% de Meta segmentado por sucursal
         geo = spend if ch == "Vía pública" else (spend * .4 if ch == "Meta Ads" else 0)
         w_s = sales_sm[m].copy()
@@ -782,7 +813,8 @@ for j in top_sku:
 # --------------------------------------------------------------- depósito
 picks90 = units[-3:].sum((0, 1))
 old_coll = pop < np.quantile(pop, .18)
-wh_units = np.round(stock_target(ND - 1).sum(0) * .7 + np.where(old_coll, rng.integers(25, 160, J), 0))
+scale = TARGET_NET_SALES_YEAR / 640e6                      # escala del depósito respecto a la versión de referencia
+wh_units = np.round(stock_target(ND - 1).sum(0) * .7 + np.where(old_coll, rng.integers(25, 160, J) * scale, 0))
 wk_co = weekly_demand_now.sum(0)
 age_slow = (wh_units + stock.sum(0)) / np.maximum(wk_co, .01) > 39
 vol = wh_units * cprop["m3"][cj]
@@ -795,7 +827,8 @@ zone_now[abc == "A"] = rng.choice(["A", "B", "C"], (abc == "A").sum(), p=[.36, .
 dist = {"A": 14, "B": 38, "C": 66}
 walk_now = (picks90 * np.vectorize(dist.get)(zone_now)).sum() / picks90.sum()
 walk_opt = (picks90 * np.vectorize(dist.get)(abc)).sum() / picks90.sum()
-ZONE_CAP = {"A": 260.0, "B": 150.0, "C": 140.0}           # m3 útiles
+# capacidad útil: el depósito está al ~75% de ocupación
+ZONE_CAP = {z: float(vol.sum() / 0.75 * sh) for z, sh in {"A": .44, "B": .29, "C": .27}.items()}
 zones = []
 for zname in "ABC":
     v_now = vol[zone_now == zname].sum()
@@ -997,6 +1030,7 @@ DATA = dict(
     skuStore=sku_store, transfers=transfers,
     pcvm=pcvm_out, customers=customers_out, marketing=marketing_out, basket=basket_out, fraud=fraud_out,
     forecast=fc_out, pricing=dict(cats=pricing, skus=pricing_sku), warehouse=warehouse_out, recs=recs,
+    ecommerce=dict(rows=ecom.to_dict("records"), withIva=C.ECOM_REVENUE_WITH_IVA),
 )
 
 

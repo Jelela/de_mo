@@ -19,6 +19,7 @@ Abrir `dashboard/index.html` en el navegador (doble clic). No necesita servidor 
 | | Depósito | Ocupación por zona, clasificación ABC, reubicación y mercadería de lenta salida |
 | | Detección de fraude | Operadores de caja con indicadores anómalos y transacciones marcadas |
 | Clientes y marketing | Clientes, LTV y churn | Segmentos RFM, modelo de churn, cohortes, CLV, gasto proyectado |
+| | E-commerce | **Datos reales** de la tienda online: revenue, órdenes, ticket, sesiones, conversión, inversión, ROAS y CAC |
 | | Inversión publicitaria | Inversión, ROAS, CAC y LTV por canal; inversión por sucursal |
 | | Análisis de canasta | Afinidad entre categorías (lift), reglas de asociación y pares de artículos |
 | Predictivo | Pronóstico de ventas | Proyección a 6 meses con backtest y rango de confianza |
@@ -36,6 +37,7 @@ python3 generate.py          # ~30 segundos
 ```
 
 - **Catálogo:** `generator/catalog.csv`. Sale del export real de stock (`build_catalog.py <stock.xlsx>`): 1.401 artículos modelo-color con sus nombres y precios de lista. Las categorías se infieren del nombre.
+- **E-commerce real:** `generator/ecommerce_real.csv` (may-25 a oct-26). La venta web simulada reproduce mes a mes esa venta (sin IVA) y Meta + Google usan su inversión real. La escala de toda la compañía sale de ahí: la web es el 10% de la venta (`WEB_SHARE`), unos $ 127 M netos por año.
 - **Simulación:** 24 meses (oct 2024 – sep 2026) de venta diaria por sucursal y artículo, con estacionalidad del hemisferio sur, liquidaciones, Black Friday, aumentos de lista, inflación de costos, suba del dólar en importados, reposición semanal, quiebres y sobrestock.
 - **Historias plantadas para la demo:**
   - Las Piedras con bajo ROA, sobrestock y descuentos manuales altos.

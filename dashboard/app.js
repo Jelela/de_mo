@@ -420,6 +420,7 @@
     tag: "M3 12V4h8l10 10-8 8zM7.5 7.5h.01",
     shield: "M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z",
     warehouse: "M3 21V8l9-5 9 5v13M7 21v-8h10v8M7 17h10",
+    cart: "M3 4h2l2.4 11.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 8H6.2M9 20.5h.01M17 20.5h.01",
   };
   const PAGES = [
     { g: "General" },
@@ -435,6 +436,7 @@
     { k: "fraude", t: "Detección de fraude", icon: "shield", sub: "Operadores y transacciones con comportamiento anómalo (últimos 90 días)", store: true, period: false, render: pageFraude },
     { g: "Clientes y marketing" },
     { k: "clientes", t: "Clientes, LTV y churn", icon: "users", sub: "Segmentación RFM, valor de vida, riesgo de abandono y potencial de gasto", store: true, period: false, render: pageClientes },
+    { k: "ecommerce", t: "E-commerce", icon: "cart", sub: "Datos reales de la tienda online: tráfico, conversión, ticket y retorno de la pauta", store: false, period: false, render: pageEcommerce },
     { k: "marketing", t: "Inversión publicitaria", icon: "mega", sub: "Inversión, retorno y costo de adquisición por canal", store: true, period: true, render: pageMarketing },
     { k: "canasta", t: "Análisis de canasta", icon: "basket", sub: "Qué productos se compran juntos (market basket analysis)", store: false, period: false, render: pageCanasta },
     { g: "Predictivo" },
@@ -1226,7 +1228,7 @@
       const cac = o.n ? o.s / o.n : null;
       return { ch, s: o.s, v: o.v, roas: o.v / o.s, n: o.n, cac, ltv, ratio: ltv && cac ? ltv / cac : null };
     });
-    g.append(card("Rendimiento por canal", `${P.label} · LTV a 18 meses en margen bruto`, 12, table([
+    g.append(card("Rendimiento por canal", `${P.label} · Meta y Google con el spend y revenue reales del e-commerce (con IVA) · LTV a 18 meses en margen bruto`, 12, table([
       { k: "ch", label: "Canal" },
       { k: "s", label: "Inversión", num: true, fmt: (x) => fmtMoney(x) },
       { k: "v", label: "Venta atribuida", num: true, fmt: (x) => fmtMoney(x) },
@@ -1248,6 +1250,95 @@
       { k: "sales", label: "Venta", num: true, fmt: (x) => fmtMoney(x) },
       { k: "pct", label: "Inv. / venta", num: true, fmt: (x) => fmtPct(x) },
     ], stRows, { sort: "ad", hl: (r) => r.i === storeIdx() })));
+  }
+
+
+  // ================================================================ E-COMMERCE (datos reales)
+  function pageEcommerce(v) {
+    const E = D.ecommerce.rows;
+    const full = E.filter((r) => !r.parcial);
+    const partial = E.find((r) => r.parcial);
+    const S = SERIES();
+    const sum = (rows, k) => rows.reduce((a, r) => a + r[k], 0);
+    const l12 = full.filter((r) => r.mes >= "2025-10" && r.mes <= "2026-09");
+    const ms26 = full.filter((r) => r.mes >= "2026-05" && r.mes <= "2026-09");
+    const ms25 = full.filter((r) => r.mes >= "2025-05" && r.mes <= "2025-09");
+    const rev = sum(l12, "revenue"), ord = sum(l12, "ordenes"), ses = sum(l12, "sesiones"), sp = sum(l12, "spend");
+    const g26 = sum(ms26, "revenue") / sum(ms25, "revenue") - 1;
+    const share = (() => {
+      const w = aggSM({ months: range(NM - 12, NM), key: (r) => (SID[r[0]] === "WEB" ? "web" : "fis") });
+      const a = (w.get("web") || EMPTY).v, b = (w.get("fis") || EMPTY).v;
+      return a / (a + b);
+    })();
+    v.append(h("div", { class: "note", style: "margin:0 0 16px" }, h("b", {}, "Datos reales del e-commerce de Peach, "),
+      `de mayo 2025 a octubre 2026 (octubre parcial, del 1 al 12). Revenue con IVA, como lo reporta la plataforma. La web es el ${fmtPct(share, 1)} de la venta total de los últimos 12 meses.`));
+    v.append(h("div", { class: "kpis" },
+      kpi("Revenue 12 meses", fmtMoney(rev), `may–sep 26: ${fmtDelta(g26)} vs. may–sep 25`, g26 >= 0 ? "up" : "down"),
+      kpi("Órdenes", fmtInt(ord), `${fmtDelta(sum(ms26, "ordenes") / sum(ms25, "ordenes") - 1)} may–sep a/a`),
+      kpi("Ticket promedio", fmtMoney(rev / ord, false), "revenue ÷ órdenes"),
+      kpi("Sesiones", fmtInt(ses), `${fmtDelta(sum(ms26, "sesiones") / sum(ms25, "sesiones") - 1)} may–sep a/a`),
+      kpi("Tasa de conversión", fmtPct(ord / ses, 2), "órdenes ÷ sesiones"),
+      kpi("Inversión en pauta", fmtMoney(sp), `ROAS ${fmtNum(rev / sp, 1)}x · CAC ${fmtMoney(sp / ord, false)}`)));
+    const g = h("div", { class: "grid" });
+    v.append(g);
+    const labels = E.map((r) => monthLabel(r.mes) + (r.parcial ? "*" : ""));
+    const barCols = (c) => E.map((r) => (r.parcial ? c + "55" : c));
+
+    const [b1, c1] = chartBox("tall");
+    g.append(card("Revenue mensual", "Con IVA · * octubre 2026 parcial (1 al 12)", 8, b1));
+    mkChart(c1, {
+      type: "bar",
+      data: { labels, datasets: [{ data: E.map((r) => r.revenue), backgroundColor: barCols(S[0]), maxBarThickness: 30 }] },
+      options: {
+        scales: axes({ y: { ticks: { callback: moneyTick } } }),
+        plugins: { tooltip: { callbacks: {
+          title: (c) => monthLabel(E[c[0].dataIndex].mes, true) + (E[c[0].dataIndex].parcial ? " (parcial)" : ""),
+          label: (c) => { const r = E[c.dataIndex]; return [` ${fmtMoney(r.revenue, false)} revenue`, ` ${fmtInt(r.ordenes)} órdenes · ticket ${fmtMoney(r.ticket_prom, false)}`]; } } } },
+      },
+    });
+
+    // lectura automática
+    const best = full.slice().sort((a, b) => b.revenue - a.revenue)[0];
+    const pre = full.filter((r) => r.mes >= "2025-10" && r.mes <= "2026-03"), post = full.filter((r) => r.mes >= "2026-04" && r.mes <= "2026-09");
+    const avg = (rows, k) => sum(rows, k) / rows.length;
+    const roas = (rows) => sum(rows, "revenue") / sum(rows, "spend");
+    const conv = (rows) => sum(rows, "ordenes") / sum(rows, "sesiones");
+    const hiConv = full.filter((r) => r.conv_rate >= 0.009).map((r) => monthLabel(r.mes)).join(", ");
+    g.append(card("Qué dicen los datos", null, 4, h("div", { class: "explain" },
+      h("p", {}, h("b", {}, "La web duplicó su venta: "), `de mayo a septiembre 2026 vendió ${fmtMoney(sum(ms26, "revenue"))}, ${fmtDelta(g26, 0)} contra el mismo período de 2025.`),
+      h("p", {}, h("b", {}, roas(post) >= roas(pre) ? "Más inversión y mejor retorno: " : "Más inversión, menos retorno: "), `desde abril 2026 la pauta pasó de ${fmtMoney(avg(pre, "spend"))} a ${fmtMoney(avg(post, "spend"))} por mes y el ROAS subió de ${fmtNum(roas(pre), 1)}x a ${fmtNum(roas(post), 1)}x.`),
+      h("p", {}, h("b", {}, "Mejor mes: "), `${monthLabel(best.mes, true)}, con ${fmtMoney(best.revenue)}, ticket de ${fmtMoney(best.ticket_prom, false)} y ROAS ${fmtNum(best.roas, 1)}x.`),
+      h("p", {}, h("b", {}, "Conversión: "), `promedia ${fmtPct(conv(l12), 2)}; supera el 0,9% en ${hiConv}, meses de campañas fuertes.`),
+      partial ? h("p", {}, h("b", {}, "Octubre: "), `en 12 días lleva ${fmtMoney(partial.revenue)} (ROAS ${fmtNum(partial.roas, 1)}x). Al mismo ritmo cerraría cerca de ${fmtMoney(partial.revenue / 12 * 31)}.`) : null)));
+
+    const simple = (title, sub, key, fmt, color, type = "bar", span = 6) => {
+      const [bx, cv] = chartBox();
+      g.append(card(title, sub, span, bx));
+      mkChart(cv, {
+        type,
+        data: { labels, datasets: [{ data: E.map((r) => r[key]), backgroundColor: type === "bar" ? barCols(color) : color, borderColor: color, tension: .3, pointRadius: type === "line" ? 3 : 0, maxBarThickness: 30 }] },
+        options: { scales: axes({ y: { beginAtZero: true, ticks: { callback: fmt } } }), interaction: { mode: "index", intersect: false },
+          plugins: { tooltip: { callbacks: { label: (c) => ` ${fmt(c.raw)}` } } } },
+      });
+    };
+    simple("Sesiones", "Visitas a la tienda online por mes", "sesiones", (x) => fmtInt(x), S[0]);
+    simple("Tasa de conversión", "Órdenes ÷ sesiones", "conv_rate", (x) => fmtPct(x, 2), S[0], "line");
+    simple("Inversión en pauta", "Spend mensual en medios digitales", "spend", (x) => fmtMoney(x), S[0]);
+    simple("ROAS", "Revenue ÷ inversión", "roas", (x) => `${fmtNum(x, 1)}x`, S[0], "line");
+
+    const rows = E.slice().reverse().map((r) => ({ ...r, mesL: monthLabel(r.mes, true) + (r.parcial ? " (parcial)" : "") }));
+    g.append(card("Detalle mensual", "Datos tal como vienen de la plataforma, más recientes primero", 12, table([
+      { k: "mesL", label: "Mes", sortVal: (r) => r.mes },
+      { k: "revenue", label: "Revenue", num: true, fmt: (x) => fmtMoney(x, false) },
+      { k: "ordenes", label: "Órdenes", num: true, fmt: fmtInt },
+      { k: "ticket_prom", label: "Ticket prom.", num: true, fmt: (x) => fmtMoney(x, false) },
+      { k: "sesiones", label: "Sesiones", num: true, fmt: fmtInt },
+      { k: "conv_rate", label: "Conversión", num: true, fmt: (x) => fmtPct(x, 2) },
+      { k: "spend", label: "Inversión", num: true, fmt: (x) => fmtMoney(x, false) },
+      { k: "roas", label: "ROAS", num: true, fmt: (x) => `${fmtNum(x, 2)}x` },
+      { k: "cac", label: "CAC", num: true, fmt: (x) => fmtMoney(x, false), title: "Inversión ÷ órdenes" },
+    ], rows, { nosort: true, foot: { mesL: "Oct 25 – Sep 26", revenue: fmtMoney(rev, false), ordenes: fmtInt(ord), ticket_prom: fmtMoney(rev / ord, false),
+      sesiones: fmtInt(ses), conv_rate: fmtPct(ord / ses, 2), spend: fmtMoney(sp, false), roas: `${fmtNum(rev / sp, 2)}x`, cac: fmtMoney(sp / ord, false) } })));
   }
 
   // ================================================================ CANASTA

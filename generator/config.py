@@ -6,22 +6,26 @@ SEED = 20261011
 START = date(2024, 10, 1)
 END = date(2026, 9, 30)          # último día con datos ("hoy" de la demo)
 IVA = 1.22                        # precios de lista incluyen IVA
-TARGET_NET_SALES_YEAR = 640e6     # UYU sin IVA, total compañía
+# Escala: el e-commerce real (ecommerce_real.csv) es ~10% de la venta total.
+# La venta total anual se deriva de ese dato: venta web neta 12m / WEB_SHARE.
+ECOM_REAL = "ecommerce_real.csv"
+ECOM_REVENUE_WITH_IVA = True      # el revenue de la plataforma incluye IVA
+WEB_SHARE = 0.10
 
 # id, nombre, ciudad, tipo, m2, factor de venta, apertura, personal
 STORES = [
-    ("MVS", "Montevideo Shopping", "Montevideo", "Shopping", 190, 1.40, None, 12),
-    ("PCS", "Punta Carretas", "Montevideo", "Shopping", 170, 1.25, None, 11),
-    ("TCR", "Tres Cruces", "Montevideo", "Shopping", 150, 1.10, None, 10),
-    ("POR", "Portones", "Montevideo", "Shopping", 130, 0.92, None, 8),
-    ("NVC", "Nuevocentro", "Montevideo", "Shopping", 120, 0.84, None, 8),
-    ("CUR", "Costa Urbana", "Canelones", "Shopping", 130, 0.86, date(2025, 4, 1), 8),
-    ("LPS", "Las Piedras", "Canelones", "Shopping", 115, 0.58, None, 7),
-    ("PDE", "Punta Shopping", "Maldonado", "Shopping", 160, 0.95, None, 9),
-    ("SAL", "Salto Shopping", "Salto", "Shopping", 100, 0.60, None, 6),
-    ("PAY", "Paysandú Shopping", "Paysandú", "Shopping", 90, 0.48, None, 5),
-    ("COL", "Colonia", "Colonia", "Calle", 85, 0.44, None, 5),
-    ("WEB", "E-commerce", "Online", "Online", 0, 1.05, None, 7),
+    ("MVS", "Montevideo Shopping", "Montevideo", "Shopping", 110, 1.40, None, 4),
+    ("PCS", "Punta Carretas", "Montevideo", "Shopping", 100, 1.25, None, 4),
+    ("TCR", "Tres Cruces", "Montevideo", "Shopping", 90, 1.10, None, 3),
+    ("POR", "Portones", "Montevideo", "Shopping", 80, 0.92, None, 3),
+    ("NVC", "Nuevocentro", "Montevideo", "Shopping", 75, 0.84, None, 3),
+    ("CUR", "Costa Urbana", "Canelones", "Shopping", 80, 0.86, date(2025, 4, 1), 3),
+    ("LPS", "Las Piedras", "Canelones", "Shopping", 60, 0.58, None, 2),
+    ("PDE", "Punta Shopping", "Maldonado", "Shopping", 95, 0.95, None, 3),
+    ("SAL", "Salto Shopping", "Salto", "Shopping", 65, 0.62, None, 2),
+    ("PAY", "Paysandú Shopping", "Paysandú", "Shopping", 55, 0.52, None, 2),
+    ("COL", "Colonia", "Colonia", "Calle", 55, 0.50, None, 2),
+    ("WEB", "E-commerce", "Online", "Online", 0, 1.0, None, 2),
 ]
 
 # tendencia anual propia de cada sucursal (crecimiento real de unidades)
@@ -35,7 +39,7 @@ STORE_SEASON = {
 }
 
 # sesgo del planificador: >1 sobrestock, <1 quiebres
-STORE_STOCK_BIAS = {"LPS": 1.75, "COL": 1.35, "PAY": 1.3, "MVS": 0.82, "WEB": 0.9}
+STORE_STOCK_BIAS = {"LPS": 1.75, "COL": 1.35, "PAY": 1.3, "MVS": 0.82, "WEB": 1.25}
 # descuento manual medio en caja (proporción del precio)
 STORE_MANUAL_DISC = {"LPS": 0.048, "TCR": 0.027}
 DEFAULT_MANUAL_DISC = 0.018
@@ -78,20 +82,21 @@ COST_MONTHLY_INFL = .0042
 FX_SHOCK = (date(2026, 4, 1), .065)   # suba de costo en importados
 
 # gastos operativos por sucursal física
-RENT_M2_MONTH = 2350          # UYU / m2 / mes (2024)
-RENT_PCT_SALES = .06
-SALARY_MONTH = 64000          # costo empresa por persona
-OTHER_PCT_SALES = .085      # tarjetas, gastos comunes, fondo de promoción, energía
+RENT_M2_MONTH = 1250          # UYU / m2 / mes (2024)
+RENT_PCT_SALES = .05
+SALARY_MONTH = 52000          # costo empresa por persona
+OTHER_PCT_SALES = .065      # tarjetas, gastos comunes, fondo de promoción, energía
 WEB_PCT_SALES = .24           # plataforma, logística, medios de pago, devoluciones
-CAPEX_M2 = 95000              # obra, mobiliario y llave por m2
-WEB_CAPEX = 6.5e6
+CAPEX_M2 = 70000              # obra, mobiliario y llave por m2
+WEB_CAPEX = 2.5e6
 
+# Pauta. Meta y Google salen del spend real del e-commerce (split META_SHARE);
+# el resto: % de la venta total, ROAS reportado y tendencia anual del ROAS.
+META_SHARE = 0.62
 AD_CHANNELS = [
-    # canal, share del presupuesto, ROAS medio, tendencia ROAS anual
-    ("Meta Ads", .34, 6.2, 0.04),
-    ("Google Ads", .22, 8.4, 0.02),
-    ("Influencers", .18, 3.4, -0.22),
-    ("Email y WhatsApp", .08, 21.0, 0.05),
-    ("Vía pública", .18, 1.9, 0.0),
+    ("Meta Ads", None, None, 0),
+    ("Google Ads", None, None, 0),
+    ("Influencers", .0045, 3.2, -0.22),
+    ("Email y WhatsApp", .0010, 21.0, 0.05),
+    ("Vía pública", .0045, 1.9, 0.0),
 ]
-AD_BUDGET_PCT = .03
