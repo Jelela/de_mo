@@ -9,8 +9,8 @@
   --grid: #e1e0d9;
   --axis: #c3c2b7;
   --border: rgba(11, 11, 11, 0.10);
-  --accent: #ed715a;          /* coral del logo (solo chrome, nunca datos) */
-  --accent-soft: #fde3dd;
+  --accent: #0f31f6;          /* azul de espor.ai (solo chrome, nunca datos) */
+  --accent-soft: #e3e8ff;
   --s1: #2a78d6; --s2: #eb6834; --s3: #1baf7a; --s4: #eda100;
   --s5: #e87ba4; --s6: #008300; --s7: #6250d6; --s8: #e34948;
   --good: #0ca30c; --warning: #fab219; --serious: #ec835a; --critical: #d03b3b;
@@ -23,7 +23,7 @@
   --glass-hover: rgba(255, 255, 255, 0.55);
   --glass-border: rgba(255, 255, 255, 0.65);
   --glass-shadow: 0 10px 40px rgba(60, 40, 30, 0.14), inset 0 1px 0 rgba(255,255,255,.6);
-  --page-glow-1: rgba(232, 115, 79, 0.16);
+  --page-glow-1: rgba(15, 49, 246, 0.10);
   --page-glow-2: rgba(42, 120, 214, 0.10);
 }
 @media (prefers-color-scheme: dark) {
@@ -32,7 +32,7 @@
     --page: #0d0d0d; --surface: #1a1a19; --surface-2: #232321;
     --ink: #f0efec; --ink-2: #c3c2b7; --muted: #898781;
     --grid: #2c2c2a; --axis: #383835; --border: rgba(255,255,255,0.10);
-    --accent: #ed715a; --accent-soft: #3a2219;
+    --accent: #4d6bff; --accent-soft: #1b2150;
     --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500;
     --s5: #d55181; --s6: #008300; --s7: #9085e9; --s8: #e66767;
     --good-text: #0ca30c; --bad-text: #ef6b6b;
@@ -45,7 +45,7 @@
     --glass-hover: rgba(255, 255, 255, 0.07);
     --glass-border: rgba(255, 255, 255, 0.12);
     --glass-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255,255,255,.06);
-    --page-glow-1: rgba(240, 138, 104, 0.10);
+    --page-glow-1: rgba(77, 107, 255, 0.10);
     --page-glow-2: rgba(57, 135, 229, 0.08);
   }
 }
@@ -54,7 +54,7 @@
   --page: #0d0d0d; --surface: #1a1a19; --surface-2: #232321;
   --ink: #f0efec; --ink-2: #c3c2b7; --muted: #898781;
   --grid: #2c2c2a; --axis: #383835; --border: rgba(255,255,255,0.10);
-  --accent: #ed715a; --accent-soft: #3a2219;
+  --accent: #4d6bff; --accent-soft: #1b2150;
   --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500;
   --s5: #d55181; --s6: #008300; --s7: #9085e9; --s8: #e66767;
   --good-text: #0ca30c; --bad-text: #ef6b6b;
@@ -66,7 +66,7 @@
   --glass-hover: rgba(255, 255, 255, 0.07);
   --glass-border: rgba(255, 255, 255, 0.12);
   --glass-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255,255,255,.06);
-  --page-glow-1: rgba(240, 138, 104, 0.10);
+  --page-glow-1: rgba(77, 107, 255, 0.10);
   --page-glow-2: rgba(57, 135, 229, 0.08);
 }
 
@@ -127,7 +127,7 @@ button, select, input { font: inherit; color: inherit; }
 .dock-item.active .dock-icon { color: #fff; background: var(--accent); border-color: transparent; }
 
 .brand-top { display: none; }
-.brand-top img { display: block; height: 22px; width: auto; }
+.brand-top img { height: 22px; width: auto; }
 
 .main { min-width: 0; padding: 0 28px 48px 288px; }
 .topbar {
@@ -280,3 +280,12 @@ table.heat td { text-align: center; padding: 6px 4px; border-radius: 4px; font-v
   .filter select { min-width: 140px; }
   .kpi .value { font-size: 22px; }
 }
+
+/* logo: versión clara u oscura según el tema */
+.logo-dark { display: none !important; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .logo-light { display: none !important; }
+  :root:not([data-theme="light"]) .logo-dark { display: block !important; }
+}
+:root[data-theme="dark"] .logo-light { display: none !important; }
+:root[data-theme="dark"] .logo-dark { display: block !important; }

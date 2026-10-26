@@ -1545,7 +1545,7 @@
     chartDefaults();
     document.getElementById("page-title").textContent = p.t;
     document.getElementById("page-sub").textContent = p.sub;
-    document.title = `${p.t} · Peach`;
+    document.title = `${p.t} · espor.ai`;
     selStore.value = state.store;
     selPeriod.value = state.period;
     selStore.disabled = !p.store;
